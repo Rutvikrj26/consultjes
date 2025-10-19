@@ -49,7 +49,7 @@ const About = () => {
     },
     {
       title: 'Technical Expertise',
-      description: '26+ years of engineering experience'
+      description: 'CNC machining, precision manufacturing, and process optimization'
     },
     {
       title: 'Customer Focus',
@@ -109,13 +109,16 @@ const About = () => {
               <h2>Engineering Procurement Excellence</h2>
               <p>
                 JES Engineering specializes in the procurement and installation of high-performance industrial
-                components. With over 26 years of experience, we provide comprehensive solutions for hydraulic
-                systems, linear motion components, and industrial cooling equipment.
+                components. With over 26 years of precision engineering experience, we provide comprehensive
+                solutions for hydraulic systems, linear motion components, and industrial cooling equipment.
+                Our expertise spans Defense, Aerospace, Energy, and Industrial Manufacturing sectors worldwide.
               </p>
               <p>
-                Our mission is to simplify the procurement process for engineering projects by providing access
-                to premium components, expert technical consultation, and professional installation services—all
-                through a single, trusted partner.
+                Backed by AS9100-D certification and proven track record with industry leaders like ISRO,
+                Siemens, L&T, ABB, and Godrej Aerospace, we combine world-class procurement capabilities with
+                advanced manufacturing expertise. Our mission is to deliver precision-engineered solutions with
+                complete technical support—from component selection and sourcing to installation, commissioning,
+                and after-sales service.
               </p>
             </div>
             <div className="about-intro__stats">

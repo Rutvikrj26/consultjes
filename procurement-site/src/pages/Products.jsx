@@ -94,7 +94,9 @@ const Products = () => {
           <div className="products-header__content">
             <h1 className="products-header__title">Product Catalog</h1>
             <p className="products-header__description">
-              Browse our comprehensive selection of industrial components for procurement and installation
+              Browse our comprehensive selection of industrial components backed by 26+ years of precision
+              engineering expertise. Serving Defense, Aerospace, Energy, and Industrial sectors with
+              AS9100-D certified quality and complete technical support.
             </p>
           </div>
         </div>

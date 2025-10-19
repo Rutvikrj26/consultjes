@@ -10,11 +10,12 @@ const Services = () => {
       title: 'Machine Shop Setup & Installation',
       description: 'Complete end-to-end machine shop setup including installation of heavy-duty CNC machines, quality inspection equipment, and production workflow optimization.',
       capabilities: [
-        'HMC/VMC machine installation and commissioning',
-        'CMM and precision measurement equipment setup',
-        'High-precision boring and milling machine integration',
-        'Production layout optimization',
-        'Tool room setup with pre-setup capabilities'
+        'Heavy-duty HMC/Boring machines (600-1600 pellet size) installation',
+        'VMC machines (3000-4200 pellet size) setup and commissioning',
+        'Hexagon Gantry CMM (2x3x2m) installation and operator training',
+        'Japan-based Nigata HND 100 Double Spindle fine boring setup',
+        'Complete workflow optimization from casting to CMM-passed parts',
+        'Tool room with pre-setup capabilities and screw compressor utilities'
       ],
       industries: ['Manufacturing', 'Heavy Engineering', 'Industrial Machinery']
     },
@@ -23,11 +24,12 @@ const Services = () => {
       title: 'Precision Manufacturing & Machining',
       description: 'Export-quality precision machining services for complex components across Defense, Aerospace, Energy, and Industrial sectors.',
       capabilities: [
-        'CNC Gantry Milling (up to 15m travel)',
-        'CNC VTL operations (3m to 5m chuck diameter)',
-        'High-precision boring and fine machining',
-        'Complex component manufacturing',
-        'Injection molding machine parts production'
+        'CNC Gantry Milling (15m X-axis, 4m Y-axis, 1m Z-axis, SIEMENS 840)',
+        'CNC VTL operations (3m-5m chuck diameter, 4-4.5m height, SIEMENS 828/802D)',
+        'CNC Floor Boring (10m x 3.5m table, SIEMENS 840D controller)',
+        'Injection molding machine parts (Mould Platen, Crosshead, Thrust Housing)',
+        'Turbine components for steam and hydro power applications',
+        'Aerospace components (BrahMos missiles, satellite parts, K9 Vajra Tank)'
       ],
       industries: ['Defense', 'Aerospace', 'Energy', 'Turbine Manufacturing']
     },
@@ -62,11 +64,12 @@ const Services = () => {
       title: 'CNC Programming & Tooling',
       description: 'Expert CNC programming and custom tooling development for SIEMENS and FANUC controllers across various machine types.',
       capabilities: [
-        'SIEMENS (840D-SL, 828-SL, 802D-SL) programming',
-        'FANUC controller programming',
-        'Custom jig and fixture design',
-        'Tool pre-setup and optimization',
-        'Machine parameter optimization'
+        'SIEMENS (840D-SL, 828-SL, 802D-SL) programming and optimization',
+        'FANUC controller programming for machining centers and turning',
+        'Custom jig and fixture design for CNC setups',
+        'Tool pre-setup stations for reduced cycle time',
+        'Valve mounting block manufacturing expertise',
+        'Heat treatment process setup (Nitriding & Hard Completing)'
       ],
       industries: ['Machine Shops', 'Job Work', 'OEM Manufacturing']
     },
@@ -170,8 +173,10 @@ const Services = () => {
             <h2>Excellence in Engineering & Manufacturing</h2>
             <p>
               JES Engineering provides world-class manufacturing and engineering services across Defense, Aerospace,
-              Energy, and Industrial sectors. Our expertise spans from complete machine shop setup to export-quality
-              precision manufacturing, backed by stringent quality standards and proven project delivery.
+              Energy, and Industrial sectors. With 26+ years of hands-on experience managing complex projects for
+              industry leaders like ISRO, Siemens, L&T, ABB, and Godrej Aerospace, we deliver precision solutions
+              from machine shop setup to export-quality component manufacturing. Our AS9100-D certified processes
+              ensure compliance with the highest international standards for aerospace and defense applications.
             </p>
             <div className="intro-stats">
               <div className="stat">

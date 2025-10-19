@@ -1,10 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Button from './Button';
 import logo from '../assets/logo.png';
 import './Hero.css';
 
 const Hero = () => {
+  const [currentWord, setCurrentWord] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const words = ['Procurement', 'Consulting', 'Manufacturing', 'Installation', 'Engineering'];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setCurrentWord((prev) => (prev + 1) % words.length);
+        setIsAnimating(false);
+      }, 300);
+    }, 3500); // Change word every 3.5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="hero">
       <div className="hero__background">
@@ -22,14 +38,18 @@ const Hero = () => {
             </div>
 
             <h1 className="hero__title">
-              Industrial Procurement
-              <span className="hero__title-highlight hero__title-services"> Services</span>
+              Industrial{' '}
+              <span className={`hero__title-dynamic ${isAnimating ? 'hero__title-dynamic--exit' : 'hero__title-dynamic--enter'}`}>
+                {words[currentWord]}
+              </span>
+              <br />
+              <span className="hero__title-highlight">Services</span>
             </h1>
 
             <p className="hero__description">
               Your trusted partner for procurement and installation of high-performance hydraulic systems,
-              linear motion components, and industrial cooling solutions. Delivering excellence in engineering
-              services.
+              linear motion components, and industrial cooling solutions. Backed by 26+ years of precision
+              engineering expertise serving Defense, Aerospace, Energy, and Industrial sectors worldwide.
             </p>
 
             <div className="hero__actions">
@@ -52,7 +72,7 @@ const Hero = () => {
               </div>
               <div className="stat__divider"></div>
               <div className="stat">
-                <div className="stat__value">15+</div>
+                <div className="stat__value">26+</div>
                 <div className="stat__label">Years Experience</div>
               </div>
               <div className="stat__divider"></div>
@@ -75,6 +95,18 @@ const Hero = () => {
             <div className="visual__card visual__card--3">
               <div className="visual__icon">❄️</div>
               <div className="visual__label">Cooling Solutions</div>
+            </div>
+            <div className="visual__card visual__card--4">
+              <div className="visual__icon">🏭</div>
+              <div className="visual__label">CNC Machining</div>
+            </div>
+            <div className="visual__card visual__card--5">
+              <div className="visual__icon">✓</div>
+              <div className="visual__label">Quality Control</div>
+            </div>
+            <div className="visual__card visual__card--6">
+              <div className="visual__icon">🚀</div>
+              <div className="visual__label">Aerospace Components</div>
             </div>
           </div>
         </div>

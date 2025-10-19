@@ -6,26 +6,26 @@ const values = [
   {
     id: 1,
     icon: '🏆',
-    title: 'Premium Quality',
-    description: 'All products meet international standards with comprehensive certifications',
+    title: 'AS9100-D Certified Quality',
+    description: 'Export-quality precision manufacturing meeting international aerospace and defense standards with complete traceability',
   },
   {
     id: 2,
     icon: '🌍',
-    title: 'Global Sourcing',
-    description: 'Partnered with leading manufacturers worldwide for the best solutions',
+    title: 'Global Expertise',
+    description: 'Proven track record with Siemens, L&T, ABB, ISRO, and international clients across Defense, Aerospace, and Energy sectors',
   },
   {
     id: 3,
-    icon: '⚡',
-    title: 'Fast Delivery',
-    description: 'Efficient logistics and inventory management for quick turnaround',
+    icon: '⚙️',
+    title: 'Advanced Manufacturing',
+    description: 'CNC machining capabilities with SIEMENS & FANUC controls, precision boring, and CMM inspection for complex components',
   },
   {
     id: 4,
     icon: '💡',
-    title: 'Expert Support',
-    description: 'Technical expertise and consultation to help you choose the right products',
+    title: 'Technical Excellence',
+    description: '26+ years of machine shop management, process optimization, and engineering solutions from setup to delivery',
   },
 ];
 

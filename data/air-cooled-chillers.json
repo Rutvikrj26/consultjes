@@ -5,14 +5,20 @@
     {
       "name": "Air Cooled Water Chiller",
       "tech_tier": "Entry to Mid",
-      "capacity_tr": "5-500",
+      "capacity_tr": "0.25-500",
       "capacity_kw": "0.5-400",
-      "compressor": "Scroll/Reciprocating",
+      "compressor": "Scroll/Reciprocating (or screw)",
       "condenser": "Air-cooled",
-      "power_supply": "440V, 3-phase",
-      "applications": "General industrial/process & HVAC",
-      "features": "Packaged systems, simple install, wide capacity, 1-yr warranty",
-      "image": "https://5.imimg.com/data5/WQ/AV/FQ/SELLER-705095/air-cooled-chiller-500x500.JPG"
+      "power_supply": "Various (e.g., 230V, 460V, 3-phase, 50/60 Hz)",
+      "applications": "General industrial/process & HVAC, industrial machinery, automation systems, data centers.",
+      "features": "Packaged systems, simple install, wide capacity, 1-yr warranty, precise temperature control, and energy efficiency.",
+      "image": "https://thmhuade.com/wp-content/uploads/2020/07/air-cooled-water-chiller-300x300.jpg",
+      "specifications": {
+        "refrigerant": "R-134a, R-410A, R-407C (eco-friendly options)",
+        "temperature_range": "Defined by inlet/outlet water temperatures and ambient operating conditions.",
+        "efficiency": "High (measured by COP, EER, IPLV)",
+        "control_systems": "Microprocessor controls, PID temperature controllers, BMS connectivity."
+      }
     },
     {
       "name": "200 TR Air-Cooled Chiller",

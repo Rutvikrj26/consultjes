@@ -1,0 +1,46 @@
+
+{
+  "category": "Linear Bearings & Guideways",
+  "products": [
+    {
+      "name": "Standard Linear Bearings",
+      "tech_tier": "Mid",
+      "shaft_dia_range_mm": "3-100",
+      "key_features": "Standard, Adjustable (AJ), Open (OP), and Long (L) types. Interchangeable dimensions.",
+      "materials": "Steel outer cylinder, Steel or Resin retainer",
+      "applications": "General purpose linear motion, automation machinery",
+      "differentiator": "High Precision and Rigidity, Ease of Assembly, Variety of Types (Metric/Inch)",
+      "image": ""
+    },
+    {
+      "name": "Flanged Linear Bearings",
+      "tech_tier": "Mid",
+      "shaft_dia_range_mm": "6-100",
+      "key_features": "Round (F), Square (K), Two-side cut (H) flanges. Standard, Long (L), and Middle (M) flange types.",
+      "materials": "Steel outer cylinder, Resin retainer",
+      "applications": "Applications requiring secure, direct mounting of the bearing.",
+      "differentiator": "Integrated flange simplifies design and assembly, ensuring perpendicularity.",
+      "image": ""
+    },
+    {
+      "name": "Linear Bearing Slide Units",
+      "tech_tier": "Mid",
+      "shaft_dia_range_mm": "3-60",
+      "key_features": "Aluminum housing block for easy mounting. Standard (UU), Open (UUOP), and Long (LUU) versions.",
+      "materials": "Aluminum housing, Steel bearing",
+      "applications": "Turnkey linear slides, automated gantries, measurement equipment.",
+      "differentiator": "Pre-assembled unit reduces design time and guarantees alignment.",
+      "image": ""
+    },
+    {
+      "name": "Linear Guideways",
+      "tech_tier": "Best",
+      "rail_width_mm": "15-65",
+      "key_features": "45° contact angle for equal load in all directions, self-aligning capability, low noise.",
+      "materials": "Steel",
+      "applications": "High-precision machine tools, CNC machines, robotics, semiconductor mfg.",
+      "differentiator": "High Rigidity, Four-way Equal Load, Interchangeable carriages/rails.",
+      "image": ""
+    }
+  ]
+}

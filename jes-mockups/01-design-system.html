@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JES Engineering - Design System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f8f9fa;
+            color: #2C3E50;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #1B3A52 0%, #0A1929 100%);
+            color: white;
+            padding: 4rem 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            color: #1B3A52;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #D4AF37;
+        }
+
+        /* Color Palette */
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .color-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .color-swatch {
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .color-info {
+            padding: 1rem;
+            background: #f8f9fa;
+        }
+
+        .color-info h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .color-info code {
+            background: #e9ecef;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            display: inline-block;
+            margin-top: 0.25rem;
+        }
+
+        /* Typography */
+        .type-sample {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-left: 4px solid #D4AF37;
+            background: #f8f9fa;
+        }
+
+        .type-sample .label {
+            font-size: 0.875rem;
+            color: #7F8C8D;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        /* Buttons */
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .btn {
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: #D4AF37;
+            color: #1B3A52;
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #F4D03F;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-secondary {
+            background: #1B3A52;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #0A1929;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #1B3A52;
+            border: 2px solid #1B3A52;
+        }
+
+        .btn-outline:hover {
+            background: #1B3A52;
+            color: white;
+        }
+
+        /* Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border: 2px solid #E0E6ED;
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(27, 58, 82, 0.12);
+            border-color: #D4AF37;
+        }
+
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #D4AF37 0%, #F4D03F 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            color: #1B3A52;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            color: #7F8C8D;
+            line-height: 1.6;
+        }
+
+        /* Form Elements */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #2C3E50;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border: 2px solid #E0E6ED;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+
+        /* Icons */
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .icon-box {
+            text-align: center;
+            padding: 1.5rem;
+            border: 2px solid #E0E6ED;
+            border-radius: 8px;
+        }
+
+        .icon-box span {
+            font-size: 2.5rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .icon-box p {
+            font-size: 0.875rem;
+            color: #7F8C8D;
+        }
+
+        /* Spacing System */
+        .spacing-example {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .spacing-box {
+            background: #D4AF37;
+            color: #1B3A52;
+            padding: 1rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-header">
+        <div class="container">
+            <h1>JES Engineering Design System</h1>
+            <p>A comprehensive guide to our brand identity, components, and design patterns</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Brand Colors -->
+        <div class="section">
+            <h2 class="section-title">Brand Colors</h2>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #1B3A52; color: white;">
+                        Primary Navy
+                    </div>
+                    <div class="color-info">
+                        <h3>Primary Navy</h3>
+                        <code>#1B3A52</code>
+                        <code>RGB(27, 58, 82)</code>
+                        <p style="margin-top: 0.5rem; font-size: 0.875rem; color: #7F8C8D;">Main brand color, headers, navigation</p>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #D4AF37; color: #1B3A52;">
+                        Primary Gold
+                    </div>
+                    <div class="color-info">
+                        <h3>Primary Gold</h3>
+                        <code>#D4AF37</code>
+                        <code>RGB(212, 175, 55)</code>
+                        <p style="margin-top: 0.5rem; font-size: 0.875rem; color: #7F8C8D;">Accent color, CTAs, highlights</p>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #0A1929; color: white;">
+                        Accent Navy
+                    </div>
+                    <div class="color-info">
+                        <h3>Accent Navy</h3>
+                        <code>#0A1929</code>
+                        <code>RGB(10, 25, 41)</code>
+                        <p style="margin-top: 0.5rem; font-size: 0.875rem; color: #7F8C8D;">Darker shade, gradients, depth</p>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #F4D03F; color: #1B3A52;">
+                        Accent Gold
+                    </div>
+                    <div class="color-info">
+                        <h3>Accent Gold</h3>
+                        <code>#F4D03F</code>
+                        <code>RGB(244, 208, 63)</code>
+                        <p style="margin-top: 0.5rem; font-size: 0.875rem; color: #7F8C8D;">Lighter gold, hover states</p>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #F5F7FA; color: #2C3E50;">
+                        Neutral Gray
+                    </div>
+                    <div class="color-info">
+                        <h3>Neutral Gray</h3>
+                        <code>#F5F7FA</code>
+                        <code>RGB(245, 247, 250)</code>
+                        <p style="margin-top: 0.5rem; font-size: 0.875rem; color: #7F8C8D;">Backgrounds, sections</p>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #2C3E50; color: white;">
+                        Text Dark
+                    </div>
+                    <div class="color-info">
+                        <h3>Text Dark</h3>
+                        <code>#2C3E50</code>
+                        <code>RGB(44, 62, 80)</code>
+                        <p style="margin-top: 0.5rem; font-size: 0.875rem; color: #7F8C8D;">Primary text color</p>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #7F8C8D; color: white;">
+                        Text Light
+                    </div>
+                    <div class="color-info">
+                        <h3>Text Light</h3>
+                        <code>#7F8C8D</code>
+                        <code>RGB(127, 140, 141)</code>
+                        <p style="margin-top: 0.5rem; font-size: 0.875rem; color: #7F8C8D;">Secondary text, descriptions</p>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background: white; color: #2C3E50; border: 2px solid #E0E6ED;">
+                        White
+                    </div>
+                    <div class="color-info">
+                        <h3>White</h3>
+                        <code>#FFFFFF</code>
+                        <code>RGB(255, 255, 255)</code>
+                        <p style="margin-top: 0.5rem; font-size: 0.875rem; color: #7F8C8D;">Cards, content backgrounds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Typography -->
+        <div class="section">
+            <h2 class="section-title">Typography</h2>
+            
+            <div class="type-sample">
+                <div class="label">H1 - Montserrat Bold, 48px</div>
+                <h1 style="font-size: 3rem; font-family: 'Montserrat', sans-serif; font-weight: 700; color: #1B3A52;">Engineering Excellence, Globally Sourced</h1>
+            </div>
+
+            <div class="type-sample">
+                <div class="label">H2 - Montserrat SemiBold, 36px</div>
+                <h2 style="font-size: 2.25rem; font-family: 'Montserrat', sans-serif; font-weight: 600; color: #1B3A52;">Comprehensive Product Solutions</h2>
+            </div>
+
+            <div class="type-sample">
+                <div class="label">H3 - Montserrat SemiBold, 24px</div>
+                <h3 style="font-size: 1.5rem; font-family: 'Montserrat', sans-serif; font-weight: 600; color: #1B3A52;">Hydraulic Systems</h3>
+            </div>
+
+            <div class="type-sample">
+                <div class="label">Body Large - Inter Regular, 18px</div>
+                <p style="font-size: 1.125rem; color: #2C3E50;">Premium hydraulic systems, linear motion technology, and industrial cooling solutions from world-leading manufacturers. Quality tested. Globally certified.</p>
+            </div>
+
+            <div class="type-sample">
+                <div class="label">Body - Inter Regular, 16px</div>
+                <p style="font-size: 1rem; color: #2C3E50;">Our comprehensive range includes axial piston pumps, precision bearings, industrial chillers, and complete system solutions for diverse engineering applications.</p>
+            </div>
+
+            <div class="type-sample">
+                <div class="label">Caption - Inter Medium, 14px</div>
+                <p style="font-size: 0.875rem; color: #7F8C8D; font-weight: 500;">Technical specifications available in downloadable datasheets</p>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="section">
+            <h2 class="section-title">Buttons</h2>
+            <div class="button-grid">
+                <div>
+                    <p style="margin-bottom: 0.5rem; font-weight: 500;">Primary Button</p>
+                    <button class="btn btn-primary">Get Quote</button>
+                </div>
+                <div>
+                    <p style="margin-bottom: 0.5rem; font-weight: 500;">Secondary Button</p>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+                <div>
+                    <p style="margin-bottom: 0.5rem; font-weight: 500;">Outline Button</p>
+                    <button class="btn btn-outline">Download Catalog</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="section">
+            <h2 class="section-title">Product Cards</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">⚙️</div>
+                    <h3>Hydraulic Systems</h3>
+                    <p>Axial piston pumps, motors, valves & excavator solutions from THM Huade</p>
+                    <div style="margin-top: 1rem;">
+                        <span style="background: #F5F7FA; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; margin-right: 0.5rem;">5-500 TR</span>
+                        <span style="background: #F5F7FA; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem;">280-450 bar</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📐</div>
+                    <h3>Linear Motion</h3>
+                    <p>Precision bearings, ball screws & linear guideways from QLH Technology</p>
+                    <div style="margin-top: 1rem;">
+                        <span style="background: #F5F7FA; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; margin-right: 0.5rem;">Ø3-300mm</span>
+                        <span style="background: #F5F7FA; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem;">High Precision</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">❄️</div>
+                    <h3>Cooling Systems</h3>
+                    <p>Industrial chillers, HVAC & process cooling from AMI</p>
+                    <div style="margin-top: 1rem;">
+                        <span style="background: #F5F7FA; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; margin-right: 0.5rem;">0.5-500 TR</span>
+                        <span style="background: #F5F7FA; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem;">Energy Efficient</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Elements -->
+        <div class="section">
+            <h2 class="section-title">Form Elements</h2>
+            <div style="max-width: 600px;">
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-input" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-input" placeholder="your.email@company.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Product Interest</label>
+                    <select class="form-input">
+                        <option>Select a product category</option>
+                        <option>Hydraulic Systems</option>
+                        <option>Linear Motion Technology</option>
+                        <option>Cooling Systems</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Icons -->
+        <div class="section">
+            <h2 class="section-title">Product Category Icons</h2>
+            <div class="icon-grid">
+                <div class="icon-box">
+                    <span>⚙️</span>
+                    <p>Hydraulics</p>
+                </div>
+                <div class="icon-box">
+                    <span>📐</span>
+                    <p>Linear Motion</p>
+                </div>
+                <div class="icon-box">
+                    <span>❄️</span>
+                    <p>Cooling</p>
+                </div>
+                <div class="icon-box">
+                    <span>🔧</span>
+                    <p>Tools</p>
+                </div>
+                <div class="icon-box">
+                    <span>📊</span>
+                    <p>Analytics</p>
+                </div>
+                <div class="icon-box">
+                    <span>📄</span>
+                    <p>Documentation</p>
+                </div>
+                <div class="icon-box">
+                    <span>✓</span>
+                    <p>Certified</p>
+                </div>
+                <div class="icon-box">
+                    <span>🌍</span>
+                    <p>Global</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spacing -->
+        <div class="section">
+            <h2 class="section-title">Spacing Scale</h2>
+            <p style="margin-bottom: 2rem; color: #7F8C8D;">Consistent spacing using 8px base unit (0.5rem)</p>
+            <div class="spacing-example">
+                <div class="spacing-box" style="width: 32px; height: 32px;">4px</div>
+                <div class="spacing-box" style="width: 64px; height: 64px;">8px</div>
+                <div class="spacing-box" style="width: 96px; height: 96px;">12px</div>
+                <div class="spacing-box" style="width: 128px; height: 128px;">16px</div>
+                <div class="spacing-box" style="width: 192px; height: 192px;">24px</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

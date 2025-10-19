@@ -1,0 +1,34 @@
+{
+  "category": "Mobile Hydraulics & Linear Motion",
+  "products": [
+    {
+      "name": "TVT-09 Linear Actuator",
+      "tech_tier": "Electromechanical",
+      "power_voltage": "45 W, 12/24/36/48 VDC",
+      "applications": "Mobile/industrial linear motion",
+      "differentiator": "Compact, multi-voltage options",
+      "image": "https://thmhuade.com/products/thm-tvt-09-linear-actuator/"
+    },
+    {
+      "name": "Mobile Hydraulics Solutions",
+      "tech_tier": "System",
+      "applications": "Equipment upfits & service for sectors like transportation, aerospace, construction, agriculture, and manufacturing.",
+      "differentiator": "Comprehensive support for a wide range of hydraulic components and services to minimize downtime.",
+      "image": "https://thmhuade.com/product-category/thm/mobile-hydraulics/",
+      "components": [
+        "Hydraulic valves",
+        "Pumps",
+        "Motors",
+        "Tanks",
+        "Accessories",
+        "Hoses",
+        "Fittings"
+      ],
+      "services": [
+        "Mobile hydraulic mechanic services",
+        "Hydraulic hose repair",
+        "Professional hydraulic repair center"
+      ]
+    }
+  ]
+}

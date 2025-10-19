@@ -1,0 +1,45 @@
+
+{
+  "category": "Air Cooled Chillers",
+  "products": [
+    {
+      "name": "Air Cooled Water Chiller",
+      "tech_tier": "Entry to Mid",
+      "capacity_tr": "5-500",
+      "capacity_kw": "0.5-400",
+      "compressor": "Scroll/Reciprocating",
+      "condenser": "Air-cooled",
+      "power_supply": "440V, 3-phase",
+      "applications": "General industrial/process & HVAC",
+      "features": "Packaged systems, simple install, wide capacity, 1-yr warranty",
+      "image": "https://5.imimg.com/data5/WQ/AV/FQ/SELLER-705095/air-cooled-chiller-500x500.JPG"
+    },
+    {
+      "name": "200 TR Air-Cooled Chiller",
+      "tech_tier": "Better",
+      "capacity_tr": "200",
+      "capacity_kw": "10-1000",
+      "temperature_range": "+2°C",
+      "compressor": "Screw, 2 compressors",
+      "condenser": "Air-cooled",
+      "power_supply": "440V, 3-phase",
+      "noise": "~75 dB",
+      "applications": "Large rooftop/yard installs",
+      "features": "Industrial build, designed for tropical conditions",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/SD/ID/DY/705095/200tr-air-cooled-chiller-500x500.jpeg"
+    },
+    {
+      "name": "Air Cooled Screw Chiller",
+      "tech_tier": "Better",
+      "capacity_tr": "5-500",
+      "capacity_kw": "120-2300",
+      "temperature_range": "+30°C to -10°C",
+      "compressor": "Screw",
+      "condenser": "Air-cooled",
+      "power_supply": "3-phase",
+      "applications": "Industrial loads with wider temp spans",
+      "features": "High range with low-temp capability (-10°C)",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/SD/ID/DY/705095/200tr-air-cooled-chiller-500x500.jpeg"
+    }
+  ]
+}

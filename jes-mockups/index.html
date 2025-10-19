@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JES Engineering - Design Mockups Index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #1B3A52 0%, #0A1929 100%);
+            min-height: 100vh;
+            color: white;
+            padding: 3rem 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: #1B3A52;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0 auto 2rem;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            opacity: 0.9;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background: #D4AF37;
+            color: #1B3A52;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-top: 1.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            color: #2C3E50;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 48px rgba(0,0,0,0.3);
+        }
+
+        .card-header {
+            padding: 2rem;
+            background: linear-gradient(135deg, #F5F7FA 0%, #E0E6ED 100%);
+            text-align: center;
+        }
+
+        .card-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-number {
+            background: #D4AF37;
+            color: #1B3A52;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin: 0 auto 1rem;
+        }
+
+        .card-body {
+            padding: 2rem;
+        }
+
+        .card-body h3 {
+            color: #1B3A52;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-body p {
+            color: #7F8C8D;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-features {
+            margin-bottom: 1.5rem;
+        }
+
+        .feature {
+            padding: 0.5rem 0;
+            color: #2C3E50;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background: #1B3A52;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #0A1929;
+        }
+
+        .btn-primary {
+            background: #D4AF37;
+            color: #1B3A52;
+            margin-bottom: 0.75rem;
+        }
+
+        .btn-primary:hover {
+            background: #F4D03F;
+        }
+
+        .info-section {
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .info-section h2 {
+            font-size: 2rem;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-section ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .info-section li {
+            padding: 0.75rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .footer p {
+            opacity: 0.8;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .info-section ul {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">JES</div>
+            <h1>JES Engineering Design Mockups</h1>
+            <p class="subtitle">Complete Website Design Package for Review</p>
+            <div class="status-badge">✓ Ready for Approval</div>
+        </header>
+
+        <div class="info-section">
+            <h2>📦 Package Contents</h2>
+            <p style="margin-bottom: 2rem; opacity: 0.9;">Click on any page below to view the full design mockup. All pages are responsive and interactive.</p>
+            <ul>
+                <li>✅ Design System & Style Guide</li>
+                <li>✅ Complete Homepage Design</li>
+                <li>✅ Product Category Listing</li>
+                <li>✅ Product Detail Page</li>
+                <li>✅ About & Contact Page</li>
+                <li>✅ Resources & Downloads</li>
+                <li>✅ Responsive Mobile Layouts</li>
+                <li>✅ Full Documentation (README)</li>
+            </ul>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-number">00</div>
+                    <div class="card-icon">📚</div>
+                </div>
+                <div class="card-body">
+                    <h3>Documentation</h3>
+                    <p>Complete guide to the design system, all pages, and implementation notes.</p>
+                    <div class="card-features">
+                        <div class="feature">📋 Design decisions & rationale</div>
+                        <div class="feature">🎨 Color & typography guide</div>
+                        <div class="feature">📱 Responsive breakpoints</div>
+                        <div class="feature">🚀 Implementation roadmap</div>
+                    </div>
+                    <a href="00-README.md" class="btn btn-primary" target="_blank">Read Documentation</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-number">01</div>
+                    <div class="card-icon">🎨</div>
+                </div>
+                <div class="card-body">
+                    <h3>Design System</h3>
+                    <p>Complete style guide showing colors, typography, buttons, forms, and all UI components.</p>
+                    <div class="card-features">
+                        <div class="feature">🎨 Brand color palette</div>
+                        <div class="feature">✍️ Typography scales</div>
+                        <div class="feature">🔘 Button variations</div>
+                        <div class="feature">📋 Form elements</div>
+                    </div>
+                    <a href="01-design-system.html" class="btn btn-primary" target="_blank">View Design System</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-number">02</div>
+                    <div class="card-icon">🏠</div>
+                </div>
+                <div class="card-body">
+                    <h3>Homepage</h3>
+                    <p>Main landing page with hero section, product categories, trust indicators, and CTAs.</p>
+                    <div class="card-features">
+                        <div class="feature">🦚 Hero with peacock motif</div>
+                        <div class="feature">📊 Trust indicators</div>
+                        <div class="feature">⚙️ Product showcase</div>
+                        <div class="feature">🏆 Value propositions</div>
+                    </div>
+                    <a href="02-homepage.html" class="btn btn-primary" target="_blank">View Homepage</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-number">03</div>
+                    <div class="card-icon">📦</div>
+                </div>
+                <div class="card-body">
+                    <h3>Product Category</h3>
+                    <p>Browse and filter products with sidebar filters, sorting, and detailed product cards.</p>
+                    <div class="card-features">
+                        <div class="feature">🔍 Advanced filters</div>
+                        <div class="feature">📊 Sort options</div>
+                        <div class="feature">💳 Product cards</div>
+                        <div class="feature">📄 Pagination</div>
+                    </div>
+                    <a href="03-product-category.html" class="btn btn-primary" target="_blank">View Category Page</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-number">04</div>
+                    <div class="card-icon">🔧</div>
+                </div>
+                <div class="card-body">
+                    <h3>Product Detail</h3>
+                    <p>Comprehensive product page with specifications, applications, and quote request.</p>
+                    <div class="card-features">
+                        <div class="feature">📐 Technical specs</div>
+                        <div class="feature">💼 Applications</div>
+                        <div class="feature">📄 Documentation</div>
+                        <div class="feature">💬 Quote panel</div>
+                    </div>
+                    <a href="04-product-detail.html" class="btn btn-primary" target="_blank">View Product Detail</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-number">05</div>
+                    <div class="card-icon">🏢</div>
+                </div>
+                <div class="card-body">
+                    <h3>About & Contact</h3>
+                    <p>Company information, core values, contact form, and office locations.</p>
+                    <div class="card-features">
+                        <div class="feature">📖 Company story</div>
+                        <div class="feature">💎 Core values</div>
+                        <div class="feature">✉️ Contact form</div>
+                        <div class="feature">📍 Locations</div>
+                    </div>
+                    <a href="05-about-contact.html" class="btn btn-primary" target="_blank">View About & Contact</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-number">06</div>
+                    <div class="card-icon">📚</div>
+                </div>
+                <div class="card-body">
+                    <h3>Resources</h3>
+                    <p>Downloadable catalogs, technical guides, video tutorials, and documentation.</p>
+                    <div class="card-features">
+                        <div class="feature">📄 Product catalogs</div>
+                        <div class="feature">🔧 Technical guides</div>
+                        <div class="feature">🎥 Video tutorials</div>
+                        <div class="feature">📧 Newsletter signup</div>
+                    </div>
+                    <a href="06-resources.html" class="btn btn-primary" target="_blank">View Resources</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>🎯 What's Next?</h2>
+            <p style="margin-bottom: 2rem;">After reviewing these mockups, we can proceed with:</p>
+            <ol style="list-style-position: inside; opacity: 0.9; line-height: 2;">
+                <li><strong>Figma Recreation:</strong> Convert these designs to Figma files for presentation and handoff</li>
+                <li><strong>Design Refinements:</strong> Make any adjustments to colors, layouts, or content</li>
+                <li><strong>React Implementation:</strong> Build the approved designs as production-ready React components</li>
+                <li><strong>Backend Integration:</strong> Connect to your product database and quote system</li>
+            </ol>
+        </div>
+
+        <footer class="footer">
+            <p><strong>Created for JES Engineering</strong></p>
+            <p>Professional engineering website design package</p>
+            <p style="opacity: 0.6; font-size: 0.875rem;">All designs are responsive and ready for implementation</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,458 @@
+{
+  "category": "Valves",
+  "subcategories": [
+    {
+      "name": "Directional Control Valves",
+      "products": [
+        {
+          "name": "HD-WE Solenoid Operated Spool Valve",
+          "tech_tier": "Entry to Mid",
+          "size_interface": "NG6 (D03), NG10",
+          "control": "Solenoid / electro-hydraulic",
+          "features": "Direct solenoid-operated, wet pin DC or AC solenoids with removable coils.",
+          "applications": "Industrial automation, machinery manufacturing, aerospace projects, marine applications, machine tools, plastic molding machines, and pressing machines.",
+          "differentiator": "Coils can be replaced without opening the pressure-tight chamber. Optional manual override.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-WE-solenoid-operated-spool-valve-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 350 bar",
+            "max_flow_rate": "Up to 120 L/min",
+            "standards": "DIN 24 340 form A, ISO 4401, CETOP-RP 121H"
+          }
+        },
+        {
+          "name": "HD-M-SEW6/10 Solenoid Actuated Poppet Valve",
+          "tech_tier": "Mid to High",
+          "size_interface": "NG6, NG10",
+          "control": "Solenoid actuated",
+          "features": "Leak-free closed port, direct solenoid operated, air-gap DC solenoid with a removable coil.",
+          "applications": "Hydraulic applications such as injection molding machines, machine tools, automation equipment, construction machinery, presses, forming machines, industrial automation systems, and hydraulic test benches.",
+          "differentiator": "Leak-free design, robust and reliable for high-pressure systems.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-M-SEW-solenoid-actuated-poppet-valve-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 630 bar",
+            "max_flow_rate": "25 L/min (for HD-M-SEW6)",
+            "standards": "DIN 24 340 Form A, ISO 4401, CETOP-RP 121H",
+            "configurations": "2/2-way, 3/2-way (normally closed or normally open), 4/2-way with sandwich plate"
+          }
+        },
+        {
+          "name": "HD-(H)-WEH/WH Pilot Operated Directional Valve",
+          "tech_tier": "High",
+          "size_interface": "NG10, NG16, NG25, NG32",
+          "control": "Electro-hydraulic (WEH) or hydraulic (WH)",
+          "features": "Pilot operated, subplate mounting, optional wet-pin DC or AC solenoids, manual override, shifting time adjustment.",
+          "applications": "General hydraulic systems, machine tools, plastic injection molding machines.",
+          "differentiator": "High flow rates, various optional features for customized control.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-H-WEH-WH-pilot-operated-directional-valve-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 350 bar",
+            "max_flow_rate": "Up to 1100 L/min",
+            "standards": "DIN 24 340 form A, ISO 4401, CETOP-RP 121H"
+          }
+        },
+        {
+          "name": "P40/P80/P120 Monoblock Manually Controlled Valve",
+          "tech_tier": "Entry to Mid",
+          "size_interface": "P40, P80, P120 nominal flow rates",
+          "control": "Manual (lever), with options for cable, solenoid, pneumatic, electro-hydraulic control",
+          "features": "Monoblock construction (1-7 spools), parallel or series functions, optional safety valve.",
+          "applications": "Mobile equipment like tractors, excavators, and loaders, as well as various industrial machinery.",
+          "differentiator": "Compact, reliable, and economical solution for hydraulic fluid control.",
+          "image": "https://thmhuade.com/wp-content/uploads/2021/02/P80-Monoblock-Manually-Controlled-Valve-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 315 bar (P40), 250 bar (P80)",
+            "nominal_flow_rate": "40 L/min (P40), 80 L/min (P80), 120 L/min (P120)",
+            "fluid_temperature_range": "-10°C to +80°C"
+          }
+        },
+        {
+          "name": "HD-LC 2-way Cartridge Valve",
+          "tech_tier": "High",
+          "size_interface": "NG16 to NG160",
+          "control": "Logic element for compact block designs",
+          "features": "Poppet with or without damping nose, multiple area ratios, various spring options, stroke limiters.",
+          "applications": "Directional control, pressure control (relief or reducing), and flow control.",
+          "differentiator": "Versatile logic elements for compact hydraulic systems.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-LC-2-way-cartridge-valve-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 420 bar",
+            "max_flow_rate": "Up to 7000 L/min",
+            "standards": "DIN 24342"
+          }
+        }
+      ]
+    },
+    {
+      "products": [
+        {
+          "name": "HD-S Check Free Flow Valve",
+          "tech_tier": "Entry",
+          "size_interface": "6, 8, 10, 15, 20, 25, 30 inches",
+          "control": "Free flow in one direction, leakage-free closure in the opposite direction.",
+          "features": "Threaded (screw-in) connection or subplate mounting, various cracking pressures available.",
+          "applications": "Fluid flow control in diverse industrial applications to ensure unidirectional flow and prevent backflow.",
+          "differentiator": "High-strength materials for friction, corrosion, and deformation resistance.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-S-check-free-flow-valve-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 315 bar",
+            "max_flow_rate": "Up to 450 L/min"
+          }
+        },
+        {
+          "name": "HD-SV/SL Hydraulically Pilot Operated Check Valve",
+          "tech_tier": "Mid",
+          "size_interface": "NG10, NG20, NG30",
+          "control": "Allows free flow in one direction and blocks flow in the opposite direction until pilot pressure is applied.",
+          "features": "Subplate mounting, optional pre-opening for dampened decompression.",
+          "applications": "Hydraulic presses, lifting equipment, injection molding machines.",
+          "differentiator": "Combines check valve function with an externally controllable bypass for flexible and safe operation.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-SV-SL-hydraulically-pilot-operated-check-valve-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 315 bar",
+            "max_flow_rate": "Up to 400 L/min",
+            "standards": "DIN 24 340, ISO 4401, CETOP-RP 121H3"
+          }
+        },
+        {
+          "name": "HD-RVP Check Valve, Sub-plate Mounting",
+          "tech_tier": "Entry to Mid",
+          "size_interface": "NG6 to NG40",
+          "control": "Leakage-free closure in one direction, free flow in the opposite direction.",
+          "features": "Sub-plate mounting, poppet design.",
+          "applications": "Back pressure valve or bypass valve at the outlet of a pump.",
+          "differentiator": "Dependable flow control, compatible with Rexroth products.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-RVP-check-valve-sub-plate-mounting-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 315 bar",
+            "max_flow_rate": "Up to 600 L/min",
+            "opening_pressure": "0.05 MPa"
+          }
+        },
+        {
+          "name": "HD-Z1S Sandwich Plate Check Valve",
+          "tech_tier": "Mid",
+          "size_interface": "NG6, NG10",
+          "control": "Direct-operated check valve for vertical stacking assemblies.",
+          "features": "Sandwich plate design, 8 different isolating functions, various cracking pressure options.",
+          "applications": "Industrial applications requiring operating pressures above 10.0 MPa and flow velocities exceeding 4 m/s.",
+          "differentiator": "Leak-tightness through high-performance plastic poppet, cost-effective replacement for Rexroth components.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-Z1S-sandwich-plate-check-valve-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 350 bar",
+            "max_flow_rate": "Up to 100 L/min",
+            "standards": "ISO 4401"
+          }
+        },
+        {
+          "name": "HD-Z2S Pilot Operated Check Valve, Sandwich Plate",
+          "tech_tier": "Mid to High",
+          "size_interface": "NG6, NG10, NG16, NG22",
+          "control": "Hydraulically pilot-operated check valve for vertical stacking assemblies.",
+          "features": "Sandwich plate design, leakage-free closure of one or two actuator ports, optional pre-opening.",
+          "applications": "Various industrial equipment requiring leakage-free blocking of actuator ports.",
+          "differentiator": "Provides leakage-free closure even over long periods, can replace Rexroth's equivalent range.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-Z2S-pilot-operated-check-valve-sandwich-plate-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 315 bar",
+            "max_flow_rate": "Up to 450 L/min",
+            "standards": "DIN 24 340 form A, ISO 4401, CETOP-RP 121H"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pressure Valves",
+      "products": [
+        {
+          "name": "HD-DB...50/ Pilot Operated Pressure Relief Valve",
+          "tech_tier": "High",
+          "size_interface": "NG10 to NG30",
+          "control": "Pilot-operated pressure relief",
+          "features": "Poppet structure, multiple pressure adjustment elements, various mounting types (sub-plate, threaded, manifold).",
+          "applications": "Aerospace, equipment engineering, mining, chemical manufacturing, machine tools, marine steering gear hydraulic systems, swing crane hydraulic systems, and pitch control systems.",
+          "differentiator": "Limits or controls pressure in a hydraulic system, with optional solenoid-operated unloading (HD-DBW).",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-DB-pilot-operated-pressure-relief-valve-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 350 bar",
+            "max_flow_rate": "Up to 650 L/min",
+            "pressure_ranges": "50, 100, 200, 315, and 350 bar"
+          }
+        },
+        {
+          "name": "HD-DBD Direct Operated Pressure Relief Valve",
+          "tech_tier": "Entry to Mid",
+          "size_interface": "NG6 to NG30",
+          "control": "Direct-operated pressure relief",
+          "features": "Direct-operated poppet valve, various pressure adjustment elements (rotary knob, hex head screw), multiple mounting types (cartridge, threaded, subplate).",
+          "applications": "Engineering, construction machinery, metallurgy, machine tools, and aerospace.",
+          "differentiator": "Infinitely variable pressure adjustment, can replace Rexroth DBD series.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-DBD-direct-operated-pressure-relief-valve-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 400 bar"
+          }
+        },
+        {
+          "name": "HD-DR...DP Direct Operated Pressure Reducing Valve, 3-Port",
+          "tech_tier": "Mid",
+          "size_interface": "NG6, NG10",
+          "control": "Direct-operated pressure reducing",
+          "features": "3-port design, subplate mounting, various adjustment elements, optional check valve for free return flow.",
+          "applications": "Industrial pressure control, handling equipment, construction machinery, lathes, ship hydraulic systems, mining, metallurgy, and chemical sectors.",
+          "differentiator": "Reduces system pressure with a pressure relief function on the secondary side.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-DR-DP-direct-operated-pressure-reducing-valve-3-port-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 315 bar",
+            "max_flow_rate": "Up to 80 L/min",
+            "pressure_ranges": "25, 75, 150, 210, and 315 bar",
+            "standards": "DIN 24 340, form D, ISO 5781, CETOP-RP 121H"
+          }
+        },
+        {
+          "name": "HD-DR Pilot Operated Pressure Reducing Valve",
+          "tech_tier": "High",
+          "size_interface": "NG10, NG20, NG30",
+          "control": "Pilot-operated pressure reducing",
+          "features": "Sub-plate mounting and threaded connection, four types of pressure adjustment elements, optional check valve.",
+          "applications": "Heavy-duty use in construction, industrial and mobile equipment, machine tools, aerospace, marine steering gear hydraulic systems, swing crane hydraulic systems, and pitch control systems.",
+          "differentiator": "Smooth and quick pressure regulation for enhanced hydraulic efficiency and system protection.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-DR-pilot-operated-pressure-reducing-valve-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 315 bar",
+            "max_flow_rate": "Up to 400 L/min",
+            "pressure_ranges": "50, 100, 200, and 315 bar"
+          }
+        },
+        {
+          "name": "HD-ZDB/Z2DB Pilot Operated Pressure Relief, Sandwich Plate",
+          "tech_tier": "High",
+          "size_interface": "NG6, NG10",
+          "control": "Pilot-operated pressure relief",
+          "features": "Sandwich plate design with one or two pressure relief cartridges, various adjustment elements.",
+          "applications": "General hydraulic systems.",
+          "differentiator": "Limits the pressure within a hydraulic system, with a compact sandwich plate design.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-ZDB-Z2DB-pilot-operated-pressure-relief-sandwich-plate-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 315 bar",
+            "max_flow_rate": "Up to 100 L/min",
+            "pressure_ranges": "50, 100, 200, and 315 bar",
+            "standards": "DIN 24 340 form A, ISO 4401, CETOP-RP 121H"
+          }
+        },
+        {
+          "name": "HD-ZDR Direct Operated Pressure Reducing, Sandwich Plate",
+          "tech_tier": "Mid",
+          "size_interface": "NG6, NG10",
+          "control": "Direct-operated pressure reducing",
+          "features": "Sandwich plate design, 4 pressure levels/ratings, various adjustment elements, optional check valve.",
+          "applications": "General hydraulic systems.",
+          "differentiator": "Reduces system pressure with a pressure relief function on the secondary side, compact design.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-ZDR-direct-operated-pressure-reducing-sandwich-plate-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 350 bar",
+            "max_flow_rate": "Up to 160 L/min",
+            "pressure_settings": "25, 75, 150, 210, and 315 bar",
+            "standards": "ISO 4401-03-02-0-05, DIN 24340 form A"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Proportional Valves",
+      "products": [
+        {
+          "name": "HD-2FRE Proportional Flow Control Valve, 2-Way",
+          "tech_tier": "High",
+          "size_interface": "NG6, NG10, NG16",
+          "control": "Proportional solenoid",
+          "features": "2-way design, pressure-compensated, electrical position feedback, sub-plate mounting.",
+          "applications": "Industrial equipment, chemical processing, and mining.",
+          "differentiator": "Regulates flow based on an electrical command value, with constant flow even with varying load pressures.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-2FRE-proportional-flow-control-valve-2-way-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 315 bar",
+            "max_flow_rate": "Up to 160 L/min"
+          }
+        },
+        {
+          "name": "HD-4WR Pilot Operated Proportional Directional Valve",
+          "tech_tier": "High",
+          "size_interface": "NG10, NG16, NG25, NG32",
+          "control": "Pilot-operated proportional solenoid",
+          "features": "Spring-centered spools, subplate mounting, optional electrical position feedback and integrated electronics.",
+          "applications": "General hydraulic systems.",
+          "differentiator": "Controls both direction and flow rate of hydraulic fluid, with high flow rate capabilities.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-4WR-pilot-operated-proportional-directional-valve-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 350 bar",
+            "max_flow_rate": "Up to 3000 L/min",
+            "standards": "DIN 24 340 From A, ISO4401, CETOP-RP121H"
+          }
+        },
+        {
+          "name": "HD-DBE/DBEM Proportional Pressure Relief Valve",
+          "tech_tier": "High",
+          "size_interface": "NG10, NG20, NG30",
+          "control": "Proportional solenoid",
+          "features": "Subplate mounting, manifold mounting, optional integrated electronics (OBE).",
+          "applications": "General hydraulic systems.",
+          "differentiator": "Limits and precisely adjusts pressure based on an electrical command value, with optional maximum pressure safety (DBEM).",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-DBE-DBEM-proportional-pressure-relief-valve-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 350 bar",
+            "max_flow_rate": "Up to 600 L/min",
+            "standards": "DIN 24 340 form E, ISO 6264"
+          }
+        },
+        {
+          "name": "HD-3DREP6 Proportional Pressure Reducing Valve, 3-Way",
+          "tech_tier": "High",
+          "size_interface": "NG6",
+          "control": "Directly actuated proportional solenoid",
+          "features": "3-way design, sub-plate mounting, optional integrated control electronics (HD-3DREPE).",
+          "applications": "General hydraulic systems.",
+          "differentiator": "Converts an electrical input signal into a proportional pressure output signal, limiting system pressure.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-3DREP6-proportional-pressure-reducing-valve-3-way-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 100 bar",
+            "max_flow_rate": "Up to 15 L/min"
+          }
+        },
+        {
+          "name": "HD-4WRA Direct Actuated Proportional Directional Valve",
+          "tech_tier": "High",
+          "size_interface": "NG6, NG10",
+          "control": "Directly actuated proportional solenoid",
+          "features": "Spring-centered spool, subplate mounting, optional internal amplifier (HD-4WRAE).",
+          "applications": "Equipment building, mining, metallurgy, aerospace, machine tools, and light industry.",
+          "differentiator": "Controls both direction and volume flow of hydraulic fluid.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-4WRA-direct-actuated-proportional-directional-valve-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 315 bar",
+            "max_flow_rate": "Up to 95 L/min"
+          }
+        },
+        {
+          "name": "HD-4WRE Direct Actuated Proportional Directional Valve w/ Electrical Feedback",
+          "tech_tier": "High",
+          "size_interface": "NG6, NG10",
+          "control": "Directly actuated proportional solenoid with electrical feedback",
+          "features": "Spring-centered spool, sub-plate mounting, optional integrated valve electronics (HD-4WREE).",
+          "applications": "Equipment manufacturing, mining, metallurgy, and aerospace.",
+          "differentiator": "Precise control of both direction and volume flow of hydraulic fluid with electrical position feedback.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-4WRE-direct-actuated-proportional-directional-valve-w-electrical-feedback-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 315 bar",
+            "max_flow_rate": "Up to 180 L/min",
+            "standards": "ISO 4401"
+          }
+        },
+        {
+          "name": "4WRPEH6/10 Servo Solenoid Proportional Valve",
+          "tech_tier": "Servo",
+          "size_interface": "NG6, NG10",
+          "control": "Servo solenoid with integrated electronics (OBE)",
+          "features": "High-response, direct-operated, electrical position feedback, 4/4 fail-safe position.",
+          "applications": "Electro-hydraulic control systems for production and testing, industrial equipment, chemical processing, mining.",
+          "differentiator": "Servo quality control spool and sleeve for precise control, compatible with Bosch Rexroth's 4WRPEH series.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/4WRPEH6-10-servo-solenoid-proportional-valve-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 350 bar",
+            "nominal_flow_rate": "Up to 100 L/min",
+            "standards": "DIN 24 340 A, ISO 4401, CETOP-RP 121 H"
+          }
+        },
+        {
+          "name": "LSPV Series Load Sensing Proportional Control Valve",
+          "tech_tier": "High",
+          "size_interface": "Modular design",
+          "control": "Load sensing proportional control",
+          "features": "Dynamically adjusts hydraulic flow based on the load, modular design.",
+          "applications": "Construction equipment, agricultural machinery, aerial work platforms, cranes, drilling rigs, and mining trucks.",
+          "differentiator": "Optimizes hydraulic system performance by providing precise, efficient, and safe flow control, minimizing energy waste.",
+          "image": "https://thmhuade.com/wp-content/uploads/2023/09/LSPV-Series-Load-Sensing-Proportional-Control-valve-300x300.jpg",
+          "specifications": {
+            "system_compatibility": "Closed-center systems for load sensing variable pumps and open-center systems for fixed displacement pumps."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Flow Control Valves",
+      "products": [
+        {
+          "name": "HD-2FRM 2-Way Flow Control Valve",
+          "tech_tier": "Mid",
+          "size_interface": "NG5, NG6, NG10, NG16",
+          "control": "Mechanical actuation",
+          "features": "Subplate mounting, optional lockable key/rotary knob, optional check valve.",
+          "applications": "General hydraulic systems for throttling flow.",
+          "differentiator": "Maintains a constant flow, largely independent of pressure and temperature variations.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-2FRM-2-way-flow-control-valve-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 315 bar",
+            "max_flow_rate": "Up to 160 L/min",
+            "standards": "DIN 24 340, ISO 4401, CETOP-RP 121H"
+          }
+        },
+        {
+          "name": "HD-DV/DRV Throttle Check Valve",
+          "tech_tier": "Entry to Mid",
+          "size_interface": "NG6 to NG40",
+          "control": "Throttle/shut-off (DV) or throttle check (DRV)",
+          "features": "Sub-plate mounting or threaded connections, color scale on adjustment knob for repeatability.",
+          "applications": "Industrial and mobile hydraulic systems for accurate flow control, regulating speed of loads, system damping, and pressure release in accumulator systems.",
+          "differentiator": "Precise adjustment and complete shut-off of fluid flow in both directions (DV) or throttling in one direction with free return flow (DRV).",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-DV-DRV-throttle-check-valve-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 350 bar",
+            "max_flow_rate": "Up to 600 L/min"
+          }
+        },
+        {
+          "name": "HD-FD Check Q Meter Valve",
+          "tech_tier": "High",
+          "size_interface": "NG12, NG16, NG25, NG32",
+          "control": "Pilot-operated check valve",
+          "features": "Sub-plate mounting, threaded connections, manifold mounting, optional built-in secondary pressure relief valve.",
+          "applications": "Construction machinery, cranes, excavators, material handlers, drilling rigs, and stationary equipment.",
+          "differentiator": "Controls the returning flow in relation to the flow directed into the opposite side of the actuator, preventing uncontrolled movement.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-FD-check-Q-meter-valve-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 350 bar",
+            "max_flow_rate": "Up to 560 L/min",
+            "standards": "DIN 24 340, ISO 5781, CETOP-RP 121 H"
+          }
+        },
+        {
+          "name": "HD-MG/MK Throttle and Throttle Check Valve (In-line mounting)",
+          "tech_tier": "Entry to Mid",
+          "size_interface": "NG6 to NG30",
+          "control": "Throttle (MG) or throttle check (MK)",
+          "features": "Direct in-line mounting with threaded connections.",
+          "applications": "General hydraulic systems.",
+          "differentiator": "Pressure and viscosity dependent flow control, with throttling in both directions (MG) or one direction with free return flow (MK).",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-MG-MK-throttle-and-throttle-check-valve-in-line-mounting-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 315 bar",
+            "max_flow_rate": "Up to 400 L/min"
+          }
+        },
+        {
+          "name": "HD-Z2FS Double Throttle Check Valve (Sandwich Plate)",
+          "tech_tier": "Mid",
+          "size_interface": "NG6, NG10, NG16, NG22",
+          "control": "Double throttle/check valve",
+          "features": "Sandwich plate design, two symmetrically arranged throttle/check valves, meter-in or meter-out control.",
+          "applications": "Regulating the speed of an actuator or as a pilot choke adjustment.",
+          "differentiator": "Limits main or pilot oil flow at one or two service ports.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HD-Z2FS-double-throttle-check-valve-sandwich-plate-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 315 bar",
+            "max_flow_rate": "Up to 350 L/min",
+            "standards": "DIN 24 340, ISO 4401, CETOP-RP 121H"
+          }
+        }
+      ]
+    }
+  ]
+}

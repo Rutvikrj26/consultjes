@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydraulic Systems - JES Engineering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: #2C3E50;
+            background: #F5F7FA;
+        }
+
+        /* Header */
+        .header {
+            background: #1B3A52;
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #1B3A52;
+        }
+
+        .logo-text h1 {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 2rem;
+        }
+
+        /* Page Header */
+        .page-hero {
+            background: linear-gradient(135deg, #1B3A52 0%, #0A1929 100%);
+            color: white;
+            padding: 3rem 2rem;
+        }
+
+        .page-hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .breadcrumb {
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            opacity: 0.8;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .breadcrumb span {
+            margin: 0 0.5rem;
+        }
+
+        .page-hero h1 {
+            font-size: 2.5rem;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        .page-hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 700px;
+        }
+
+        .manufacturer-badge {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.2);
+            color: #D4AF37;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-weight: 600;
+            margin-top: 1.5rem;
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 3rem;
+        }
+
+        /* Sidebar Filters */
+        .sidebar {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            height: fit-content;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 2rem;
+        }
+
+        .sidebar h3 {
+            color: #1B3A52;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+        }
+
+        .filter-section {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #E0E6ED;
+        }
+
+        .filter-section:last-child {
+            border-bottom: none;
+        }
+
+        .filter-section h4 {
+            color: #2C3E50;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .filter-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .filter-option input {
+            margin-right: 0.5rem;
+        }
+
+        .filter-option label {
+            font-size: 0.95rem;
+            color: #2C3E50;
+            cursor: pointer;
+        }
+
+        .filter-count {
+            color: #7F8C8D;
+            font-size: 0.875rem;
+            margin-left: auto;
+        }
+
+        .range-input {
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+
+        .range-values {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.875rem;
+            color: #7F8C8D;
+            margin-top: 0.5rem;
+        }
+
+        .filter-reset {
+            width: 100%;
+            padding: 0.75rem;
+            background: transparent;
+            border: 2px solid #E0E6ED;
+            border-radius: 6px;
+            color: #2C3E50;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-reset:hover {
+            border-color: #D4AF37;
+            color: #D4AF37;
+        }
+
+        /* Products Area */
+        .products-area {
+            min-height: 100vh;
+        }
+
+        .products-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .results-info {
+            color: #7F8C8D;
+            font-size: 1rem;
+        }
+
+        .sort-select {
+            padding: 0.75rem 1rem;
+            border: 2px solid #E0E6ED;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            background: white;
+            cursor: pointer;
+        }
+
+        /* Product Grid */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .product-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .product-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(27, 58, 82, 0.12);
+            border-color: #D4AF37;
+        }
+
+        .product-image {
+            height: 220px;
+            background: #F5F7FA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            border-bottom: 2px solid #E0E6ED;
+        }
+
+        .product-info {
+            padding: 1.75rem;
+        }
+
+        .product-category {
+            color: #D4AF37;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-item h3 {
+            color: #1B3A52;
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .product-item p {
+            color: #7F8C8D;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.25rem;
+        }
+
+        .product-specs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .spec-item {
+            font-size: 0.875rem;
+        }
+
+        .spec-label {
+            color: #7F8C8D;
+            display: block;
+        }
+
+        .spec-value {
+            color: #2C3E50;
+            font-weight: 600;
+        }
+
+        .product-actions {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn-view {
+            flex: 1;
+            padding: 0.75rem;
+            background: #1B3A52;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-view:hover {
+            background: #0A1929;
+        }
+
+        .btn-quote {
+            flex: 1;
+            padding: 0.75rem;
+            background: #D4AF37;
+            color: #1B3A52;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-quote:hover {
+            background: #F4D03F;
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 3rem;
+        }
+
+        .page-btn {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #E0E6ED;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .page-btn:hover {
+            border-color: #D4AF37;
+            color: #D4AF37;
+        }
+
+        .page-btn.active {
+            background: #1B3A52;
+            color: white;
+            border-color: #1B3A52;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">JES</div>
+                <div class="logo-text">
+                    <h1>JES Engineering</h1>
+                </div>
+            </div>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/products">Products</a>
+                <a href="/resources">Resources</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <div class="breadcrumb">
+                <a href="/">Home</a>
+                <span>/</span>
+                <a href="/products">Products</a>
+                <span>/</span>
+                <span>Hydraulic Systems</span>
+            </div>
+            <h1>Hydraulic Systems</h1>
+            <p>Premium axial piston pumps, motors, valves, and complete hydraulic solutions for industrial and mobile applications. Engineered for reliability and performance.</p>
+            <div class="manufacturer-badge">⚙️ THM Huade Hydraulics</div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Sidebar Filters -->
+        <aside class="sidebar">
+            <h3>Filters</h3>
+
+            <div class="filter-section">
+                <h4>Product Type</h4>
+                <div class="filter-option">
+                    <input type="checkbox" id="pumps" checked>
+                    <label for="pumps">Pumps</label>
+                    <span class="filter-count">42</span>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="motors">
+                    <label for="motors">Motors</label>
+                    <span class="filter-count">28</span>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="valves">
+                    <label for="valves">Valves</label>
+                    <span class="filter-count">65</span>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="systems">
+                    <label for="systems">Complete Systems</label>
+                    <span class="filter-count">12</span>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h4>Circuit Type</h4>
+                <div class="filter-option">
+                    <input type="checkbox" id="open">
+                    <label for="open">Open Circuit</label>
+                    <span class="filter-count">85</span>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="closed">
+                    <label for="closed">Closed Circuit</label>
+                    <span class="filter-count">38</span>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h4>Pressure Range (bar)</h4>
+                <input type="range" class="range-input" min="0" max="500" value="250">
+                <div class="range-values">
+                    <span>0</span>
+                    <span>500 bar</span>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h4>Displacement (TR)</h4>
+                <input type="range" class="range-input" min="0" max="500" value="250">
+                <div class="range-values">
+                    <span>0</span>
+                    <span>500 TR</span>
+                </div>
+            </div>
+
+            <button class="filter-reset">Reset Filters</button>
+        </aside>
+
+        <!-- Products Area -->
+        <div class="products-area">
+            <div class="products-header">
+                <div class="results-info">
+                    Showing <strong>42 products</strong>
+                </div>
+                <select class="sort-select">
+                    <option>Sort by: Relevance</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Name: A-Z</option>
+                    <option>Newest First</option>
+                </select>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-item">
+                    <div class="product-image">⚙️</div>
+                    <div class="product-info">
+                        <div class="product-category">Axial Piston Pump</div>
+                        <h3>A4VSO Variable Displacement Pump</h3>
+                        <p>Variable displacement swash plate design for open circuits with superior capacity control.</p>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Sizes</span>
+                                <span class="spec-value">40-355</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Pressure</span>
+                                <span class="spec-value">350 bar</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Open Circuit</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Design</span>
+                                <span class="spec-value">Swash Plate</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-view">View Details</button>
+                            <button class="btn-quote">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <div class="product-image">⚙️</div>
+                    <div class="product-info">
+                        <div class="product-category">Axial Piston Pump</div>
+                        <h3>A10V(S)O Variable Displacement Pump</h3>
+                        <p>Swash plate design with 280 bar continuous pressure rating for demanding applications.</p>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Sizes</span>
+                                <span class="spec-value">10-140</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Pressure</span>
+                                <span class="spec-value">280 bar</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Open Circuit</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Design</span>
+                                <span class="spec-value">Swash Plate</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-view">View Details</button>
+                            <button class="btn-quote">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-item">
+                    <div class="product-image">⚙️</div>
+                    <div class="product-info">
+                        <div class="product-category">Axial Piston Pump</div>
+                        <h3>A7V Variable Bent Axis Pump</h3>
+                        <p>Bent axis design variable displacement pump for superior efficiency in open circuits.</p>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Sizes</span>
+                                <span class="spec-value">20-500</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Open Circuit</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Design</span>
+                                <span class="spec-value">Bent Axis</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Features</span>
+                                <span class="spec-value">High Efficiency</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-view">View Details</button>
+                            <button class="btn-quote">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-item">
+                    <div class="product-image">⚙️</div>
+                    <div class="product-info">
+                        <div class="product-category">Closed Circuit Pump</div>
+                        <h3>A4VSG Variable Displacement</h3>
+                        <p>High-pressure closed circuit pump with 400 bar nominal, 450 bar max capability.</p>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Displacement</span>
+                                <span class="spec-value">40-750 ml/r</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Pressure</span>
+                                <span class="spec-value">400 bar</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Closed Circuit</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Design</span>
+                                <span class="spec-value">Swash Plate</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-view">View Details</button>
+                            <button class="btn-quote">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-item">
+                    <div class="product-image">⚙️</div>
+                    <div class="product-info">
+                        <div class="product-category">Axial Piston Motor</div>
+                        <h3>A2FM Fixed Displacement Motor</h3>
+                        <p>Bent axis fixed displacement motor with 400 bar nominal pressure rating.</p>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Sizes</span>
+                                <span class="spec-value">16-180</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Pressure</span>
+                                <span class="spec-value">400 bar</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Motor</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Design</span>
+                                <span class="spec-value">Bent Axis</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-view">View Details</button>
+                            <button class="btn-quote">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-item">
+                    <div class="product-image">⚙️</div>
+                    <div class="product-info">
+                        <div class="product-category">Axial Piston Motor</div>
+                        <h3>A6VM Variable Axial Piston Motor</h3>
+                        <p>Variable displacement motor with 400 bar max pressure for mobile applications.</p>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Sizes</span>
+                                <span class="spec-value">107, 160</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Pressure</span>
+                                <span class="spec-value">400 bar max</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Type</span>
+                                <span class="spec-value">Variable Motor</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Application</span>
+                                <span class="spec-value">Mobile</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-view">View Details</button>
+                            <button class="btn-quote">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn">«</button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">»</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4VSO Variable Displacement Pump - JES Engineering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: #2C3E50;
+            background: #F5F7FA;
+        }
+
+        /* Header */
+        .header {
+            background: #1B3A52;
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #1B3A52;
+        }
+
+        .logo-text h1 {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb-section {
+            background: white;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #E0E6ED;
+        }
+
+        .breadcrumb {
+            max-width: 1400px;
+            margin: 0 auto;
+            font-size: 0.875rem;
+            color: #7F8C8D;
+        }
+
+        .breadcrumb a {
+            color: #1B3A52;
+            text-decoration: none;
+        }
+
+        .breadcrumb span {
+            margin: 0 0.5rem;
+        }
+
+        /* Main Content */
+        .product-detail {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .product-header {
+            background: white;
+            border-radius: 12px;
+            padding: 3rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .product-title-section {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 3rem;
+        }
+
+        .product-title-left {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .product-image-large {
+            width: 350px;
+            height: 350px;
+            background: #F5F7FA;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8rem;
+            border: 2px solid #E0E6ED;
+        }
+
+        .product-title-info {
+            flex: 1;
+        }
+
+        .manufacturer-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #D4AF37 0%, #F4D03F 100%);
+            color: #1B3A52;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+        }
+
+        .product-title-info h1 {
+            font-size: 2.5rem;
+            font-family: 'Montserrat', sans-serif;
+            color: #1B3A52;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-code {
+            font-family: 'Roboto Mono', monospace;
+            color: #7F8C8D;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .product-description {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #2C3E50;
+            margin-bottom: 2rem;
+        }
+
+        .key-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .feature-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem;
+            background: #F5F7FA;
+            border-radius: 8px;
+            border-left: 3px solid #D4AF37;
+        }
+
+        .feature-icon {
+            font-size: 1.5rem;
+        }
+
+        .feature-text {
+            font-size: 0.95rem;
+        }
+
+        .feature-label {
+            font-weight: 600;
+            color: #2C3E50;
+        }
+
+        .feature-value {
+            color: #7F8C8D;
+        }
+
+        /* Quote Panel */
+        .quote-panel {
+            background: linear-gradient(135deg, #1B3A52 0%, #0A1929 100%);
+            border-radius: 12px;
+            padding: 2rem;
+            color: white;
+        }
+
+        .quote-panel h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .quote-panel p {
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .quote-btn {
+            width: 100%;
+            padding: 1rem;
+            background: #D4AF37;
+            color: #1B3A52;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
+        }
+
+        .quote-btn:hover {
+            background: #F4D03F;
+            transform: translateY(-2px);
+        }
+
+        .download-btn {
+            width: 100%;
+            padding: 1rem;
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            font-size: 0.875rem;
+            opacity: 0.8;
+        }
+
+        /* Tabs */
+        .tabs-section {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .tabs-header {
+            display: flex;
+            border-bottom: 2px solid #E0E6ED;
+        }
+
+        .tab {
+            padding: 1.25rem 2rem;
+            font-weight: 600;
+            color: #7F8C8D;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .tab:hover {
+            color: #1B3A52;
+        }
+
+        .tab.active {
+            color: #1B3A52;
+            border-bottom-color: #D4AF37;
+        }
+
+        .tab-content {
+            padding: 3rem;
+        }
+
+        /* Specifications Table */
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .spec-section {
+            background: #F5F7FA;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .spec-section h4 {
+            color: #1B3A52;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid #D4AF37;
+        }
+
+        .spec-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #E0E6ED;
+        }
+
+        .spec-row:last-child {
+            border-bottom: none;
+        }
+
+        .spec-label {
+            color: #7F8C8D;
+            font-weight: 500;
+        }
+
+        .spec-value {
+            color: #2C3E50;
+            font-weight: 600;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.95rem;
+        }
+
+        /* Applications */
+        .applications-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .application-card {
+            background: #F5F7FA;
+            border-radius: 8px;
+            padding: 1.5rem;
+            border-left: 3px solid #D4AF37;
+        }
+
+        .application-card h4 {
+            color: #1B3A52;
+            margin-bottom: 0.75rem;
+        }
+
+        .application-card p {
+            color: #7F8C8D;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Related Products */
+        .related-products {
+            margin-top: 3rem;
+        }
+
+        .related-products h3 {
+            font-size: 1.75rem;
+            color: #1B3A52;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 2rem;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .related-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 2px solid #E0E6ED;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .related-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border-color: #D4AF37;
+        }
+
+        .related-image {
+            height: 150px;
+            background: #F5F7FA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+
+        .related-info {
+            padding: 1.25rem;
+        }
+
+        .related-info h4 {
+            font-size: 1rem;
+            color: #1B3A52;
+            margin-bottom: 0.5rem;
+        }
+
+        .related-info p {
+            font-size: 0.875rem;
+            color: #7F8C8D;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .product-title-section {
+                grid-template-columns: 1fr;
+            }
+
+            .product-title-left {
+                flex-direction: column;
+            }
+
+            .specs-grid,
+            .applications-grid,
+            .related-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">JES</div>
+                <div class="logo-text">
+                    <h1>JES Engineering</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-section">
+        <div class="breadcrumb">
+            <a href="/">Home</a>
+            <span>/</span>
+            <a href="/products">Products</a>
+            <span>/</span>
+            <a href="/products/hydraulics">Hydraulic Systems</a>
+            <span>/</span>
+            <span>A4VSO Variable Displacement Pump</span>
+        </div>
+    </div>
+
+    <!-- Product Detail -->
+    <div class="product-detail">
+        <div class="product-header">
+            <div class="product-title-section">
+                <div class="product-title-left">
+                    <div class="product-image-large">⚙️</div>
+                    <div class="product-title-info">
+                        <div class="manufacturer-tag">⚙️ THM Huade Hydraulics</div>
+                        <h1>A4VSO Variable Displacement Pump</h1>
+                        <div class="product-code">Model: A4VSO-40/71/125/180/250/300/355</div>
+                        <p class="product-description">
+                            Variable displacement axial piston pump with swash plate design, specifically engineered for open circuit applications. Features superior capacity control, high pressure capability up to 350 bar continuous operation, and exceptional efficiency across the full operating range.
+                        </p>
+                        <div class="key-features">
+                            <div class="feature-badge">
+                                <div class="feature-icon">📏</div>
+                                <div class="feature-text">
+                                    <div class="feature-label">Size Range</div>
+                                    <div class="feature-value">40 to 355 TR</div>
+                                </div>
+                            </div>
+                            <div class="feature-badge">
+                                <div class="feature-icon">💪</div>
+                                <div class="feature-text">
+                                    <div class="feature-label">Max Pressure</div>
+                                    <div class="feature-value">350 bar continuous</div>
+                                </div>
+                            </div>
+                            <div class="feature-badge">
+                                <div class="feature-icon">🔄</div>
+                                <div class="feature-text">
+                                    <div class="feature-label">Design Type</div>
+                                    <div class="feature-value">Swash Plate</div>
+                                </div>
+                            </div>
+                            <div class="feature-badge">
+                                <div class="feature-icon">⚡</div>
+                                <div class="feature-text">
+                                    <div class="feature-label">Circuit Type</div>
+                                    <div class="feature-value">Open Circuit</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quote Panel -->
+                <div class="quote-panel">
+                    <h3>Request a Quote</h3>
+                    <p>Get pricing and availability for this product. Our team will respond within 24 hours.</p>
+                    <button class="quote-btn">Get Quote Now</button>
+                    <button class="download-btn">📄 Download Datasheet</button>
+                    <div class="contact-info">
+                        <p><strong>Need technical assistance?</strong></p>
+                        <p>Contact our engineering team for application support and product selection guidance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs-section">
+            <div class="tabs-header">
+                <div class="tab active">Technical Specifications</div>
+                <div class="tab">Applications</div>
+                <div class="tab">Documentation</div>
+                <div class="tab">Support</div>
+            </div>
+
+            <div class="tab-content">
+                <h3 style="color: #1B3A52; font-family: 'Montserrat', sans-serif; margin-bottom: 2rem; font-size: 1.75rem;">Technical Specifications</h3>
+                
+                <div class="specs-grid">
+                    <div class="spec-section">
+                        <h4>Performance Characteristics</h4>
+                        <div class="spec-row">
+                            <span class="spec-label">Displacement Range</span>
+                            <span class="spec-value">40-355 ml/r</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Continuous Pressure</span>
+                            <span class="spec-value">350 bar</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Peak Pressure</span>
+                            <span class="spec-value">400 bar</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Max Speed</span>
+                            <span class="spec-value">2,800 rpm</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Volumetric Efficiency</span>
+                            <span class="spec-value">>95%</span>
+                        </div>
+                    </div>
+
+                    <div class="spec-section">
+                        <h4>Design Features</h4>
+                        <div class="spec-row">
+                            <span class="spec-label">Design Type</span>
+                            <span class="spec-value">Swash Plate</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Circuit Type</span>
+                            <span class="spec-value">Open Circuit</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Control Options</span>
+                            <span class="spec-value">Multiple</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Mounting</span>
+                            <span class="spec-value">ISO Flange</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Rotation</span>
+                            <span class="spec-value">Clockwise/CCW</span>
+                        </div>
+                    </div>
+
+                    <div class="spec-section">
+                        <h4>Operating Conditions</h4>
+                        <div class="spec-row">
+                            <span class="spec-label">Fluid Type</span>
+                            <span class="spec-value">Mineral Oil</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Viscosity Range</span>
+                            <span class="spec-value">16-400 mm²/s</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Operating Temp</span>
+                            <span class="spec-value">-20°C to +80°C</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Filtration</span>
+                            <span class="spec-value">ISO 18/16/13</span>
+                        </div>
+                    </div>
+
+                    <div class="spec-section">
+                        <h4>Certifications & Standards</h4>
+                        <div class="spec-row">
+                            <span class="spec-label">ISO Certification</span>
+                            <span class="spec-value">ISO 9001</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Standards</span>
+                            <span class="spec-value">ISO 4406</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">CE Marking</span>
+                            <span class="spec-value">Yes</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Warranty</span>
+                            <span class="spec-value">12 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 3rem;">
+                    <h3 style="color: #1B3A52; font-family: 'Montserrat', sans-serif; margin-bottom: 2rem; font-size: 1.5rem;">Typical Applications</h3>
+                    <div class="applications-grid">
+                        <div class="application-card">
+                            <h4>🏗️ Mobile Machinery</h4>
+                            <p>Excavators, loaders, cranes, and other construction equipment requiring precise flow control.</p>
+                        </div>
+                        <div class="application-card">
+                            <h4>🏭 Industrial Equipment</h4>
+                            <p>Injection molding machines, presses, and metal forming equipment with variable flow requirements.</p>
+                        </div>
+                        <div class="application-card">
+                            <h4>🚜 Agricultural Machinery</h4>
+                            <p>Tractors, harvesters, and farming equipment needing reliable hydraulic power.</p>
+                        </div>
+                        <div class="application-card">
+                            <h4>⚙️ Machine Tools</h4>
+                            <p>CNC machines, grinding equipment, and precision manufacturing systems.</p>
+                        </div>
+                        <div class="application-card">
+                            <h4>🚢 Marine Applications</h4>
+                            <p>Deck machinery, winches, and steering systems for marine vessels.</p>
+                        </div>
+                        <div class="application-card">
+                            <h4>♻️ Material Handling</h4>
+                            <p>Forklifts, conveyor systems, and automated warehouse equipment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Products -->
+        <div class="related-products">
+            <h3>Related Products</h3>
+            <div class="related-grid">
+                <div class="related-card">
+                    <div class="related-image">⚙️</div>
+                    <div class="related-info">
+                        <h4>A10V(S)O Pump</h4>
+                        <p>280 bar variable displacement pump</p>
+                    </div>
+                </div>
+                <div class="related-card">
+                    <div class="related-image">⚙️</div>
+                    <div class="related-info">
+                        <h4>A7V Bent Axis Pump</h4>
+                        <p>High efficiency variable pump</p>
+                    </div>
+                </div>
+                <div class="related-card">
+                    <div class="related-image">⚙️</div>
+                    <div class="related-info">
+                        <h4>A2FM Motor</h4>
+                        <p>Fixed displacement motor 400 bar</p>
+                    </div>
+                </div>
+                <div class="related-card">
+                    <div class="related-image">⚙️</div>
+                    <div class="related-info">
+                        <h4>HD-WE Valves</h4>
+                        <p>Directional control valves</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

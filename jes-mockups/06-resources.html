@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources & Downloads - JES Engineering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: #2C3E50;
+            background: #F5F7FA;
+        }
+
+        /* Header */
+        .header {
+            background: #1B3A52;
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #1B3A52;
+        }
+
+        .logo-text h1 {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        /* Hero */
+        .page-hero {
+            background: linear-gradient(135deg, #1B3A52 0%, #0A1929 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 3rem;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        .page-hero p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Search Bar */
+        .search-section {
+            padding: 2rem;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .search-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1.25rem 3rem 1.25rem 1.5rem;
+            border: 2px solid #E0E6ED;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: #7F8C8D;
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section {
+            margin-bottom: 5rem;
+        }
+
+        .section-header {
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: #1B3A52;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 0.75rem;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: #7F8C8D;
+        }
+
+        /* Catalog Grid */
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .catalog-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .catalog-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(27, 58, 82, 0.12);
+            border-color: #D4AF37;
+        }
+
+        .catalog-preview {
+            height: 250px;
+            background: linear-gradient(135deg, #F5F7FA 0%, #E0E6ED 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            border-bottom: 2px solid #E0E6ED;
+        }
+
+        .catalog-info {
+            padding: 2rem;
+        }
+
+        .catalog-category {
+            color: #D4AF37;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .catalog-info h3 {
+            color: #1B3A52;
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .catalog-info p {
+            color: #7F8C8D;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .catalog-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.875rem;
+            color: #7F8C8D;
+            margin-bottom: 1.5rem;
+        }
+
+        .catalog-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .download-btn {
+            width: 100%;
+            padding: 0.875rem;
+            background: #D4AF37;
+            color: #1B3A52;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .download-btn:hover {
+            background: #F4D03F;
+            transform: translateY(-2px);
+        }
+
+        /* Guide Cards */
+        .guide-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .guide-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            display: flex;
+            gap: 2rem;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .guide-card:hover {
+            border-color: #D4AF37;
+            transform: translateY(-2px);
+        }
+
+        .guide-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #1B3A52 0%, #0A1929 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #D4AF37;
+            flex-shrink: 0;
+        }
+
+        .guide-content h3 {
+            color: #1B3A52;
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+        }
+
+        .guide-content p {
+            color: #7F8C8D;
+            line-height: 1.6;
+            margin-bottom: 1.25rem;
+        }
+
+        .guide-link {
+            color: #1B3A52;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .guide-link:hover {
+            color: #D4AF37;
+        }
+
+        /* Video Section */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .video-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .video-thumbnail {
+            height: 200px;
+            background: linear-gradient(135deg, #1B3A52 0%, #0A1929 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #D4AF37;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .play-button {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: rgba(212, 175, 55, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #1B3A52;
+        }
+
+        .video-info {
+            padding: 1.5rem;
+        }
+
+        .video-info h4 {
+            color: #1B3A52;
+            margin-bottom: 0.5rem;
+        }
+
+        .video-info p {
+            color: #7F8C8D;
+            font-size: 0.9rem;
+        }
+
+        .video-duration {
+            display: inline-block;
+            background: #F5F7FA;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            color: #2C3E50;
+            margin-top: 0.75rem;
+        }
+
+        /* Newsletter */
+        .newsletter-section {
+            background: linear-gradient(135deg, #1B3A52 0%, #0A1929 100%);
+            border-radius: 12px;
+            padding: 4rem;
+            text-align: center;
+            color: white;
+        }
+
+        .newsletter-section h2 {
+            font-size: 2rem;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        .newsletter-section p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 1rem 1.5rem;
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            font-size: 1rem;
+        }
+
+        .newsletter-input::placeholder {
+            color: rgba(255,255,255,0.6);
+        }
+
+        .newsletter-submit {
+            padding: 1rem 2rem;
+            background: #D4AF37;
+            color: #1B3A52;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-submit:hover {
+            background: #F4D03F;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .catalog-grid,
+            .video-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .guide-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .catalog-grid,
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .guide-card {
+                flex-direction: column;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">JES</div>
+                <div class="logo-text">
+                    <h1>JES Engineering</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <h1>Resources & Downloads</h1>
+        <p>Product catalogs, technical guides, and documentation to support your projects</p>
+    </section>
+
+    <!-- Search -->
+    <section class="search-section">
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search catalogs, guides, or products...">
+            <div class="search-icon">🔍</div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Product Catalogs -->
+        <section class="section">
+            <div class="section-header">
+                <h2>Product Catalogs</h2>
+                <p>Comprehensive catalogs with full specifications and technical data</p>
+            </div>
+            <div class="catalog-grid">
+                <div class="catalog-card">
+                    <div class="catalog-preview">⚙️</div>
+                    <div class="catalog-info">
+                        <div class="catalog-category">THM Huade</div>
+                        <h3>Hydraulic Systems Catalog</h3>
+                        <p>Complete catalog of axial piston pumps, motors, valves, and excavator solutions.</p>
+                        <div class="catalog-meta">
+                            <span>📄 126 pages</span>
+                            <span>💾 45 MB</span>
+                        </div>
+                        <button class="download-btn">
+                            📥 Download PDF
+                        </button>
+                    </div>
+                </div>
+
+                <div class="catalog-card">
+                    <div class="catalog-preview">📐</div>
+                    <div class="catalog-info">
+                        <div class="catalog-category">QLH Technology</div>
+                        <h3>Linear Motion Catalog</h3>
+                        <p>Precision bearings, ball screws, linear guideways, and support components.</p>
+                        <div class="catalog-meta">
+                            <span>📄 91 pages</span>
+                            <span>💾 32 MB</span>
+                        </div>
+                        <button class="download-btn">
+                            📥 Download PDF
+                        </button>
+                    </div>
+                </div>
+
+                <div class="catalog-card">
+                    <div class="catalog-preview">❄️</div>
+                    <div class="catalog-info">
+                        <div class="catalog-category">AMI Cooling</div>
+                        <h3>Cooling Systems Catalog</h3>
+                        <p>Industrial chillers, HVAC systems, and process cooling solutions.</p>
+                        <div class="catalog-meta">
+                            <span>📄 78 pages</span>
+                            <span>💾 28 MB</span>
+                        </div>
+                        <button class="download-btn">
+                            📥 Download PDF
+                        </button>
+                    </div>
+                </div>
+
+                <div class="catalog-card">
+                    <div class="catalog-preview">🔧</div>
+                    <div class="catalog-info">
+                        <div class="catalog-category">Quick Reference</div>
+                        <h3>Product Selection Guide</h3>
+                        <p>Fast reference guide for selecting the right product for your application.</p>
+                        <div class="catalog-meta">
+                            <span>📄 24 pages</span>
+                            <span>💾 8 MB</span>
+                        </div>
+                        <button class="download-btn">
+                            📥 Download PDF
+                        </button>
+                    </div>
+                </div>
+
+                <div class="catalog-card">
+                    <div class="catalog-preview">📊</div>
+                    <div class="catalog-info">
+                        <div class="catalog-category">Technical Data</div>
+                        <h3>Engineering Specifications</h3>
+                        <p>Detailed technical specifications and performance data sheets.</p>
+                        <div class="catalog-meta">
+                            <span>📄 156 pages</span>
+                            <span>💾 62 MB</span>
+                        </div>
+                        <button class="download-btn">
+                            📥 Download PDF
+                        </button>
+                    </div>
+                </div>
+
+                <div class="catalog-card">
+                    <div class="catalog-preview">✓</div>
+                    <div class="catalog-info">
+                        <div class="catalog-category">Compliance</div>
+                        <h3>Certifications & Standards</h3>
+                        <p>ISO certifications, quality standards, and compliance documentation.</p>
+                        <div class="catalog-meta">
+                            <span>📄 18 pages</span>
+                            <span>💾 5 MB</span>
+                        </div>
+                        <button class="download-btn">
+                            📥 Download PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Guides -->
+        <section class="section">
+            <div class="section-header">
+                <h2>Technical Guides</h2>
+                <p>In-depth guides for installation, maintenance, and troubleshooting</p>
+            </div>
+            <div class="guide-grid">
+                <div class="guide-card">
+                    <div class="guide-icon">🔧</div>
+                    <div class="guide-content">
+                        <h3>Installation Guide</h3>
+                        <p>Step-by-step installation procedures, mounting requirements, and best practices for proper setup.</p>
+                        <a href="#" class="guide-link">Read Guide →</a>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <div class="guide-icon">⚙️</div>
+                    <div class="guide-content">
+                        <h3>Maintenance Manual</h3>
+                        <p>Preventive maintenance schedules, lubrication requirements, and component inspection procedures.</p>
+                        <a href="#" class="guide-link">Read Guide →</a>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <div class="guide-icon">🔍</div>
+                    <div class="guide-content">
+                        <h3>Troubleshooting Guide</h3>
+                        <p>Common issues, diagnostic procedures, and solutions for operational problems.</p>
+                        <a href="#" class="guide-link">Read Guide →</a>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <div class="guide-icon">📐</div>
+                    <div class="guide-content">
+                        <h3>Application Engineering</h3>
+                        <p>Design considerations, sizing calculations, and application-specific recommendations.</p>
+                        <a href="#" class="guide-link">Read Guide →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Tutorials -->
+        <section class="section">
+            <div class="section-header">
+                <h2>Video Tutorials</h2>
+                <p>Visual guides for product operation and maintenance</p>
+            </div>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <div class="video-info">
+                        <h4>Hydraulic Pump Installation</h4>
+                        <p>Complete installation procedure for A4VSO series pumps</p>
+                        <span class="video-duration">⏱ 12:45</span>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <div class="video-info">
+                        <h4>Linear Bearing Maintenance</h4>
+                        <p>Lubrication and maintenance best practices</p>
+                        <span class="video-duration">⏱ 8:30</span>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <div class="video-info">
+                        <h4>Chiller System Setup</h4>
+                        <p>Initial setup and commissioning procedures</p>
+                        <span class="video-duration">⏱ 15:20</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to receive the latest product updates, technical guides, and industry insights</p>
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                <button type="submit" class="newsletter-submit">Subscribe</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

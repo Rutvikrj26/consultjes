@@ -1,0 +1,388 @@
+{
+  "category": "Pumps",
+  "subcategories": [
+    {
+      "name": "Internal Gear Pumps",
+      "products": [
+        {
+          "name": "IGP 1/2/3 Internal Gear Pumps (02T series)",
+          "tech_tier": "Mid",
+          "design": "Internal gear pump with fixed displacement",
+          "applications": "Hydraulic systems for plastic machines, shoe machines, presses, and electric forklifts.",
+          "differentiator": "Ultra-low noise, high capacity efficiency even at low speeds, and not sensitive to oil pollution.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/THM-IGP-02T-Series-as-on-01.2023.pdf",
+          "specifications": {
+            "max_working_pressure": "Up to 350 bar",
+            "speed_range": "Up to 3000 r/min"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Axial Piston Pumps",
+      "products": [
+        {
+          "name": "A2F Fixed-Displacement Pump/Motor",
+          "tech_tier": "Better/Best",
+          "design": "Bent axis design",
+          "applications": "Hydrostatic drives in open and closed circuits for construction machinery and industrial applications.",
+          "differentiator": "High-performance spheric valve plate rotary group for automatic centering, high efficiency, and long life.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/A2F-fixed-displacement-pump-motor-300x300.jpg",
+          "specifications": {
+            "displacement": "Fixed"
+          }
+        },
+        {
+          "name": "A11VO/A11VLO Variable Displacement Pump",
+          "tech_tier": "Better/Best",
+          "design": "Swash plate design",
+          "applications": "Open circuit hydrostatic drives, especially in mobile applications.",
+          "differentiator": "Variable displacement for energy saving, with excellent suction performance and a wide range of control options.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/A11VO-A11VLO-variable-displacement-pump-300x300.jpg",
+          "specifications": {
+            "displacement": "40 to 260 mL/r",
+            "nominal_pressure": "Up to 350 bar",
+            "max_pressure": "Up to 400 bar"
+          }
+        },
+        {
+          "name": "A2FO Fixed-Displacement Bent Axis Pump",
+          "tech_tier": "Better/Best",
+          "design": "Bent-axis design (40-degree tilt)",
+          "applications": "Hydrostatic drives in open circuits for mobile and industrial applications.",
+          "differentiator": "High power density, optimum efficiency, and a compact, economical design.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/A2FO-fixed-displacement-bent-axis-pump-300x300.jpg",
+          "specifications": {
+            "displacement_sizes": "10 to 180 cc/rev",
+            "nominal_pressure": "Up to 400 bar",
+            "peak_pressure": "Up to 450 bar"
+          }
+        },
+        {
+          "name": "A4VSO Variable Displacement Pump",
+          "tech_tier": "Better/Best",
+          "design": "Swash plate design",
+          "applications": "Industrial and mobile hydraulic systems, including hydraulic presses, construction machinery, and shipbuilding.",
+          "differentiator": "Precision, efficiency, and durability in high-performance systems, with low noise operation and excellent suction characteristics.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/A4VSO-variable-displacement-pump-300x300.jpg",
+          "specifications": {
+            "nominal_pressure": "Up to 350 bar",
+            "peak_pressure": "Up to 400 bar"
+          }
+        },
+        {
+          "name": "A10V(S)O Variable Displacement Axial Piston Pump",
+          "tech_tier": "Better/Best",
+          "design": "Swash plate design",
+          "applications": "Open circuit hydrostatic drives for mobile and industrial applications.",
+          "differentiator": "High power density, low noise, and long service life, with a wide range of control options.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/A10VSO-variable-displacement-axial-piston-pump-300x300.jpg",
+          "specifications": {
+            "displacement_sizes": "10 to 140 cc/rev",
+            "nominal_pressure": "Up to 280 bar",
+            "max_pressure": "Up to 350 bar"
+          }
+        },
+        {
+          "name": "A7V Variable Displacement Pump",
+          "tech_tier": "Better/Best",
+          "design": "Bent axis design",
+          "applications": "Hydrostatic transmissions in open circuits for industrial equipment and mobile machinery.",
+          "differentiator": "Variable displacement with high-performance rotating components for automatic alignment, high efficiency, and low noise.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/A7V-variable-displacement-pump-300x300.jpg",
+          "specifications": {
+            "max_displacement": "Up to 500 mL/r",
+            "max_pressure": "Up to 315 bar",
+            "peak_pressure": "Up to 400 bar"
+          }
+        },
+        {
+          "name": "A2VK Variable Pump",
+          "tech_tier": "High",
+          "design": "Axial piston high-pressure pump",
+          "applications": "Pumping and metering polyurethane components (polyol and isocyanate).",
+          "differentiator": "High metering accuracy and repeatability of variable flows, compatible with highly viscous fluids.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/A2VK-variable-pump-300x300.jpg",
+          "specifications": {
+            "nominal_pressure": "Up to 250 bar",
+            "peak_pressure": "Up to 315 bar",
+            "displacement_sizes": "12, 28, 55, and 107 cm³"
+          }
+        },
+        {
+          "name": "A8V Variable Double Pump",
+          "tech_tier": "Better/Best",
+          "design": "Bent-axis axial piston pump with two rotary groups",
+          "applications": "Hydrostatic transmissions for open circuits.",
+          "differentiator": "Two rotary groups in a single housing, with various control options for individual pumps.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/A8V-variable-double-pump-300x300.jpg",
+          "specifications": {
+            "displacement_sizes": "28 to 160 cm³/rev",
+            "max_pressure": "Up to 400 bar"
+          }
+        },
+        {
+          "name": "AR Series Axial Piston Pump",
+          "tech_tier": "Mid",
+          "design": "Axial piston pump with variable displacement",
+          "applications": "Machine tools, press machinery, injection molding machines, industrial automation systems.",
+          "differentiator": "Compact, lightweight, energy-efficient with low noise operation and long service life.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/AR-series-axial-piston-pump-300x300.jpg",
+          "specifications": {
+            "nominal_pressure": "Up to 165 bar",
+            "max_pressure": "Up to 210 bar",
+            "displacement_range": "10 to 22 cm³/rev",
+            "speed_range": "500 to 1800 RPM"
+          }
+        },
+        {
+          "name": "MV Series Bi-directional Axial Piston Pump",
+          "tech_tier": "High",
+          "design": "Variable displacement axial piston pump",
+          "applications": "Servo applications, heavy machinery lifting, small power units, and challenging industrial and mobile applications.",
+          "differentiator": "Bi-directional operation, low noise level even during full pressure operation, and modular control for simplified system design.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/MV-series-bi-directional-axial-piston-pump-300x300.jpg",
+          "specifications": {
+            "rated_pressure": "Up to 175 bar",
+            "max_pressure": "Up to 250 bar",
+            "speed": "1800 RPM"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ABER'S Hydraulic Pumps",
+      "products": [
+        {
+          "name": "VDP Series Variable Displacement Pump",
+          "tech_tier": "Better/Best",
+          "design": "Axial piston pump",
+          "applications": "Hydraulic trucks industry and various other applications requiring precise regulation of displacement.",
+          "differentiator": "Small dimensions, light weight, robust construction, low noise levels, and high efficiency.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/VDP-series-variable-displacement-pump-300x300.jpg",
+          "specifications": {
+            "displacement": "40 to 109 cm³/rev",
+            "nominal_pressure": "Up to 410 bar",
+            "max_intermittent_pressure": "Up to 450 bar"
+          }
+        },
+        {
+          "name": "BIF Series Iron Cast Bent Axis Piston Pump",
+          "tech_tier": "Better/Best",
+          "design": "Bent axis piston pump",
+          "applications": "Heavy-duty hydraulic systems and mobile applications, especially for trucks.",
+          "differentiator": "Higher pressure capabilities, less pulse, maximum efficiency, and low noise operation.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/BIF-series-iron-cast-bent-axis-piston-pump-300x300.jpg",
+          "specifications": {
+            "displacement": "17 to 81 cm³/rot",
+            "operating_pressure": "Up to 400 bar",
+            "peak_pressure": "Up to 450 bar"
+          }
+        },
+        {
+          "name": "BI Series Single Bent Axis Piston Pump",
+          "tech_tier": "Better/Best",
+          "design": "Bent axis piston pump",
+          "applications": "Various hydraulic applications requiring high efficiency and low noise.",
+          "differentiator": "Reversible operation, high volumetric efficiency, and low internal power loss.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/BI-series-single-bent-axis-piston-pump-300x300.jpg",
+          "specifications": {
+            "displacement_range": "17 to 172 cc/rev",
+            "max_operating_pressure": "Up to 350 bar",
+            "peak_pressure": "Up to 400 bar"
+          }
+        },
+        {
+          "name": "BH Series Straight Piston Pump",
+          "tech_tier": "Better/Best",
+          "design": "Axial piston pump",
+          "applications": "Various hydraulic applications requiring robust performance and high efficiency.",
+          "differentiator": "Available in single and double fixed displacement configurations, with high resistance materials.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/BH-series-straight-piston-pump-300x300.jpg",
+          "specifications": {
+            "displacement_range": "14 to 110 cm³/rev",
+            "max_pressure": "Up to 450 bar"
+          }
+        },
+        {
+          "name": "B2 Series Oil Hydraulic Gear Pump",
+          "tech_tier": "Entry",
+          "design": "Bidirectional hydraulic external gear pump",
+          "applications": "Light-duty hydraulic applications.",
+          "differentiator": "Small, fast to mount, and features a rear inlet/outlet.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/B2-series-oil-hydraulic-gear-pump-300x300.jpg",
+          "specifications": {
+            "displacement": "12 to 39 cc/rot",
+            "max_pressure": "Up to 280 bar",
+            "max_continuous_rotation": "2500 rpm"
+          }
+        },
+        {
+          "name": "B3 Series Oil Hydraulic Gear Pump",
+          "tech_tier": "Entry to Mid",
+          "design": "Bidirectional hydraulic gear pump",
+          "applications": "Various hydraulic applications requiring robust performance and high efficiency.",
+          "differentiator": "Medium size, fast mounting, and available with rear or side and rear inlet/outlet options.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/B3-series-oil-hydraulic-gear-pump-300x300.jpg",
+          "specifications": {
+            "displacement": "38 to 125 cc/rot",
+            "max_continuous_pressure": "Up to 300 bar",
+            "max_peak_pressure": "Up to 335 bar"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Gear Pumps",
+      "products": [
+        {
+          "name": "TPF2G0.5-M High Pressure Gear Pump",
+          "tech_tier": "Entry",
+          "design": "External gear pump",
+          "applications": "Industrial applications.",
+          "differentiator": "Unique sealing design for continuous operation up to 250 bar, with modified gear teeth for reduced operating torque.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/TPF2G0.5-M-high-pressure-gear-pump-300x300.jpg",
+          "specifications": {
+            "flow_rate": "0.19 to 2.00 cc/rev",
+            "max_operating_pressure": "Up to 250 bar",
+            "max_speed": "7000 RPM"
+          }
+        },
+        {
+          "name": "TPF2G1-M High Pressure Gear Pump",
+          "tech_tier": "Entry to Mid",
+          "design": "External gear pump",
+          "applications": "Agricultural machinery, hydraulic systems in cranes, loaders, excavators, pressing applications, and industrial automation systems.",
+          "differentiator": "Long service life, unique sealing design for continuous 250 bar operation, and modified gear tooth for lower operating torque.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/TPF2G1-M-high-pressure-gear-pump-300x300.jpg",
+          "specifications": {
+            "flow_rate": "1.4 to 13.8 cc/rev",
+            "max_operating_pressure": "Up to 250 bar"
+          }
+        },
+        {
+          "name": "TPF2G2-M High Pressure Gear Pump",
+          "tech_tier": "Mid",
+          "design": "External gear pump",
+          "applications": "High-performance hydraulic systems.",
+          "differentiator": "Unique sealing design for continuous operation up to 250 bar, special alloy bushes for rigidity, and modified gear teeth for lower operating torque.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/TPF2G2-M-high-pressure-gear-pump-300x300.jpg",
+          "specifications": {
+            "flow_rate": "3 to 30 cc/rev",
+            "max_operating_pressure": "Up to 270 bar"
+          }
+        },
+        {
+          "name": "CBKP Single, Double & Triple Gear Pump",
+          "tech_tier": "Mid",
+          "design": "External gear pump with aluminum alloy or cast iron housing",
+          "applications": "Engineering machinery, construction machinery, hoisting machinery, mining machinery, drilling machinery, and agricultural equipment.",
+          "differentiator": "High-strength alloy steel gears, roller bearings for overload resistance, and automatic compensation for axial clearance.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/CBKP-single-double-triple-gear-pump-300x300.jpg",
+          "specifications": {
+            "displacement_single": "32 to 100 cc/rev",
+            "displacement_double": "72 to 200 cc/rev",
+            "displacement_triple": "140 to 243 cc/rev",
+            "max_pressure": "Up to 250 bar"
+          }
+        },
+        {
+          "name": "IGP Series High-pressure Internal Gear Pump",
+          "tech_tier": "High",
+          "design": "Volumetric displacement pump with internal gears",
+          "applications": "Various hydraulic systems.",
+          "differentiator": "High volumetric performance, low noise levels, and extended lifetime due to optimal load distribution.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/IGP-series-high-pressure-internal-gear-pump-300x300.jpg",
+          "specifications": {
+            "displacement_range": "3.6 to 251.7 cm³/rev",
+            "max_operating_pressure": "Up to 350 bar",
+            "max_speed": "Up to 3000 rpm"
+          }
+        },
+        {
+          "name": "TGR Series Helical Silent Gear Pump",
+          "tech_tier": "High",
+          "design": "Helical gear pump",
+          "applications": "Industrial hydraulic applications.",
+          "differentiator": "Quiet operation, high efficiency, and long service life due to helical gear design.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/TGR-series-helical-silent-gear-pump-300x300.jpg",
+          "specifications": {
+            "max_continuous_pressure": "Up to 270 bar",
+            "max_peak_pressure": "Up to 300 bar",
+            "flow_rate_range": "6 to 290 L/min"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Vane Pumps",
+      "products": [
+        {
+          "name": "PV2R1,2,3 Fixed Vane Pump",
+          "tech_tier": "Mid",
+          "design": "Fixed displacement vane pump",
+          "applications": "Industrial applications such as manufacturing, machine tools, and injection molding machines.",
+          "differentiator": "High-pressure, high-performance with low noise operation and compact design.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/PV2R1-2-3-fixed-vane-pump-300x300.jpg",
+          "specifications": {
+            "geometric_displacement": "5.8 to 237 cm³/rev",
+            "max_operating_pressure": "Up to 21 MPa (3050 PSI)",
+            "speed_range": "600 to 1800 r/min"
+          }
+        },
+        {
+          "name": "PV2R5 Fixed Vane Pump (Large Flow)",
+          "tech_tier": "Mid",
+          "design": "Fixed displacement vane pump",
+          "applications": "Industrial applications requiring large flow.",
+          "differentiator": "High-performance, fixed displacement with low noise operation and cartridge design for easy maintenance.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/PV2R5-fixed-vane-pump-large-flow-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 120 bar",
+            "geometric_displacement": "230 to 348 cc/rev",
+            "max_speed": "1800 RPM"
+          }
+        },
+        {
+          "name": "V SERIES High-Performance Intravane Pump",
+          "tech_tier": "High",
+          "design": "Fixed displacement, balanced vane type hydraulic pump",
+          "applications": "Industrial and mobile applications, including machine tools, presses, die casting machines, and material handling machinery.",
+          "differentiator": "High volumetric efficiency, low noise levels, and long operating life due to pressure-balanced, modular design.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/V-series-high-performance-intravane-pump-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 207 bar (3000 psi)",
+            "geometric_displacement": "7 to 193 cm³/rev",
+            "speed_range": "600 to 1800 r/min"
+          }
+        },
+        {
+          "name": "HVP Medium Pressure Variable Vane Pump",
+          "tech_tier": "Mid",
+          "design": "Variable displacement vane pump",
+          "applications": "Various hydraulic applications requiring precise pressure and flow control.",
+          "differentiator": "Low noise operation, high sensitivity and responsiveness, and pressure compensation mechanism for power saving.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/HVP-medium-pressure-variable-vane-pump-300x300.jpg",
+          "specifications": {
+            "max_operating_pressure": "Up to 140 bar",
+            "nominal_displacement": "16.7 to 22.2 cc/rev",
+            "pressure_adjustment_range": "15 to 140 kgf/cm²"
+          }
+        },
+        {
+          "name": "VPS1,2,3 Servo Vane Pump",
+          "tech_tier": "High",
+          "design": "Fixed displacement vane pump",
+          "applications": "Servo system applications, mobile applications, heavy machinery lifting, and small power units.",
+          "differentiator": "Fast and low-speed operation with excellent response to switching, and better resistance to oil contamination.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/VPS1-2-3-servo-vane-pump-300x300.jpg",
+          "specifications": {
+            "nominal_displacement_range": "16 to 180 cc/rev",
+            "max_operating_pressure": "Up to 280 bar",
+            "max_speed": "Up to 2800 rpm"
+          }
+        }
+      ]
+    }
+  ]
+}

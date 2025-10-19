@@ -1,51 +1,65 @@
-
 {
   "category": "Air Cooled Chillers",
-  "products": [
+  "subcategories": [
     {
-      "name": "Air Cooled Water Chiller",
-      "tech_tier": "Entry to Mid",
-      "capacity_tr": "0.25-500",
-      "capacity_kw": "0.5-400",
-      "compressor": "Scroll/Reciprocating (or screw)",
-      "condenser": "Air-cooled",
-      "power_supply": "Various (e.g., 230V, 460V, 3-phase, 50/60 Hz)",
-      "applications": "General industrial/process & HVAC, industrial machinery, automation systems, data centers.",
-      "features": "Packaged systems, simple install, wide capacity, 1-yr warranty, precise temperature control, and energy efficiency.",
-      "image": "https://thmhuade.com/wp-content/uploads/2020/07/air-cooled-water-chiller-300x300.jpg",
-      "specifications": {
-        "refrigerant": "R-134a, R-410A, R-407C (eco-friendly options)",
-        "temperature_range": "Defined by inlet/outlet water temperatures and ambient operating conditions.",
-        "efficiency": "High (measured by COP, EER, IPLV)",
-        "control_systems": "Microprocessor controls, PID temperature controllers, BMS connectivity."
-      }
-    },
-    {
-      "name": "200 TR Air-Cooled Chiller",
-      "tech_tier": "Better",
-      "capacity_tr": "200",
-      "capacity_kw": "10-1000",
-      "temperature_range": "+2°C",
-      "compressor": "Screw, 2 compressors",
-      "condenser": "Air-cooled",
-      "power_supply": "440V, 3-phase",
-      "noise": "~75 dB",
-      "applications": "Large rooftop/yard installs",
-      "features": "Industrial build, designed for tropical conditions",
-      "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/SD/ID/DY/705095/200tr-air-cooled-chiller-500x500.jpeg"
-    },
-    {
-      "name": "Air Cooled Screw Chiller",
-      "tech_tier": "Better",
-      "capacity_tr": "5-500",
-      "capacity_kw": "120-2300",
-      "temperature_range": "+30°C to -10°C",
-      "compressor": "Screw",
-      "condenser": "Air-cooled",
-      "power_supply": "3-phase",
-      "applications": "Industrial loads with wider temp spans",
-      "features": "High range with low-temp capability (-10°C)",
-      "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/SD/ID/DY/705095/200tr-air-cooled-chiller-500x500.jpeg"
+      "name": "Air Cooled Chillers",
+      "products": [
+        {
+          "name": "Air Cooled Water Chiller",
+          "tech_tier": "Entry to Mid",
+          "design": "Packaged air-cooled chiller with scroll/reciprocating or screw compressor",
+          "applications": "General industrial/process & HVAC, industrial machinery, automation systems, data centers.",
+          "features": "Packaged systems for simple installation, wide capacity range, 1-year warranty, precise temperature control, and energy efficiency. Microprocessor controls with PID temperature controllers and BMS connectivity.",
+          "differentiator": "Versatile packaged solution with wide capacity range (0.25-500 TR), suitable for diverse industrial and commercial applications. No cooling tower required, reducing installation complexity.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/air-cooled-water-chiller-300x300.jpg",
+          "specifications": {
+            "capacity_tr": "0.25-500",
+            "capacity_kw": "0.5-400",
+            "compressor": "Scroll/Reciprocating (or screw)",
+            "condenser": "Air-cooled",
+            "refrigerant": "R-134a, R-410A, R-407C (eco-friendly options)",
+            "temperature_range": "Defined by inlet/outlet water temperatures and ambient operating conditions",
+            "efficiency": "High (measured by COP, EER, IPLV)",
+            "control_systems": "Microprocessor controls, PID temperature controllers, BMS connectivity",
+            "power_supply": "Various (e.g., 230V, 460V, 3-phase, 50/60 Hz)"
+          }
+        },
+        {
+          "name": "200 TR Air-Cooled Chiller",
+          "tech_tier": "Better",
+          "design": "Industrial screw chiller with dual compressors for tropical conditions",
+          "applications": "Large rooftop/yard installations for industrial cooling and process applications.",
+          "features": "Industrial-grade build designed for tropical conditions. Dual screw compressors for reliability and capacity control. High cooling capacity with efficient operation.",
+          "differentiator": "Specifically engineered for harsh tropical environments with ambient temperatures up to +2°C. Dual compressor design provides redundancy and better capacity modulation.",
+          "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/SD/ID/DY/705095/200tr-air-cooled-chiller-500x500.jpeg",
+          "specifications": {
+            "capacity_tr": "200",
+            "capacity_kw": "10-1000",
+            "temperature_range": "+2°C",
+            "compressor": "Screw, 2 compressors",
+            "condenser": "Air-cooled",
+            "noise": "~75 dB",
+            "power_supply": "440V, 3-phase"
+          }
+        },
+        {
+          "name": "Air Cooled Screw Chiller",
+          "tech_tier": "Better",
+          "design": "Screw compressor chiller with extended temperature range capability",
+          "applications": "Industrial loads with wider temperature spans, process cooling requiring low temperatures.",
+          "features": "High capacity range with low-temperature capability down to -10°C. Screw compressor technology provides excellent part-load efficiency and wide operating envelope.",
+          "differentiator": "Unique low-temperature capability (-10°C) among air-cooled chillers, suitable for specialized process cooling applications. Superior capacity control compared to scroll/reciprocating units.",
+          "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/SD/ID/DY/705095/200tr-air-cooled-chiller-500x500.jpeg",
+          "specifications": {
+            "capacity_tr": "5-500",
+            "capacity_kw": "120-2300",
+            "temperature_range": "+30°C to -10°C",
+            "compressor": "Screw",
+            "condenser": "Air-cooled",
+            "power_supply": "3-phase"
+          }
+        }
+      ]
     }
   ]
 }

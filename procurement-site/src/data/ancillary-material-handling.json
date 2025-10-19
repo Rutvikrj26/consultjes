@@ -1,33 +1,46 @@
-
 {
   "category": "Ancillary & Material Handling Components",
-  "products": [
+  "subcategories": [
     {
-      "name": "Precision Locknuts",
-      "use_application": "Securing bearings, gears, and other power transmission components on shafts and spindles.",
-      "size_range": "M6 - M200 (metric), various English threads",
-      "features": "Axial, Flank, Radial, and Clasp locking types for high rigidity and precision adjustment. Machined internal threads and sturdy faces for strong metal-to-metal locking.",
-      "differentiator": "Provides reliable, high-force clamping without damaging shaft threads, with high axial rigidity and runout accuracy.",
-      "image": "https://thmhuade.com/wp-content/uploads/2020/07/precision-locknuts-300x300.jpg",
-      "specifications": {
-        "materials": "Stainless steel, hardened alloy steel, heat-treated alloy steel (often with black oxide finish)",
-        "axial_runout_accuracy": "Typically 0.005 mm or better",
-        "locking_methods": "Resilient ring, peripheral setscrews, face setscrews, clamping screws, shoes lock, axial locking by segments, radial locking pegs"
-      }
+      "name": "Precision Fastening Components",
+      "products": [
+        {
+          "name": "Precision Locknuts",
+          "tech_tier": "Mid",
+          "design": "High-precision locking nuts featuring machined internal threads and sturdy faces for strong metal-to-metal locking, available in axial, flank, radial, and clasp locking configurations for secure component mounting.",
+          "applications": "Securing bearings, gears, and other power transmission components on shafts and spindles.",
+          "features": "Axial, Flank, Radial, and Clasp locking types for high rigidity and precision adjustment. Machined internal threads and sturdy faces for strong metal-to-metal locking with high axial rigidity and runout accuracy (typically 0.005 mm or better).",
+          "differentiator": "Provides reliable, high-force clamping without damaging shaft threads, with high axial rigidity and runout accuracy.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/precision-locknuts-300x300.jpg",
+          "specifications": {
+            "size_range": "M6 - M200 (metric), various English threads",
+            "materials": "Stainless steel, hardened alloy steel, heat-treated alloy steel (often with black oxide finish)",
+            "axial_runout_accuracy": "Typically 0.005 mm or better",
+            "locking_methods": "Resilient ring, peripheral setscrews, face setscrews, clamping screws, shoes lock, axial locking by segments, radial locking pegs"
+          }
+        }
+      ]
     },
     {
-      "name": "Ball Transfer Units",
-      "use_application": "Multi-directional movement of heavy loads in conveying systems, workbenches, and assembly lines.",
-      "size_range": "Loads 3kg - 6500kg",
-      "features": "Pressed metal, heavy-duty machined, spring-loaded, plastic series. Flange, bolt, press-fit mounts. Some units include seals to prevent dirt ingress or drain holes for self-cleaning.",
-      "differentiator": "Omnidirectional load-bearing spheres for smooth, precise, and low-friction movement of loads in any direction.",
-      "image": "https://thmhuade.com/wp-content/uploads/2020/07/ball-transfer-units-300x300.jpg",
-      "specifications": {
-        "housing_materials": "Hardened steel, pressed metal sheet, plastic (POM), stainless steel (for corrosive environments)",
-        "ball_materials": "Chrome steel, stainless steel, carbon steel, nylon, POM, PUR, glass (for non-magnetic)",
-        "temperature_range": "Standard: up to 100°C; Special: up to 200°C",
-        "conveying_speed": "Generally around 2 m/sec (6.5 ft/sec)"
-      }
+      "name": "Material Handling Components",
+      "products": [
+        {
+          "name": "Ball Transfer Units",
+          "tech_tier": "Mid",
+          "design": "Omnidirectional load-bearing units featuring spherical balls in precision housings for smooth, low-friction movement in any direction, available in pressed metal, heavy-duty machined, spring-loaded, and plastic series with various mounting options.",
+          "applications": "Multi-directional movement of heavy loads in conveying systems, workbenches, and assembly lines.",
+          "features": "Pressed metal, heavy-duty machined, spring-loaded, plastic series. Flange, bolt, press-fit mounts. Some units include seals to prevent dirt ingress or drain holes for self-cleaning. Load capacity from 3kg to 6500kg with various housing and ball material options for different environments.",
+          "differentiator": "Omnidirectional load-bearing spheres for smooth, precise, and low-friction movement of loads in any direction.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/ball-transfer-units-300x300.jpg",
+          "specifications": {
+            "load_range": "3kg - 6500kg",
+            "housing_materials": "Hardened steel, pressed metal sheet, plastic (POM), stainless steel (for corrosive environments)",
+            "ball_materials": "Chrome steel, stainless steel, carbon steel, nylon, POM, PUR, glass (for non-magnetic)",
+            "temperature_range": "Standard: up to 100°C; Special: up to 200°C",
+            "conveying_speed": "Generally around 2 m/sec (6.5 ft/sec)"
+          }
+        }
+      ]
     }
   ]
 }

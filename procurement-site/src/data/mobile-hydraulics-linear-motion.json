@@ -1,33 +1,52 @@
 {
   "category": "Mobile Hydraulics & Linear Motion",
-  "products": [
+  "subcategories": [
     {
-      "name": "TVT-09 Linear Actuator",
-      "tech_tier": "Electromechanical",
-      "power_voltage": "45 W, 12/24/36/48 VDC",
-      "applications": "Mobile/industrial linear motion",
-      "differentiator": "Compact, multi-voltage options",
-      "image": "https://thmhuade.com/products/thm-tvt-09-linear-actuator/"
+      "name": "Electric Linear Actuators",
+      "products": [
+        {
+          "name": "TVT-09 Linear Actuator",
+          "tech_tier": "Electromechanical",
+          "design": "Compact electromechanical linear actuator offering multi-voltage DC operation (12/24/36/48 VDC) with 45W power rating for versatile mobile and industrial linear motion applications.",
+          "applications": "Mobile/industrial linear motion",
+          "features": "Compact design with 45W power rating, multi-voltage options (12/24/36/48 VDC) for flexible integration into various systems, suitable for both mobile and industrial linear motion applications.",
+          "differentiator": "Compact, multi-voltage options",
+          "image": "https://thmhuade.com/products/thm-tvt-09-linear-actuator/",
+          "specifications": {
+            "power": "45 W",
+            "voltage": "12/24/36/48 VDC"
+          }
+        }
+      ]
     },
     {
-      "name": "Mobile Hydraulics Solutions",
-      "tech_tier": "System",
-      "applications": "Equipment upfits & service for sectors like transportation, aerospace, construction, agriculture, and manufacturing.",
-      "differentiator": "Comprehensive support for a wide range of hydraulic components and services to minimize downtime.",
-      "image": "https://thmhuade.com/product-category/thm/mobile-hydraulics/",
-      "components": [
-        "Hydraulic valves",
-        "Pumps",
-        "Motors",
-        "Tanks",
-        "Accessories",
-        "Hoses",
-        "Fittings"
-      ],
-      "services": [
-        "Mobile hydraulic mechanic services",
-        "Hydraulic hose repair",
-        "Professional hydraulic repair center"
+      "name": "Hydraulic Systems & Services",
+      "products": [
+        {
+          "name": "Mobile Hydraulics Solutions",
+          "tech_tier": "System",
+          "design": "Comprehensive mobile hydraulics solution package providing complete equipment upfits and service support including hydraulic components, mobile mechanic services, and professional repair center capabilities for industrial applications.",
+          "applications": "Equipment upfits & service for sectors like transportation, aerospace, construction, agriculture, and manufacturing.",
+          "features": "Comprehensive hydraulic system support including hydraulic valves, pumps, motors, tanks, accessories, hoses, and fittings. Professional services including mobile hydraulic mechanic services, hydraulic hose repair, and professional hydraulic repair center for complete system maintenance and support.",
+          "differentiator": "Comprehensive support for a wide range of hydraulic components and services to minimize downtime.",
+          "image": "https://thmhuade.com/product-category/thm/mobile-hydraulics/",
+          "specifications": {
+            "components": [
+              "Hydraulic valves",
+              "Pumps",
+              "Motors",
+              "Tanks",
+              "Accessories",
+              "Hoses",
+              "Fittings"
+            ],
+            "services": [
+              "Mobile hydraulic mechanic services",
+              "Hydraulic hose repair",
+              "Professional hydraulic repair center"
+            ]
+          }
+        }
       ]
     }
   ]

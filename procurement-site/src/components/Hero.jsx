@@ -29,7 +29,7 @@ const Hero = () => {
             <p className="hero__description">
               Your trusted partner for procurement and installation of high-performance hydraulic systems,
               linear motion components, and industrial cooling solutions. Delivering excellence in engineering
-              services for over 15 years.
+              services.
             </p>
 
             <div className="hero__actions">

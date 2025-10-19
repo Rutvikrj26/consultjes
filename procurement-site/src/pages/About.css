@@ -94,6 +94,167 @@
   line-height: 1.6;
 }
 
+/* Leadership Section */
+.leadership-section {
+  background: linear-gradient(180deg, #F5F7FA 0%, #FFFFFF 100%);
+}
+
+.leadership-card {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leadership-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.leadership-image {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1B3A52 0%, #0A1929 100%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.leadership-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.leadership-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.leadership-name {
+  font-size: 2rem;
+  color: #0A1929;
+  margin: 0;
+  font-weight: 700;
+}
+
+.leadership-title {
+  font-size: 1.125rem;
+  color: #D4AF37;
+  font-weight: 600;
+  margin: -0.5rem 0 0 0;
+}
+
+.leadership-bio {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: #4A5568;
+  margin: 0;
+}
+
+.leadership-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.detail-section h4 {
+  font-size: 1.125rem;
+  color: #1B3A52;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #E8ECF1;
+}
+
+.expertise-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.expertise-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  color: #4A5568;
+}
+
+.expertise-list .check-icon {
+  color: #D4AF37;
+  font-weight: 700;
+  font-size: 1.125rem;
+  flex-shrink: 0;
+}
+
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  width: 12px;
+  height: 12px;
+  background: #D4AF37;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.15);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 1.5rem;
+  bottom: -1.5rem;
+  width: 2px;
+  background: linear-gradient(180deg, #E8ECF1 0%, transparent 100%);
+}
+
+.timeline-item:last-child::before {
+  display: none;
+}
+
+.timeline-content h5 {
+  font-size: 1rem;
+  color: #0A1929;
+  margin: 0 0 0.25rem 0;
+  font-weight: 600;
+}
+
+.timeline-content .company {
+  font-size: 0.9375rem;
+  color: #1B3A52;
+  margin: 0 0 0.25rem 0;
+  font-weight: 500;
+}
+
+.timeline-content .period {
+  font-size: 0.875rem;
+  color: #718096;
+  margin: 0 0 0.5rem 0;
+}
+
+.timeline-content .highlights {
+  font-size: 0.9375rem;
+  color: #4A5568;
+  line-height: 1.6;
+  margin: 0;
+}
+
 /* Services Section */
 .services-section {
   background: #FFFFFF;
@@ -261,6 +422,21 @@ textarea.form-input {
 
   .about-intro__stats {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .leadership-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .leadership-image {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .leadership-details {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 

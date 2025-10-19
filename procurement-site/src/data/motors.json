@@ -11,6 +11,7 @@
           "torque": "High torque",
           "applications": "Undercarriage/track drive for mobile equipment, especially Horizontal Directional Drilling (HDD) machines.",
           "differentiator": "Ruggedized for harsh mobile duty, consistent power output, and smooth, controlled movement.",
+          "features": "Low-speed, high-torque (LSHT) track motor ruggedized for harsh mobile duty environments. Delivers consistent power output with smooth, controlled movement for precise operation. Engineered specifically for undercarriage and track drive applications in mobile equipment, particularly optimized for Horizontal Directional Drilling (HDD) machines requiring reliable traction in challenging conditions.",
           "image": "https://thmhuade.com/products/thm-track-motor/"
         }
       ]
@@ -24,6 +25,7 @@
           "mounting": "Integrated",
           "applications": "Agricultural machinery hydrostatic drive",
           "differentiator": "Integrated pump and motor unit for reduced pipeline pressure loss and high volumetric efficiency.",
+          "features": "Integrated hydrostatic transmission combining pump and motor in a single compact unit. Reduces pipeline pressure losses and maximizes volumetric efficiency for optimized power transfer. Displacement of 56 mL/r with rated pressure of 320 Bar and maximum pressure capability up to 390 Bar. Specifically designed for agricultural machinery hydrostatic drives requiring reliable, efficient power transmission.",
           "image": "https://thmhuade.com/products/thm-ht-s10-hydrostatic-transmission-mobile-hydraulics/",
           "specifications": {
             "displacement": "56 mL/r",
@@ -42,6 +44,7 @@
           "design": "Bent-axis design",
           "applications": "Hydrostatic drives in open and closed circuits for mobile and industrial machinery.",
           "differentiator": "High total efficiency, high power density, and compact design.",
+          "features": "Fixed displacement bent-axis motor delivering high total efficiency and exceptional power density. Compact design optimized for space-constrained installations while maintaining robust performance. Pressure capability up to 400 bar. Ideal for hydrostatic drives in both open and closed circuits across mobile and industrial machinery applications.",
           "image": "https://thmhuade.com/wp-content/uploads/2020/07/A2FM-fixed-displacement-motor-300x300.jpg",
           "specifications": {
             "displacement": "Fixed",
@@ -54,6 +57,7 @@
           "design": "Bent-axis design",
           "applications": "Integration into mechanical gearboxes, such as track drive gearboxes, for construction machinery, agricultural equipment, and more.",
           "differentiator": "Compact, plug-in design for simplified assembly and high power density.",
+          "features": "Fixed-displacement bent-axis motor with innovative plug-in design for simplified assembly and integration. Compact construction delivers high power density in a space-efficient package. Displacement sizes from 28 to 355 cm³/rev with nominal pressure up to 400 bar and peak pressure up to 450 bar. Designed for seamless integration into mechanical gearboxes including track drive systems for construction machinery and agricultural equipment.",
           "image": "https://thmhuade.com/wp-content/uploads/2020/07/A2FE-fixed-displacement-plug-in-motor-300x300.jpg",
           "specifications": {
             "displacement_sizes": "28 to 355 cm³/rev",
@@ -67,6 +71,7 @@
           "design": "Bent-axis design",
           "applications": "Hydrostatic drives in open and closed circuits for mobile and industrial applications.",
           "differentiator": "Wide control range, infinitely variable displacement, and cost-effective design.",
+          "features": "Variable displacement bent-axis motor with wide control range and infinitely variable displacement for precise speed and torque control. Cost-effective design without compromising performance or reliability. Displacement volume up to 500 mL/r with nominal pressure up to 450 bar. Suitable for hydrostatic drives in both open and closed circuits across mobile and industrial applications.",
           "image": "https://thmhuade.com/wp-content/uploads/2020/07/A6V-variable-displacement-motor-300x300.jpg",
           "specifications": {
             "displacement_volume": "Up to 500 mL/r",
@@ -79,6 +84,7 @@
           "design": "Bent-axis design",
           "applications": "Integration into mechanical gearboxes, such as track drive gearboxes, for mobile applications.",
           "differentiator": "Highly compact unit due to plug-in design, with a wide control range for high speed and high torque demands.",
+          "features": "Variable displacement bent-axis motor with highly compact plug-in design for seamless gearbox integration. Wide control range accommodates both high-speed and high-torque operating demands. Displacement sizes from 28 to 250 cm³/rev with nominal pressure up to 400 bar and peak pressure up to 500 bar. Engineered for integration into mechanical gearboxes including track drive systems for demanding mobile applications.",
           "image": "https://thmhuade.com/wp-content/uploads/2020/07/A6VE-variable-displacement-plug-in-motor-300x300.jpg",
           "specifications": {
             "displacement_sizes": "28 to 250 cm³/rev",
@@ -92,6 +98,7 @@
           "design": "Bent-axis design",
           "applications": "Hydrostatic drives in open and closed circuits for construction, agriculture, and general industrial machinery.",
           "differentiator": "Variable displacement for precise control over speed and torque, high efficiency, and compact design.",
+          "features": "Variable displacement bent-axis axial piston motor providing precise control over speed and torque for optimized performance. High efficiency with compact design for versatile installation options. Variable displacement capability enables dynamic response to changing load conditions. Designed for hydrostatic drives in both open and closed circuits across construction, agricultural, and general industrial machinery applications.",
           "image": "https://thmhuade.com/wp-content/uploads/2020/07/A6VM-variable-axial-piston-motor-300x300.jpg",
           "specifications": {
             "displacement": "Variable"
@@ -108,6 +115,7 @@
           "design": "Gerotor gear set",
           "applications": "Light-duty applications such as food processing equipment, conveyors, textile machines, and industrial sweepers.",
           "differentiator": "Compact, economical, and high power density for its size.",
+          "features": "Compact orbital motor with gerotor gear set design offering high power density in a small footprint. Economical solution for cost-sensitive applications without sacrificing reliability. Displacement from 8.2 to 50.3 cm³/rev with maximum continuous pressure up to 175 bar and torque up to 46 Nm. Ideal for light-duty applications including food processing equipment, conveyors, textile machines, and industrial sweepers.",
           "image": "https://thmhuade.com/wp-content/uploads/2020/07/BMM-OMM-orbital-motor-300x300.jpg",
           "specifications": {
             "displacement": "8.2 to 50.3 cm³/rev",
@@ -121,6 +129,7 @@
           "design": "Gerotor gear set",
           "applications": "Agriculture, construction, mining, and plastic industries, for applications like winches, conveyors, and sweepers.",
           "differentiator": "Compact, high efficiency, and economical with a durable design.",
+          "features": "Orbital motor with gerotor gear set combining compact size with high efficiency for versatile applications. Economical design with durable construction for reliable long-term operation. Displacement from 50 to 400 cc/rev with maximum pressure up to 200 bar. Well-suited for agriculture, construction, mining, and plastic industries in applications such as winches, conveyors, and sweepers.",
           "image": "https://thmhuade.com/wp-content/uploads/2020/07/BMP-OMP-orbital-motor-300x300.jpg",
           "specifications": {
             "displacement": "50 to 400 cc/rev",
@@ -133,6 +142,7 @@
           "design": "Gerotor/Geroler gear set",
           "applications": "Agricultural machinery, fishing equipment, plastics industry, mining, and construction machinery.",
           "differentiator": "Compact design with high torque output, suitable for lower load applications.",
+          "features": "Orbital motor featuring gerotor/geroler gear set with compact design delivering high torque output. Optimized for lower load applications requiring reliable rotary motion. Displacement range from 36 to 375 cc/rev for flexible application sizing. Suitable for agricultural machinery, fishing equipment, plastics industry, mining, and construction machinery requiring dependable performance.",
           "image": "https://thmhuade.com/wp-content/uploads/2020/07/BMR-OMR-orbital-motor-300x300.jpg",
           "specifications": {
             "displacement": "36 to 375 cc/rev"
@@ -144,6 +154,7 @@
           "design": "Geroler gear set with disc distribution flow",
           "applications": "Industrial applications, including conveyors, skid steer attachments, swing motors, and agricultural equipment.",
           "differentiator": "Low speed, high torque motor with smooth and reliable operation.",
+          "features": "Low-speed, high-torque orbital motor with geroler gear set and disc distribution flow for smooth, reliable operation. Advanced design ensures consistent performance across varying load conditions. Displacement from 80 to 475 cc/rev with maximum pressure up to 225 bar. Ideal for industrial applications including conveyors, skid steer attachments, swing motors, and agricultural equipment.",
           "image": "https://thmhuade.com/wp-content/uploads/2020/07/BMSY-OMS-BM3Y-orbital-motor-300x300.jpg",
           "specifications": {
             "displacement": "80 to 475 cc/rev",
@@ -156,6 +167,7 @@
           "design": "Disc valve type gerotor motor",
           "applications": "Agricultural machinery, forestry equipment, construction machinery, and other industrial sectors.",
           "differentiator": "Low-speed, high-torque (LSHT) motor for continuous operation with high efficiency and long lifespan.",
+          "features": "Low-speed, high-torque (LSHT) disc valve type gerotor motor engineered for continuous heavy-duty operation. High efficiency with extended lifespan for reduced maintenance and operating costs. Capable of handling high axial and radial loads. Displacement from 160 to 800 cc/rev. Designed for agricultural machinery, forestry equipment, construction machinery, and demanding industrial sectors.",
           "image": "https://thmhuade.com/wp-content/uploads/2020/07/BMT-OMT-BM4U-orbital-motor-300x300.jpg",
           "specifications": {
             "displacement": "160 to 800 cc/rev",
@@ -168,6 +180,7 @@
           "design": "Geroler gear set with disc distribution flow",
           "applications": "Agriculture, fishing, plastics, mining, and construction machinery.",
           "differentiator": "High torque, low-speed motor with high efficiency and long operational life.",
+          "features": "High-torque, low-speed orbital motor with geroler gear set and disc distribution flow design. High efficiency operation with extended operational life for reduced downtime and maintenance. Displacement from 315 to 1000 cc/rev with maximum pressure up to 220 bar. Designed for demanding applications in agriculture, fishing, plastics, mining, and construction machinery.",
           "image": "https://thmhuade.com/wp-content/uploads/2020/07/BMV-OMV-BM5U-orbital-motor-300x300.jpg",
           "specifications": {
             "displacement": "315 to 1000 cc/rev",
@@ -180,6 +193,7 @@
           "design": "Geroler gear set with disc distribution flow",
           "applications": "Vehicles with greater loads and pressure drops, and traction drive applications.",
           "differentiator": "Robust construction, high efficiency, and long operational life with automatic compensation for wear.",
+          "features": "Robust orbital motor with geroler gear set and disc distribution flow, featuring automatic compensation for wear to maintain consistent performance. High efficiency with extended operational life for demanding applications. BMK2: displacement 65-475 cc/rev, max pressure 210 Bar. BMK6: displacement 200-1000 cc/rev, max pressure 200 Bar. Designed for vehicles with high loads and pressure drops, and traction drive applications.",
           "image": "https://thmhuade.com/wp-content/uploads/2020/07/BMK2-BMK6-orbital-motor-300x300.jpg",
           "specifications": {
             "displacement_bmk2": "65 to 475 cc/rev",
@@ -194,6 +208,7 @@
           "design": "Dual shaft design",
           "applications": "General hydraulic systems.",
           "differentiator": "Dual shaft design for specific application requirements.",
+          "features": "Orbital motor featuring unique dual shaft design for specialized application requirements and flexible mounting configurations. Enables direct drive of multiple components or simplified integration into complex mechanical systems. Displacement from 80 to 400 cc/rev with maximum pressure up to 225 Bar. Suitable for general hydraulic systems requiring dual output capability.",
           "image": "https://thmhuade.com/wp-content/uploads/2020/07/BMRYB-orbital-motor-300x300.jpg",
           "specifications": {
             "displacement": "80 to 400 cc/rev",

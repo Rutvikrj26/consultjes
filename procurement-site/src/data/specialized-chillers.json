@@ -1,89 +1,103 @@
-
 {
   "category": "Specialized Chillers",
-  "products": [
+  "subcategories": [
     {
-      "name": "Oil Chiller - Water-Cooled Reciprocating",
-      "tech_tier": "Entry to Mid",
-      "capacity_tr": "1-500",
-      "compressor": "Reciprocating (semi-hermetic, hermetic sealed, or open-type)",
-      "condenser": "Water-cooled (shell and tube or fin & tube designs)",
-      "evaporator": "Shell-and-tube",
-      "power_supply": "3-phase (e.g., 440V 50Hz, 380V)",
-      "applications": "Hydraulic/lube/cutting oil cooling in industrial settings.",
-      "features": "Purpose-built for oil circuits, precise temperature control, robust operation, and energy efficiency.",
-      "image": "https://thmhuade.com/wp-content/uploads/2020/07/oil-chiller-water-cooled-reciprocating-300x300.jpg",
-      "specifications": {
-        "refrigerant": "R404A, R407C, R-134a, Ammonia, CO2 (eco-friendly options)",
-        "operating_temperature_range": "Can achieve very low temperatures (e.g., -50°C for brine), condensing temperatures up to 45°C.",
-        "control_systems": "Microprocessor control panels, precision temperature and pressure controls, electronic expansion valves."
-      }
-    },
-    {
-      "name": "Air Oil Chiller",
-      "tech_tier": "Entry to Mid",
-      "capacity_tr": "1-100",
-      "compressor": "Scroll/Reciprocating/Screw",
-      "condenser": "Air or water",
-      "power_supply": "440V, 3-phase, 50Hz",
-      "applications": "Oil systems where water is limited, hydraulic systems, lubrication systems, spindle cooling, CNC machines.",
-      "features": "Broad compressor choice, rugged MS body, precise temperature control, and energy efficiency.",
-      "image": "https://thmhuade.com/wp-content/uploads/2020/07/air-oil-chiller-300x300.jpg",
-      "specifications": {
-        "cooling_capacity_kw": "Up to 300 kW",
-        "operating_fluids": "Mineral oils, oil/water emulsions, water glycol, phosphate ester, synthetic oils, vegetable oils.",
-        "oil_outlet_temperature": "5°C to +25°C",
-        "max_static_operating_pressure": "Up to 21 bar"
-      }
-    },
-    {
-      "name": "Glycol / Brine Chillers",
-      "tech_tier": "Better (often screw)",
-      "temperature_range": "Low-temp duty (-40°C to 5°C)",
-      "compressor": "Screw/scroll (with capacity control from 25% to 100%)",
-      "condenser": "Air or water",
-      "power_supply": "3-phase (e.g., 400V/3-phase/50Hz)",
-      "applications": "Food processing (breweries, dairy, meat), chemical plants, pharmaceuticals, cold storage facilities, ice production, and general industrial process cooling.",
-      "features": "Low-temp capability with glycol/brine, precise temperature control (within ±1°C), and advanced control systems with connectivity options.",
-      "image": "https://thmhuade.com/wp-content/uploads/2020/07/glycol-brine-chillers-300x300.jpg",
-      "specifications": {
-        "cooling_capacity": "1 KW to 2000 KW (or 1/2 HP to 300 HP)",
-        "refrigerant": "R134a, R404A, R407C, R22, R290, R600a, R422B",
-        "evaporators": "Shell and tube or plate heat exchangers (316 stainless steel or titanium for brine)"
-      }
-    },
-    {
-      "name": "Medical Chillers (Copper/Brine type)",
-      "tech_tier": "Mid to Better",
-      "capacity_tr": "0.5-500",
-      "compressor": "Screw/Scroll (hermetically sealed, semi-hermetic, digital scroll)",
-      "condenser": "Water-cooled (plate type, shell and tube) or air-cooled",
-      "power_supply": "3-phase (e.g., 430VAC, 50 Hz)",
-      "applications": "MRI/CT, blood cooling, laboratories, and other healthcare applications requiring precise temperature control.",
-      "features": "Customization for zero-downtime medical duty, precise temperature control, robust construction, and various safety mechanisms.",
-      "image": "https://thmhuade.com/wp-content/uploads/2020/07/medical-chillers-copper-brine-type-300x300.jpg",
-      "specifications": {
-        "cooling_medium": "Brine solution (saltwater or glycol)",
-        "temperature_range": "-40°C to +30°C (some models to -270°C for cryogenic applications)",
-        "refrigerant": "R22, R407c, R134a (eco-friendly options)",
-        "control_systems": "Microprocessor-based control systems, PLC options."
-      }
-    },
-    {
-      "name": "Central/Industrial Cooling System",
-      "tech_tier": "System",
-      "capacity_tr": "Up to 500",
-      "compressor": "Scroll/Screw",
-      "condenser": "Air and water variants",
-      "power_supply": "3-phase",
-      "applications": "Engineered plant-wide systems for large HVACR setups, industrial processes, and various commercial applications.",
-      "features": "End-to-end supply & integration, precise temperature control, robust operation, and energy efficiency.",
-      "image": "https://thmhuade.com/wp-content/uploads/2020/07/central-industrial-cooling-system-300x300.jpg",
-      "specifications": {
-        "system_types": "Chiller (air-cooled, water-cooled), cooling tower, evaporative cooler, direct expansion (DX) system, VRF/VRV, adiabatic cooling.",
-        "control_systems": "Microprocessor control panels, PLC-based units with remote operation and data logging.",
-        "refrigerant": "R404A, R407C, R-134a, Ammonia, CO2 (eco-friendly options)"
-      }
+      "name": "Specialized Chillers",
+      "products": [
+        {
+          "name": "Oil Chiller - Water-Cooled Reciprocating",
+          "tech_tier": "Entry to Mid",
+          "design": "Reciprocating compressor chiller with shell-and-tube heat exchangers for oil cooling",
+          "applications": "Hydraulic/lube/cutting oil cooling in industrial settings.",
+          "features": "Purpose-built for oil circuits with precise temperature control. Robust operation and energy efficiency. Microprocessor control panels with precision temperature and pressure controls. Electronic expansion valves for precise refrigerant metering.",
+          "differentiator": "Specifically designed for industrial oil cooling applications with materials compatible with various oil types. Can achieve very low temperatures (e.g., -50°C for brine) for specialized applications.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/oil-chiller-water-cooled-reciprocating-300x300.jpg",
+          "specifications": {
+            "capacity_tr": "1-500",
+            "compressor": "Reciprocating (semi-hermetic, hermetic sealed, or open-type)",
+            "condenser": "Water-cooled (shell and tube or fin & tube designs)",
+            "evaporator": "Shell-and-tube",
+            "refrigerant": "R404A, R407C, R-134a, Ammonia, CO2 (eco-friendly options)",
+            "operating_temperature_range": "Can achieve very low temperatures (e.g., -50°C for brine), condensing temperatures up to 45°C",
+            "control_systems": "Microprocessor control panels, precision temperature and pressure controls, electronic expansion valves",
+            "power_supply": "3-phase (e.g., 440V 50Hz, 380V)"
+          }
+        },
+        {
+          "name": "Air Oil Chiller",
+          "tech_tier": "Entry to Mid",
+          "design": "Air or water-cooled chiller with multiple compressor options for oil systems",
+          "applications": "Oil systems where water is limited, hydraulic systems, lubrication systems, spindle cooling, CNC machines.",
+          "features": "Broad compressor choice (scroll/reciprocating/screw) for flexibility. Rugged MS body construction. Precise temperature control and energy efficiency. Suitable for various operating fluids including mineral oils, synthetic oils, and water-glycol mixtures.",
+          "differentiator": "Versatile solution with air or water cooling options, ideal for locations where cooling water is limited or unavailable. Compatible with wide range of industrial fluids and oils.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/air-oil-chiller-300x300.jpg",
+          "specifications": {
+            "capacity_tr": "1-100",
+            "cooling_capacity_kw": "Up to 300 kW",
+            "compressor": "Scroll/Reciprocating/Screw",
+            "condenser": "Air or water",
+            "operating_fluids": "Mineral oils, oil/water emulsions, water glycol, phosphate ester, synthetic oils, vegetable oils",
+            "oil_outlet_temperature": "5°C to +25°C",
+            "max_static_operating_pressure": "Up to 21 bar",
+            "power_supply": "440V, 3-phase, 50Hz"
+          }
+        },
+        {
+          "name": "Glycol / Brine Chillers",
+          "tech_tier": "Better",
+          "design": "Low-temperature chiller with screw/scroll compressor for glycol or brine applications",
+          "applications": "Food processing (breweries, dairy, meat), chemical plants, pharmaceuticals, cold storage facilities, ice production, and general industrial process cooling.",
+          "features": "Low-temperature capability with glycol/brine fluids (-40°C to 5°C). Precise temperature control within ±1°C. Advanced control systems with connectivity options. Screw/scroll compressors with capacity control from 25% to 100%.",
+          "differentiator": "Specialized for low-temperature applications where water-based chillers cannot operate. Shell and tube or plate heat exchangers with corrosion-resistant materials (316 stainless steel or titanium) for brine compatibility.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/glycol-brine-chillers-300x300.jpg",
+          "specifications": {
+            "temperature_range": "Low-temp duty (-40°C to 5°C)",
+            "cooling_capacity": "1 KW to 2000 KW (or 1/2 HP to 300 HP)",
+            "compressor": "Screw/scroll (with capacity control from 25% to 100%)",
+            "condenser": "Air or water",
+            "refrigerant": "R134a, R404A, R407C, R22, R290, R600a, R422B",
+            "evaporators": "Shell and tube or plate heat exchangers (316 stainless steel or titanium for brine)",
+            "power_supply": "3-phase (e.g., 400V/3-phase/50Hz)"
+          }
+        },
+        {
+          "name": "Medical Chillers (Copper/Brine type)",
+          "tech_tier": "Mid to Better",
+          "design": "Medical-grade chiller with hermetically sealed or semi-hermetic screw/scroll compressors",
+          "applications": "MRI/CT scanners, blood cooling, laboratories, and other healthcare applications requiring precise temperature control.",
+          "features": "Customization for zero-downtime medical duty with redundant systems. Precise temperature control with microprocessor-based control systems. Robust construction with various safety mechanisms. Brine solution cooling for ultra-low temperature applications.",
+          "differentiator": "Built to medical industry standards with enhanced reliability features for critical healthcare equipment. Temperature range from -40°C to +30°C (some models to -270°C for cryogenic applications). Designed for 24/7 operation with minimal maintenance requirements.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/medical-chillers-copper-brine-type-300x300.jpg",
+          "specifications": {
+            "capacity_tr": "0.5-500",
+            "compressor": "Screw/Scroll (hermetically sealed, semi-hermetic, digital scroll)",
+            "condenser": "Water-cooled (plate type, shell and tube) or air-cooled",
+            "cooling_medium": "Brine solution (saltwater or glycol)",
+            "temperature_range": "-40°C to +30°C (some models to -270°C for cryogenic applications)",
+            "refrigerant": "R22, R407c, R134a (eco-friendly options)",
+            "control_systems": "Microprocessor-based control systems, PLC options",
+            "power_supply": "3-phase (e.g., 430VAC, 50 Hz)"
+          }
+        },
+        {
+          "name": "Central/Industrial Cooling System",
+          "tech_tier": "System",
+          "design": "Engineered plant-wide cooling system with multiple chiller configurations",
+          "applications": "Engineered plant-wide systems for large HVACR setups, industrial processes, and various commercial applications.",
+          "features": "End-to-end supply and integration of complete cooling systems. Precise temperature control with robust operation. Energy efficiency across the system. Multiple chiller configurations (air-cooled, water-cooled, cooling tower, evaporative cooler, DX system, VRF/VRV, adiabatic cooling).",
+          "differentiator": "Complete turnkey solution with design, supply, installation, and commissioning. Microprocessor control panels or PLC-based units with remote operation and data logging. Integrated approach ensures optimal system performance and energy efficiency.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/central-industrial-cooling-system-300x300.jpg",
+          "specifications": {
+            "capacity_tr": "Up to 500",
+            "compressor": "Scroll/Screw",
+            "condenser": "Air and water variants",
+            "system_types": "Chiller (air-cooled, water-cooled), cooling tower, evaporative cooler, direct expansion (DX) system, VRF/VRV, adiabatic cooling",
+            "control_systems": "Microprocessor control panels, PLC-based units with remote operation and data logging",
+            "refrigerant": "R404A, R407C, R-134a, Ammonia, CO2 (eco-friendly options)",
+            "power_supply": "3-phase"
+          }
+        }
+      ]
     }
   ]
 }

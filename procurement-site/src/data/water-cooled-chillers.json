@@ -1,93 +1,107 @@
-
 {
   "category": "Water Cooled Chillers",
-  "products": [
+  "subcategories": [
     {
-      "name": "Water Chiller Plant",
-      "tech_tier": "Mid",
-      "capacity_tr": "1-500",
-      "capacity_kw": "10-1000",
-      "compressor": "Scroll (or reciprocating, screw, centrifugal)",
-      "condenser": "Water-cooled (requiring a cooling tower)",
-      "power_supply": "3-phase (various voltages and frequencies)",
-      "applications": "Process & HVAC loops, large HVACR setups, industrial processes, and various commercial applications.",
-      "features": "Compact MS body, designed for India conditions, high energy efficiency, and precise temperature control.",
-      "image": "https://thmhuade.com/wp-content/uploads/2020/07/water-chiller-plant-300x300.jpg",
-      "specifications": {
-        "refrigerant": "R-134a, R-410A (or other suitable refrigerants)",
-        "energy_efficiency": "High (measured by COP, EER, IPLV)",
-        "chilled_water_flow_rate": "Typically maintained within limits (e.g., 3 to 12 feet per second)",
-        "control_unit": "Manages and monitors the chiller's operation, including temperature settings and safety controls."
-      }
-    },
-    {
-      "name": "Automatic Water-Cooled Chiller",
-      "tech_tier": "Mid to Better",
-      "capacity_tr": "Up to 500",
-      "capacity_kw": "280",
-      "compressor": "Scroll or Screw",
-      "condenser": "Water-cooled",
-      "power_supply": "3-phase (e.g., 380V/415V 50HZ)",
-      "applications": "Central plants/large processes, industrial processes (plastic & rubber, metal working, chemical & pharmaceutical, food & beverage, laser, electronics), commercial HVAC systems.",
-      "features": "Higher efficiency, large TR in compact footprint, precision cooling, and advanced control and safety features.",
-      "image": "https://thmhuade.com/wp-content/uploads/2020/07/automatic-water-cooled-chiller-300x300.jpg",
-      "specifications": {
-        "refrigerant": "R-134a, R-513A, R-514A, R-1233zd, R22, R407C, R410A, R404A",
-        "chilled_water_temperature_range": "3°C to 50°C",
-        "control_systems": "Microcomputer control systems with remote monitoring and self-diagnosis."
-      }
-    },
-    {
-      "name": "Water-Cooled Screw Chiller (package)",
-      "tech_tier": "Better",
-      "capacity_tr": "35-4500",
-      "capacity_kw": "105-9699.8",
-      "compressor": "Screw (high-efficiency semi-hermetic twin-screw compressors)",
-      "condenser": "Water-cooled (shell and tube type)",
-      "power_supply": "3-phase",
-      "applications": "Heavy/variable industrial loads, large commercial and industrial applications (airports, hospitals, schools, malls, offices, factories, data centers).",
-      "features": "Tropicalized design, factory-tested, high energy efficiency, and precise temperature control.",
-      "image": "https://thmhuade.com/wp-content/uploads/2020/07/water-cooled-screw-chiller-package-300x300.jpg",
-      "specifications": {
-        "refrigerant": "R134a",
-        "chilled_water_temperature_range": "5°C to 30°C (some models to -145°C)",
-        "control_systems": "Microprocessor or PLC based control systems with intelligent monitoring and safety features."
-      }
-    },
-    {
-      "name": "Water-Cooled Reciprocating Chiller",
-      "tech_tier": "Entry to Mid",
-      "capacity_tr": "5-300",
-      "compressor": "Reciprocating (semi-hermetic or hermetic sealed)",
-      "condenser": "Water-cooled (shell and tube)",
-      "evaporator": "Shell-and-tube (or DX, flooded shell and tube, plate heat exchanger, coil type)",
-      "power_supply": "3-phase",
-      "applications": "General industrial, pharmaceutical, food and beverage processing, chemical manufacturing, plastic processing, cold storage solutions, and district cooling.",
-      "features": "Robust build, automatic control, high efficiency, and precise temperature control.",
-      "image": "https://thmhuade.com/wp-content/uploads/2020/07/water-cooled-reciprocating-chiller-300x300.jpg",
-      "specifications": {
-        "refrigerant": "R-404A, R-407C, R-134A (or R-22, Ammonia, CO2)",
-        "temperature_control_range": "-30°C to 25°C",
-        "energy_efficiency": "Typically 0.7 to 1 kW/ton",
-        "control_systems": "Digital, microprocessor-based, PLC, or VFD control panels."
-      }
-    },
-    {
-      "name": "RMC Water Chiller Plant",
-      "tech_tier": "Specialized",
-      "capacity_tr": "8-500",
-      "temperature_range": "~4°C (outlet water temperature typically 5-35°C)",
-      "condenser": "Water-cooled (or air-cooled variants)",
-      "power_supply": "3-phase, 1-200 HP motors (rated voltage 220-480V, 50Hz)",
-      "applications": "Ready-mix concrete batching, water and aggregate cooling in batching plants.",
-      "features": "Customized for low-temp (≈4°C) concrete cooling duty, energy-efficient, robust build, and automatic control.",
-      "image": "https://thmhuade.com/wp-content/uploads/2020/07/rmc-water-chiller-plant-300x300.jpg",
-      "specifications": {
-        "cooling_capacity_kw": "Up to 286.4 kW",
-        "chilling_capacity": "Over 20,000 liters of water per day",
-        "compressor_type": "Scroll (for smaller units) or screw (for larger industrial applications)",
-        "construction_materials": "Mild steel, stainless steel heat exchangers, hot-dipped galvanized evaporative condensers."
-      }
+      "name": "Water Cooled Chillers",
+      "products": [
+        {
+          "name": "Water Chiller Plant",
+          "tech_tier": "Mid",
+          "design": "Compact MS body packaged chiller with scroll compressor",
+          "applications": "Process & HVAC loops, large HVACR setups, industrial processes, and various commercial applications.",
+          "features": "Compact MS body designed for India conditions. High energy efficiency and precise temperature control. Control unit manages and monitors chiller operation including temperature settings and safety controls.",
+          "differentiator": "Optimized for Indian climate conditions with robust mild steel construction. Higher efficiency than air-cooled equivalents due to lower condensing temperatures via cooling tower.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/water-chiller-plant-300x300.jpg",
+          "specifications": {
+            "capacity_tr": "1-500",
+            "capacity_kw": "10-1000",
+            "compressor": "Scroll (or reciprocating, screw, centrifugal)",
+            "condenser": "Water-cooled (requiring a cooling tower)",
+            "refrigerant": "R-134a, R-410A (or other suitable refrigerants)",
+            "energy_efficiency": "High (measured by COP, EER, IPLV)",
+            "chilled_water_flow_rate": "Typically maintained within limits (e.g., 3 to 12 feet per second)",
+            "control_unit": "Manages and monitors the chiller's operation, including temperature settings and safety controls",
+            "power_supply": "3-phase (various voltages and frequencies)"
+          }
+        },
+        {
+          "name": "Automatic Water-Cooled Chiller",
+          "tech_tier": "Mid to Better",
+          "design": "Automated water-cooled chiller with scroll or screw compressor",
+          "applications": "Central plants/large processes, industrial processes (plastic & rubber, metal working, chemical & pharmaceutical, food & beverage, laser, electronics), commercial HVAC systems.",
+          "features": "Higher efficiency than air-cooled alternatives, large TR capacity in compact footprint, precision cooling. Advanced control and safety features with microcomputer control systems, remote monitoring, and self-diagnosis.",
+          "differentiator": "Automated operation with advanced microcomputer control systems. Supports wide range of refrigerants for environmental compliance. Precision temperature control within tight tolerances.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/automatic-water-cooled-chiller-300x300.jpg",
+          "specifications": {
+            "capacity_tr": "Up to 500",
+            "capacity_kw": "280",
+            "compressor": "Scroll or Screw",
+            "condenser": "Water-cooled",
+            "refrigerant": "R-134a, R-513A, R-514A, R-1233zd, R22, R407C, R410A, R404A",
+            "chilled_water_temperature_range": "3°C to 50°C",
+            "control_systems": "Microcomputer control systems with remote monitoring and self-diagnosis",
+            "power_supply": "3-phase (e.g., 380V/415V 50HZ)"
+          }
+        },
+        {
+          "name": "Water-Cooled Screw Chiller (package)",
+          "tech_tier": "Better",
+          "design": "High-efficiency semi-hermetic twin-screw compressor package chiller",
+          "applications": "Heavy/variable industrial loads, large commercial and industrial applications (airports, hospitals, schools, malls, offices, factories, data centers).",
+          "features": "Tropicalized design for harsh climates, factory-tested for reliability. High energy efficiency with precise temperature control. Shell and tube type water-cooled condenser. Microprocessor or PLC based control systems with intelligent monitoring.",
+          "differentiator": "Industrial workhorse with excellent capacity range (35-4500 TR). Tropicalized design ensures reliable operation in extreme ambient conditions. Superior part-load efficiency compared to other compressor types.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/water-cooled-screw-chiller-package-300x300.jpg",
+          "specifications": {
+            "capacity_tr": "35-4500",
+            "capacity_kw": "105-9699.8",
+            "compressor": "Screw (high-efficiency semi-hermetic twin-screw compressors)",
+            "condenser": "Water-cooled (shell and tube type)",
+            "refrigerant": "R134a",
+            "chilled_water_temperature_range": "5°C to 30°C (some models to -145°C)",
+            "control_systems": "Microprocessor or PLC based control systems with intelligent monitoring and safety features",
+            "power_supply": "3-phase"
+          }
+        },
+        {
+          "name": "Water-Cooled Reciprocating Chiller",
+          "tech_tier": "Entry to Mid",
+          "design": "Reciprocating compressor chiller with shell-and-tube heat exchangers",
+          "applications": "General industrial, pharmaceutical, food and beverage processing, chemical manufacturing, plastic processing, cold storage solutions, and district cooling.",
+          "features": "Robust build with automatic control. High efficiency and precise temperature control. Digital, microprocessor-based, PLC, or VFD control panels. Shell-and-tube evaporator and condenser design.",
+          "differentiator": "Cost-effective solution for entry-to-mid range applications. Proven technology with excellent reliability. Typically 0.7 to 1 kW/ton energy efficiency.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/water-cooled-reciprocating-chiller-300x300.jpg",
+          "specifications": {
+            "capacity_tr": "5-300",
+            "compressor": "Reciprocating (semi-hermetic or hermetic sealed)",
+            "condenser": "Water-cooled (shell and tube)",
+            "evaporator": "Shell-and-tube (or DX, flooded shell and tube, plate heat exchanger, coil type)",
+            "refrigerant": "R-404A, R-407C, R-134A (or R-22, Ammonia, CO2)",
+            "temperature_control_range": "-30°C to 25°C",
+            "energy_efficiency": "Typically 0.7 to 1 kW/ton",
+            "control_systems": "Digital, microprocessor-based, PLC, or VFD control panels",
+            "power_supply": "3-phase"
+          }
+        },
+        {
+          "name": "RMC Water Chiller Plant",
+          "tech_tier": "Specialized",
+          "design": "Specialized chiller for ready-mix concrete applications",
+          "applications": "Ready-mix concrete batching, water and aggregate cooling in batching plants.",
+          "features": "Customized for low-temperature (≈4°C) concrete cooling duty. Energy-efficient with robust build. Automatic control with scroll or screw compressors. Hot-dipped galvanized evaporative condensers for corrosion resistance.",
+          "differentiator": "Purpose-built for concrete industry with precise low-temperature control critical for concrete quality. Handles over 20,000 liters of water per day chilling capacity. Corrosion-resistant materials for harsh batching plant environments.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/rmc-water-chiller-plant-300x300.jpg",
+          "specifications": {
+            "capacity_tr": "8-500",
+            "temperature_range": "~4°C (outlet water temperature typically 5-35°C)",
+            "cooling_capacity_kw": "Up to 286.4 kW",
+            "chilling_capacity": "Over 20,000 liters of water per day",
+            "compressor_type": "Scroll (for smaller units) or screw (for larger industrial applications)",
+            "condenser": "Water-cooled (or air-cooled variants)",
+            "construction_materials": "Mild steel, stainless steel heat exchangers, hot-dipped galvanized evaporative condensers",
+            "power_supply": "3-phase, 1-200 HP motors (rated voltage 220-480V, 50Hz)"
+          }
+        }
+      ]
     }
   ]
 }

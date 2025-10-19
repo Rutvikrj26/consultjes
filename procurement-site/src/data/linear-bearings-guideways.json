@@ -1,46 +1,69 @@
-
 {
   "category": "Linear Bearings & Guideways",
-  "products": [
+  "subcategories": [
     {
-      "name": "Standard Linear Bearings",
-      "tech_tier": "Mid",
-      "shaft_dia_range_mm": "3-100",
-      "key_features": "Standard, Adjustable (AJ), Open (OP), and Long (L) types. Interchangeable dimensions.",
-      "materials": "Steel outer cylinder, Steel or Resin retainer",
-      "applications": "General purpose linear motion, automation machinery",
-      "differentiator": "High Precision and Rigidity, Ease of Assembly, Variety of Types (Metric/Inch)",
-      "image": ""
-    },
-    {
-      "name": "Flanged Linear Bearings",
-      "tech_tier": "Mid",
-      "shaft_dia_range_mm": "6-100",
-      "key_features": "Round (F), Square (K), Two-side cut (H) flanges. Standard, Long (L), and Middle (M) flange types.",
-      "materials": "Steel outer cylinder, Resin retainer",
-      "applications": "Applications requiring secure, direct mounting of the bearing.",
-      "differentiator": "Integrated flange simplifies design and assembly, ensuring perpendicularity.",
-      "image": ""
-    },
-    {
-      "name": "Linear Bearing Slide Units",
-      "tech_tier": "Mid",
-      "shaft_dia_range_mm": "3-60",
-      "key_features": "Aluminum housing block for easy mounting. Standard (UU), Open (UUOP), and Long (LUU) versions.",
-      "materials": "Aluminum housing, Steel bearing",
-      "applications": "Turnkey linear slides, automated gantries, measurement equipment.",
-      "differentiator": "Pre-assembled unit reduces design time and guarantees alignment.",
-      "image": ""
+      "name": "Linear Bearings",
+      "products": [
+        {
+          "name": "Standard Linear Bearings",
+          "tech_tier": "Mid",
+          "design": "Ball bearing design with interchangeable dimensions, offering standard, adjustable (AJ), open (OP), and long (L) configurations for versatile mounting options.",
+          "applications": "General purpose linear motion, automation machinery",
+          "features": "Standard, Adjustable (AJ), Open (OP), and Long (L) types. Interchangeable dimensions with steel outer cylinder and steel or resin retainer for reliable operation.",
+          "differentiator": "High Precision and Rigidity, Ease of Assembly, Variety of Types (Metric/Inch)",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/standard-linear-bearings-300x300.jpg",
+          "specifications": {
+            "shaft_diameter_range": "3-100 mm",
+            "materials": "Steel outer cylinder, Steel or Resin retainer"
+          }
+        },
+        {
+          "name": "Flanged Linear Bearings",
+          "tech_tier": "Mid",
+          "design": "Integrated flange design available in round (F), square (K), and two-side cut (H) configurations with standard, long (L), and middle (M) flange options for direct mounting.",
+          "applications": "Applications requiring secure, direct mounting of the bearing.",
+          "features": "Round (F), Square (K), Two-side cut (H) flanges. Standard, Long (L), and Middle (M) flange types with steel outer cylinder and resin retainer.",
+          "differentiator": "Integrated flange simplifies design and assembly, ensuring perpendicularity.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/flanged-linear-bearings-300x300.jpg",
+          "specifications": {
+            "shaft_diameter_range": "6-100 mm",
+            "materials": "Steel outer cylinder, Resin retainer",
+            "flange_types": "Round (F), Square (K), Two-side cut (H)"
+          }
+        },
+        {
+          "name": "Linear Bearing Slide Units",
+          "tech_tier": "Mid",
+          "design": "Pre-assembled aluminum housing block with integrated steel bearing, available in standard (UU), open (UUOP), and long (LUU) versions for turnkey linear motion solutions.",
+          "applications": "Turnkey linear slides, automated gantries, measurement equipment.",
+          "features": "Aluminum housing block for easy mounting. Standard (UU), Open (UUOP), and Long (LUU) versions provide complete slide assembly ready for installation.",
+          "differentiator": "Pre-assembled unit reduces design time and guarantees alignment.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/linear-bearing-slide-units-300x300.jpg",
+          "specifications": {
+            "shaft_diameter_range": "3-60 mm",
+            "materials": "Aluminum housing, Steel bearing"
+          }
+        }
+      ]
     },
     {
       "name": "Linear Guideways",
-      "tech_tier": "Best",
-      "rail_width_mm": "15-65",
-      "key_features": "45° contact angle for equal load in all directions, self-aligning capability, low noise.",
-      "materials": "Steel",
-      "applications": "High-precision machine tools, CNC machines, robotics, semiconductor mfg.",
-      "differentiator": "High Rigidity, Four-way Equal Load, Interchangeable carriages/rails.",
-      "image": ""
+      "products": [
+        {
+          "name": "Linear Guideways",
+          "tech_tier": "Best",
+          "design": "Precision linear guideway system featuring 45° contact angle ball design for equal load distribution in all directions with self-aligning capability and low noise operation.",
+          "applications": "High-precision machine tools, CNC machines, robotics, semiconductor manufacturing.",
+          "features": "45° contact angle for equal load in all directions, self-aligning capability, low noise operation, interchangeable carriages and rails for maintenance flexibility.",
+          "differentiator": "High Rigidity, Four-way Equal Load, Interchangeable carriages/rails.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/linear-guideways-300x300.jpg",
+          "specifications": {
+            "rail_width_range": "15-65 mm",
+            "materials": "Steel",
+            "contact_angle": "45°"
+          }
+        }
+      ]
     }
   ]
 }

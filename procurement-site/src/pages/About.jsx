@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import './About.css';
+import shailesh_image from '../assets/shailesh_solanki.jpg'
 
 const About = () => {
   const services = [
@@ -48,13 +49,43 @@ const About = () => {
     },
     {
       title: 'Technical Expertise',
-      description: '15+ years of engineering experience'
+      description: '26+ years of engineering experience'
     },
     {
       title: 'Customer Focus',
       description: 'Dedicated support throughout the project lifecycle'
     }
   ];
+
+  const leadership = {
+    name: 'Shailesh N. Solanki',
+    title: 'Technical Director',
+    image: shailesh_image,
+    bio: 'Competent and proactive professional with over 26 years of achievement-driven experience in end-to-end production management, control, and quality assurance. As Technical Director of JES Engineering for the past three years, he brings extensive expertise in industrial procurement, CNC machining, production planning, and resource management to guide our technical operations and client solutions.',
+    expertise: [
+      'Production Planning & Control',
+      'CNC Machining (SIEMENS & FANUC)',
+      'Quality Assurance & ISO Standards',
+      'Process Development & Optimization',
+      'Team Leadership & Training',
+      'Procurement & Cost Control'
+    ],
+    education: 'Diploma in Mechanical Engineering',
+    experience: [
+      {
+        company: 'JES Engineering',
+        role: 'Technical Director',
+        period: '2022 - Present',
+        highlights: 'Leading technical operations, procurement strategy, and client solutions for industrial hydraulic, linear motion, and cooling systems.'
+      },
+      {
+        company: 'Haitian Huayuan Machinery India Pvt. Ltd.',
+        role: 'Manager (Machine Shop)',
+        period: '2019 - 2022',
+        highlights: 'Setup of new machine shop with heavy-duty HMC/VMC machines. International training at Haitian Huayuan China.'
+      }
+    ]
+  };
 
   return (
     <div className="about-page">
@@ -78,7 +109,7 @@ const About = () => {
               <h2>Engineering Procurement Excellence</h2>
               <p>
                 JES Engineering specializes in the procurement and installation of high-performance industrial
-                components. With over 15 years of experience, we provide comprehensive solutions for hydraulic
+                components. With over 26 years of experience, we provide comprehensive solutions for hydraulic
                 systems, linear motion components, and industrial cooling equipment.
               </p>
               <p>
@@ -96,6 +127,62 @@ const About = () => {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Leadership Section */}
+      <section className="leadership-section section-lg">
+        <div className="container">
+          <div className="section-header">
+            <h2 className="section-title">Leadership</h2>
+            <p className="section-description">
+              Guided by decades of engineering and manufacturing excellence
+            </p>
+          </div>
+
+          <Card variant="elevated" padding="xl" className="leadership-card">
+            <div className="leadership-content">
+              <div className="leadership-image">
+                <img src={leadership.image} alt={leadership.name} />
+              </div>
+              <div className="leadership-info">
+                <h3 className="leadership-name">{leadership.name}</h3>
+                <p className="leadership-title">{leadership.title}</p>
+                <p className="leadership-bio">{leadership.bio}</p>
+
+                <div className="leadership-details">
+                  <div className="detail-section">
+                    <h4>Core Expertise</h4>
+                    <ul className="expertise-list">
+                      {leadership.expertise.map((item, index) => (
+                        <li key={index}>
+                          <span className="check-icon">✓</span>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="detail-section">
+                    <h4>Professional Experience</h4>
+                    <div className="experience-timeline">
+                      {leadership.experience.map((exp, index) => (
+                        <div key={index} className="timeline-item">
+                          <div className="timeline-marker"></div>
+                          <div className="timeline-content">
+                            <h5>{exp.role}</h5>
+                            <p className="company">{exp.company}</p>
+                            <p className="period">{exp.period}</p>
+                            <p className="highlights">{exp.highlights}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Card>
         </div>
       </section>
 

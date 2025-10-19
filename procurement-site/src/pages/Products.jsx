@@ -203,12 +203,15 @@ const Products = () => {
 
                       {product.specifications && Object.keys(product.specifications).length > 0 && (
                         <div className="product-card__specs">
-                          {Object.entries(product.specifications).slice(0, 3).map(([key, value]) => (
-                            <div key={key} className="spec-item">
-                              <span className="spec-label">{key.replace(/_/g, ' ')}:</span>
-                              <span className="spec-value">{value}</span>
-                            </div>
-                          ))}
+                          {Object.entries(product.specifications)
+                            .filter(([key, value]) => typeof value !== 'object' || value === null)
+                            .slice(0, 3)
+                            .map(([key, value]) => (
+                              <div key={key} className="spec-item">
+                                <span className="spec-label">{key.replace(/_/g, ' ')}:</span>
+                                <span className="spec-value">{value}</span>
+                              </div>
+                            ))}
                         </div>
                       )}
 

@@ -1,54 +1,81 @@
-
 {
   "category": "Cooling Tunnels",
-  "products": [
+  "subcategories": [
     {
-      "name": "Chocolate Cooling Tunnel",
-      "tech_tier": "Specialized",
-      "temperature_range": "Air or water cooled tunnel (typically 5-10°C, some down to 0°C)",
-      "conveyor_build": "SS body (AISI 304 grade stainless steel)",
-      "power_supply": "3-phase",
-      "applications": "Chocolate enrobing lines, molded chocolates, chocolate drops, and bakery products.",
-      "features": "Length/temp built to product. Modular design, adjustable belt speed, CPU-controlled climate system, energy-saving CFC-free insulation.",
-      "image": "https://thmhuade.com/wp-content/uploads/2020/07/chocolate-cooling-tunnel-300x300.jpg",
-      "specifications": {
-        "belt_width": "200mm to 1600mm (up to 2 meters)",
-        "length": "2.5 to 50 meters (modular design)",
-        "cooling_method": "Controlled air circulation, sometimes with cold slab cooling",
-        "conveyor_belt_material": "Polyurethane (PU) or modular plastic"
-      }
-    },
-    {
-      "name": "Gel Cooling Tunnel",
-      "tech_tier": "Specialized",
-      "temperature_range": "0-5°C (some systems down to 0.1°C)",
-      "power_supply": "3-phase, automatic",
-      "applications": "Gels/OTC tubes, confectionery, bakery, and pharmaceutical products.",
-      "features": "ISO-certified build, 1-yr warranty noted. Automatic operation, temperature sensors, PLC control with HMI touch screen panels, and adjustable cooling zones.",
-      "image": "https://thmhuade.com/wp-content/uploads/2020/07/gel-cooling-tunnel-300x300.jpg",
-      "specifications": {
-        "cooling_method": "Forced air ventilation, water spraying, or glycol-cooled heat exchangers with fans",
-        "material": "AISI 304 stainless steel",
-        "insulation": "Thick insulation (polystyrene, polyurethane, or foamed PVC)",
-        "belt_width": "Variable (e.g., 180/250/320 mm)",
-        "length": "Customizable (e.g., 6/8/12 meters)"
-      }
-    },
-    {
-      "name": "Jam Cooling Tunnel",
-      "tech_tier": "Specialized",
-      "temperature_range": "Typically around 20°C (customizable)",
-      "power_supply": "3-phase, automatic",
-      "applications": "Hot-filled jam jars, bottles, or pouches to preserve product quality and extend shelf life.",
-      "features": "Continuous cooling for texture & shelf life. Water spray nozzles for cooling, automatic temperature control, PLC touch screen interfaces.",
-      "image": "https://thmhuade.com/wp-content/uploads/2020/07/jam-cooling-tunnel-300x300.jpg",
-      "specifications": {
-        "material": "Food-grade stainless steel (SUS304)",
-        "cooling_method": "Water spray nozzles (sometimes with chilled air or refrigeration)",
-        "capacity": "Variable (e.g., 1000-5000 L/h or 5000-8000 bottles/hour)",
-        "cooling_time": "Generally 10-25 minutes (adjustable)"
-      }
-    },
-    {\n      \"name\": \"Bakery/Peanut-Butter Cooling Tunnel\",\n      \"tech_tier\": \"Specialized\",\n      \"capacity_throughput\": \"> 400 kg/h\",\n      \"temperature_range\": \"0-5°C (or 5-10°C)\",\n      \"conveyor_build\": \"Automatic operation, CE/ISO/UL options. Stainless steel construction.\",\n      \"power_supply\": \"3-phase\",\n      \"applications\": \"Bakery products (cookies, biscuits, cakes, bread) and peanut butter production.\",\      \"features\": \"High throughput, 10-30 min holding. Multiple temperature control zones, adjustable conveyor speed, uniform airflow distribution, modular design.\",\n      \"image\": \"https://thmhuade.com/wp-content/uploads/2020/07/bakery-peanut-butter-cooling-tunnel-300x300.jpg\",\n      \"specifications\": {\n        \"cooling_method\": \"Convection cooling from top, water-cooled bottom plates\",\n        \"material\": \"Stainless steel\",\n        \"control_systems\": \"PLC/HMI controls\"\n      }\n    }
+      "name": "Cooling Tunnels",
+      "products": [
+        {
+          "name": "Chocolate Cooling Tunnel",
+          "tech_tier": "Specialized",
+          "design": "Air or water cooled tunnel with modular design",
+          "applications": "Chocolate enrobing lines, molded chocolates, chocolate drops, and bakery products.",
+          "features": "Modular design, adjustable belt speed, CPU-controlled climate system, energy-saving CFC-free insulation. Length and temperature built to product specifications.",
+          "differentiator": "Precisely controls temperature (typically 5-10°C, some down to 0°C) for optimal chocolate crystallization and texture. Modular construction allows custom configurations.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/chocolate-cooling-tunnel-300x300.jpg",
+          "specifications": {
+            "temperature_range": "5-10°C (some models down to 0°C)",
+            "belt_width": "200mm to 1600mm (up to 2 meters)",
+            "length": "2.5 to 50 meters (modular design)",
+            "cooling_method": "Controlled air circulation, sometimes with cold slab cooling",
+            "conveyor_belt_material": "Polyurethane (PU) or modular plastic",
+            "conveyor_build": "SS body (AISI 304 grade stainless steel)",
+            "power_supply": "3-phase"
+          }
+        },
+        {
+          "name": "Gel Cooling Tunnel",
+          "tech_tier": "Specialized",
+          "design": "ISO-certified automatic cooling tunnel with PLC control",
+          "applications": "Gels/OTC tubes, confectionery, bakery, and pharmaceutical products.",
+          "features": "ISO-certified build with 1-year warranty. Automatic operation, temperature sensors, PLC control with HMI touch screen panels, and adjustable cooling zones.",
+          "differentiator": "Maintains precise temperature control (0-5°C, some systems down to 0.1°C) with automatic operation for pharmaceutical-grade cooling requirements.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/gel-cooling-tunnel-300x300.jpg",
+          "specifications": {
+            "temperature_range": "0-5°C (some systems down to 0.1°C)",
+            "cooling_method": "Forced air ventilation, water spraying, or glycol-cooled heat exchangers with fans",
+            "material": "AISI 304 stainless steel",
+            "insulation": "Thick insulation (polystyrene, polyurethane, or foamed PVC)",
+            "belt_width": "Variable (e.g., 180/250/320 mm)",
+            "length": "Customizable (e.g., 6/8/12 meters)",
+            "power_supply": "3-phase, automatic"
+          }
+        },
+        {
+          "name": "Jam Cooling Tunnel",
+          "tech_tier": "Specialized",
+          "design": "Water spray cooling tunnel with PLC control",
+          "applications": "Hot-filled jam jars, bottles, or pouches to preserve product quality and extend shelf life.",
+          "features": "Continuous cooling for texture and shelf life preservation. Water spray nozzles for cooling, automatic temperature control, PLC touch screen interfaces.",
+          "differentiator": "Gentle cooling prevents thermal shock to glass containers while ensuring food safety. Typically cools products to around 20°C (customizable).",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/jam-cooling-tunnel-300x300.jpg",
+          "specifications": {
+            "temperature_range": "Typically around 20°C (customizable)",
+            "material": "Food-grade stainless steel (SUS304)",
+            "cooling_method": "Water spray nozzles (sometimes with chilled air or refrigeration)",
+            "capacity": "Variable (e.g., 1000-5000 L/h or 5000-8000 bottles/hour)",
+            "cooling_time": "Generally 10-25 minutes (adjustable)",
+            "power_supply": "3-phase, automatic"
+          }
+        },
+        {
+          "name": "Bakery/Peanut-Butter Cooling Tunnel",
+          "tech_tier": "Specialized",
+          "design": "High-throughput automatic cooling tunnel with multi-zone temperature control",
+          "applications": "Bakery products (cookies, biscuits, cakes, bread) and peanut butter production.",
+          "features": "High throughput (>400 kg/h) with 10-30 min holding time. Multiple temperature control zones, adjustable conveyor speed, uniform airflow distribution, modular design. CE/ISO/UL certification options.",
+          "differentiator": "Capable of handling high production volumes with consistent cooling across multiple product types. Stainless steel construction ensures food safety compliance.",
+          "image": "https://thmhuade.com/wp-content/uploads/2020/07/bakery-peanut-butter-cooling-tunnel-300x300.jpg",
+          "specifications": {
+            "capacity_throughput": "> 400 kg/h",
+            "temperature_range": "0-5°C (or 5-10°C)",
+            "cooling_method": "Convection cooling from top, water-cooled bottom plates",
+            "material": "Stainless steel",
+            "control_systems": "PLC/HMI controls",
+            "conveyor_build": "Automatic operation, CE/ISO/UL options. Stainless steel construction",
+            "power_supply": "3-phase"
+          }
+        }
+      ]
+    }
   ]
 }

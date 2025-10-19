@@ -1,162 +1,212 @@
 {
   "category": "Sensors & Accessories",
-  "products": [
+  "subcategories": [
     {
-      "name": "Metric ED Displacement Sensor",
-      "measure": "Linear displacement",
-      "accuracy": "High precision",
-      "applications": "Automation/position feedback",
-      "differentiator": "Precise position measurement for control loops",
-      "image": "https://thmhuade.com/product-category/atom-metric/",
-      "specifications": {
-        "structure": "ED structure",
-        "installation": "Mounting clamps",
-        "stroke_length": "Various stroke lengths available (e.g., 300mm)",
-        "output_signal": "Analog output options (e.g., 0-10V)",
-        "connectors": "A-type sockets and connectors (DIN46530)",
-        "magnet_block": "Single magnet blocks",
-        "accessories": "Square magnet gaskets, square magnets, spacers, screws, mounting clamps, insulating washers"
-      }
-    },
-    {
-      "name": "Metric EP Displacement Sensor",
-      "measure": "Linear displacement",
-      "accuracy": "High precision",
-      "applications": "Industrial automation",
-      "differentiator": "Compact structure, convenient disassembly and assembly",
-      "image": "https://thmhuade.com/product-category/atom-metric/",
-      "specifications": {
-        "measurement_range": "50mm to 2500mm (customization available)",
-        "output_signals": {
-          "current": "4-20mA, 20-4mA, 0-20mA, 20-0mA",
-          "voltage": "0-10V, 10-0V, 0-5V, 5-0V"
+      "name": "Displacement Sensors",
+      "products": [
+        {
+          "name": "Metric ED Displacement Sensor",
+          "tech_tier": "Mid",
+          "design": "ED structure linear displacement sensor with analog output options and precise position measurement capability for automation and control applications.",
+          "applications": "Automation/position feedback",
+          "features": "High precision linear displacement measurement with ED structure, mounting clamps for easy installation, various stroke lengths available (e.g., 300mm), analog output options (e.g., 0-10V), A-type sockets and connectors (DIN46530), single magnet blocks, and comprehensive accessories including square magnet gaskets, spacers, screws, and insulating washers.",
+          "differentiator": "Precise position measurement for control loops",
+          "image": "https://thmhuade.com/product-category/atom-metric/",
+          "specifications": {
+            "measurement_type": "Linear displacement",
+            "structure": "ED structure",
+            "installation": "Mounting clamps",
+            "stroke_length": "Various stroke lengths available (e.g., 300mm)",
+            "output_signal": "Analog output options (e.g., 0-10V)",
+            "connectors": "A-type sockets and connectors (DIN46530)",
+            "magnet_block": "Single magnet blocks",
+            "accessories": "Square magnet gaskets, square magnets, spacers, screws, mounting clamps, insulating washers",
+            "accuracy": "High precision"
+          }
         },
-        "environmental_resistance": {
-          "shock_index": "GB/T2423.5 50g(11ms)",
-          "vibration_index": "GB/T2423.10 10g/10-2000Hz"
+        {
+          "name": "Metric EP Displacement Sensor",
+          "tech_tier": "Mid",
+          "design": "Compact structure linear displacement sensor with convenient disassembly and assembly features, offering multiple output signal options and CE certification for industrial automation.",
+          "applications": "Industrial automation",
+          "features": "High precision linear displacement measurement with compact structure, measurement range from 50mm to 2500mm (customization available), multiple current output options (4-20mA, 20-4mA, 0-20mA, 20-0mA) and voltage output options (0-10V, 10-0V, 0-5V, 5-0V), exceptional environmental resistance with shock index GB/T2423.5 50g(11ms) and vibration index GB/T2423.10 10g/10-2000Hz.",
+          "differentiator": "Compact structure, convenient disassembly and assembly",
+          "image": "https://thmhuade.com/product-category/atom-metric/",
+          "specifications": {
+            "measurement_type": "Linear displacement",
+            "measurement_range": "50mm to 2500mm (customization available)",
+            "output_signals": {
+              "current": "4-20mA, 20-4mA, 0-20mA, 20-0mA",
+              "voltage": "0-10V, 10-0V, 0-5V, 5-0V"
+            },
+            "environmental_resistance": {
+              "shock_index": "GB/T2423.5 50g(11ms)",
+              "vibration_index": "GB/T2423.10 10g/10-2000Hz"
+            },
+            "certifications": "CE certified",
+            "accuracy": "High precision"
+          }
         },
-        "certifications": "CE certified"
-      }
-    },
-    {
-      "name": "Metric ES Displacement Sensor",
-      "measure": "Linear displacement",
-      "accuracy": "High precision",
-      "applications": "Harsh environments",
-      "differentiator": "Rugged and fully enclosed design",
-      "image": "https://thmhuade.com/product-category/atom-metric/",
-      "specifications": {
-        "interfaces": "Multiple options available, including Modbus",
-        "measurement_method": "Non-wear, non-contact",
-        "stroke_length": "50-2500 mm (customization available)",
-        "environmental_ratings": {
-          "shock_index": "GB/T2423.5 50g (11ms)",
-          "vibration_index": "GB/T2423.10 10g/10-2000Hz"
+        {
+          "name": "Metric ES Displacement Sensor",
+          "tech_tier": "Better",
+          "design": "Rugged and fully enclosed linear displacement sensor designed for harsh environments, featuring non-wear, non-contact measurement technology with multiple interface options including Modbus.",
+          "applications": "Harsh environments",
+          "features": "High precision linear displacement measurement with rugged, fully enclosed design. Non-wear, non-contact measurement method, stroke length from 50-2500 mm (customization available), multiple interface options including Modbus, exceptional environmental ratings with shock index GB/T2423.5 50g (11ms) and vibration index GB/T2423.10 10g/10-2000Hz.",
+          "differentiator": "Rugged and fully enclosed design",
+          "image": "https://thmhuade.com/product-category/atom-metric/",
+          "specifications": {
+            "measurement_type": "Linear displacement",
+            "interfaces": "Multiple options available, including Modbus",
+            "measurement_method": "Non-wear, non-contact",
+            "stroke_length": "50-2500 mm (customization available)",
+            "environmental_ratings": {
+              "shock_index": "GB/T2423.5 50g (11ms)",
+              "vibration_index": "GB/T2423.10 10g/10-2000Hz"
+            },
+            "accuracy": "High precision"
+          }
         }
-      }
+      ]
     },
     {
-      "name": "MH Series Magnetostrictive Sensor",
-      "measure": "Linear position",
-      "accuracy": "High precision",
-      "applications": "Mobile hydraulics, railway systems",
-      "differentiator": "Absolute, non-contact position measurement",
-      "image": "https://thmhuade.com/product-category/atom-metric/",
-      "specifications": {
-        "sensing_principle": "Magnetostrictive",
-        "stroke_length": "50mm to 2500mm",
-        "resolution": "±0.2 mm",
-        "repeatability": "< ±0.005% of Full Scale",
-        "linearity": "< ±0.04% of F.S.",
-        "protection_class": "IP67 and IP69K",
-        "output_signals": "Analog (VDC, Current), Bus protocols (CANbus, CANopen, SAE J1939)"
-      }
+      "name": "Magnetostrictive Sensors",
+      "products": [
+        {
+          "name": "MH Series Magnetostrictive Sensor",
+          "tech_tier": "Best",
+          "design": "Absolute, non-contact magnetostrictive position sensor with high precision and robust protection (IP67/IP69K) for mobile hydraulics and railway systems, offering analog and bus protocol outputs.",
+          "applications": "Mobile hydraulics, railway systems",
+          "features": "High precision absolute, non-contact position measurement using magnetostrictive sensing principle. Stroke length from 50mm to 2500mm, ±0.2 mm resolution, < ±0.005% Full Scale repeatability, < ±0.04% F.S. linearity, IP67 and IP69K protection class, multiple output signals including analog (VDC, Current) and bus protocols (CANbus, CANopen, SAE J1939).",
+          "differentiator": "Absolute, non-contact position measurement",
+          "image": "https://thmhuade.com/product-category/atom-metric/",
+          "specifications": {
+            "measurement_type": "Linear position",
+            "sensing_principle": "Magnetostrictive",
+            "stroke_length": "50mm to 2500mm",
+            "resolution": "±0.2 mm",
+            "repeatability": "< ±0.005% of Full Scale",
+            "linearity": "< ±0.04% of F.S.",
+            "protection_class": "IP67 and IP69K",
+            "output_signals": "Analog (VDC, Current), Bus protocols (CANbus, CANopen, SAE J1939)",
+            "accuracy": "High precision"
+          }
+        },
+        {
+          "name": "RB2- Magnetostrictive Sensor",
+          "tech_tier": "Best",
+          "design": "Built-in magnetostrictive sensor specifically designed for installation in hydraulic cylinders, featuring non-wear, non-contact absolute position output with exceptional accuracy and pressure resistance up to 35MPa.",
+          "applications": "Hydraulic cylinders",
+          "features": "High precision displacement measurement with built-in installation design for hydraulic cylinders. Non-wear, non-contact, absolute position output with 0.01% nonlinearity, 0.001% repetition accuracy, 35MPa continuous pressure resistance, and analog and SSI output options.",
+          "differentiator": "Built-in installation in hydraulic cylinders",
+          "image": "https://thmhuade.com/product-category/atom-metric/",
+          "specifications": {
+            "measurement_type": "Displacement",
+            "measurement_principle": "Non-wear, non-contact, absolute position output",
+            "nonlinearity": "0.01%",
+            "repetition_accuracy": "0.001%",
+            "pressure_resistance": "35MPa continuous",
+            "output_signal": "Analog and SSI Output",
+            "accuracy": "High precision"
+          }
+        }
+      ]
     },
     {
-      "name": "RB2- Magnetostrictive Sensor",
-      "measure": "Displacement",
-      "accuracy": "High precision",
-      "applications": "Hydraulic cylinders",
-      "differentiator": "Built-in installation in hydraulic cylinders",
-      "image": "https://thmhuade.com/product-category/atom-metric/",
-      "specifications": {
-        "measurement_principle": "Non-wear, non-contact, absolute position output",
-        "nonlinearity": "0.01%",
-        "repetition_accuracy": "0.001%",
-        "pressure_resistance": "35MPa continuous",
-        "output_signal": "Analog and SSI Output"
-      }
+      "name": "Pressure & Temperature Sensors",
+      "products": [
+        {
+          "name": "PS500 Electronic Digital Display Pressure Sensor",
+          "tech_tier": "Mid",
+          "design": "Electronic pressure sensor with high-brightness LED digital display rotatable by 330°, featuring robust all-metal construction and diffused silicon sensing element for accurate pressure measurement.",
+          "applications": "Hydraulics, industrial automation, pressure control",
+          "features": "High accuracy pressure measurement with high-brightness LED digital display rotatable by 330°. Measuring range from 100 mbar up to 1000 bar, 12-30 Vdc input voltage, robust all-metal construction, and diffused silicon sensing element.",
+          "differentiator": "High-brightness LED digital display, rotatable by 330°",
+          "image": "https://thmhuade.com/product-category/atom-metric/",
+          "specifications": {
+            "measurement_type": "Pressure",
+            "measuring_range": "100 mbar up to 1000 bar",
+            "input_voltage": "12-30 Vdc",
+            "housing": "Robust all-metal construction",
+            "sensor_type": "Diffused silicon sensing element",
+            "accuracy": "High accuracy"
+          }
+        },
+        {
+          "name": "TS420 Intelligent Temperature Controller Sensor",
+          "tech_tier": "Mid",
+          "design": "Intelligent temperature controller with PT100 sensor and high-precision A/D conversion, featuring 4-digit LED digital tube display and digital PID adjustment for precise temperature control.",
+          "applications": "Hydropower, water treatment, petroleum, chemical, machinery, and hydraulic systems",
+          "features": "High-precision temperature measurement using PT100 sensor with A/D conversion. 4-digit LED digital tube display for clear, real-time temperature monitoring, four relay outputs and a 4-20mA standard signal output, 24VDC or 220VAC power supply options, and digital PID adjustment for precise control.",
+          "differentiator": "4-digit LED digital tube display for clear, real-time temperature monitoring",
+          "image": "https://thmhuade.com/product-category/atom-metric/",
+          "specifications": {
+            "measurement_type": "Temperature",
+            "sensor_type": "PT100 sensor",
+            "outputs": "Four relay outputs and a 4-20mA standard signal output",
+            "power_supply": "24VDC or 220VAC",
+            "control_features": "Digital PID adjustment",
+            "accuracy": "High-precision A/D conversion"
+          }
+        },
+        {
+          "name": "PS200 Electronic Pressure Switch Sensor",
+          "tech_tier": "Entry",
+          "design": "Compact electronic pressure switch with diffused silicon sensor, featuring configurable PNP/NPN and normally open/normally closed output with fast response time and IP67 protection.",
+          "applications": "Industrial automation, HVAC/R systems",
+          "features": "High accuracy pressure switch (≤±0.5% of range) with diffused silicon sensor. 12-30 Vdc supply voltage, <10ms response time, IP67 protection grade, and PNP/NPN and normally open/normally closed configurable output.",
+          "differentiator": "PNP/NPN and normally open/normally closed configurable output",
+          "image": "https://thmhuade.com/product-category/atom-metric/",
+          "specifications": {
+            "measurement_type": "Pressure",
+            "sensor_type": "Diffused silicon sensor",
+            "supply_voltage": "12-30 Vdc",
+            "response_time": "<10ms",
+            "protection_grade": "IP67",
+            "accuracy": "≤±0.5% of range"
+          }
+        }
+      ]
     },
     {
-      "name": "PS500 Electronic Digital Display Pressure Sensor",
-      "measure": "Pressure",
-      "accuracy": "High accuracy",
-      "applications": "Hydraulics, industrial automation, pressure control",
-      "differentiator": "High-brightness LED digital display, rotatable by 330°",
-      "image": "https://thmhuade.com/product-category/atom-metric/",
-      "specifications": {
-        "measuring_range": "100 mbar up to 1000 bar",
-        "input_voltage": "12-30 Vdc",
-        "housing": "Robust all-metal construction",
-        "sensor_type": "Diffused silicon sensing element"
-      }
-    },
-    {
-      "name": "TS420 Intelligent Temperature Controller Sensor",
-      "measure": "Temperature",
-      "accuracy": "High-precision A/D conversion",
-      "applications": "Hydropower, water treatment, petroleum, chemical, machinery, and hydraulic systems",
-      "differentiator": "4-digit LED digital tube display for clear, real-time temperature monitoring",
-      "image": "https://thmhuade.com/product-category/atom-metric/",
-      "specifications": {
-        "sensor_type": "PT100 sensor",
-        "outputs": "Four relay outputs and a 4-20mA standard signal output",
-        "power_supply": "24VDC or 220VAC",
-        "control_features": "Digital PID adjustment"
-      }
-    },
-    {
-      "name": "PS200 Electronic Pressure Switch Sensor",
-      "measure": "Pressure",
-      "accuracy": "≤±0.5% of range",
-      "applications": "Industrial automation, HVAC/R systems",
-      "differentiator": "PNP/NPN and normally open/normally closed configurable output",
-      "image": "https://thmhuade.com/product-category/atom-metric/",
-      "specifications": {
-        "sensor_type": "Diffused silicon sensor",
-        "supply_voltage": "12-30 Vdc",
-        "response_time": "<10ms",
-        "protection_grade": "IP67"
-      }
-    },
-    {
-      "name": "HP Position Sensor",
-      "measure": "Position",
-      "accuracy": "Varies by model",
-      "applications": "Transportation, industrial, off-highway, automotive, marine, and medical applications",
-      "differentiator": "Non-contacting design for harsh environments",
-      "image": "https://thmhuade.com/product-category/atom-metric/",
-      "specifications": {
-        "technology": "Hall-effect or Inductive",
-        "angular_ranges": "Configurable from 50 to 360 degrees",
-        "output_protocol": "Analog (Ratiometric)",
-        "lifetime": "Up to 50 million cycles"
-      }
-    },
-    {
-      "name": "RH Position Sensor",
-      "measure": "Position",
-      "accuracy": "High precision",
-      "applications": "In-cylinder applications and hydraulic systems",
-      "differentiator": "Absolute magnetostrictive, non-contact sensing",
-      "image": "https://thmhuade.com/product-category/atom-metric/",
-      "specifications": {
-        "technology": "Absolute magnetostrictive",
-        "stroke_length": "25 mm to 7620 mm",
-        "resolution": "0.1 µm to 2 µm",
-        "multi-position_measurement": "Up to 30 positions with multiple magnets",
-        "outputs": "CANbus, Profibus, DeviceNet, Analog, SSI, PROFINET, EtherNet/IP™, POWERLINK, and EtherCAT®"
-      }
+      "name": "Position Sensors",
+      "products": [
+        {
+          "name": "HP Position Sensor",
+          "tech_tier": "Mid",
+          "design": "Non-contacting Hall-effect or Inductive position sensor designed for harsh environments, featuring configurable angular ranges from 50 to 360 degrees with ratiometric analog output and up to 50 million cycle lifetime.",
+          "applications": "Transportation, industrial, off-highway, automotive, marine, and medical applications",
+          "features": "High precision position measurement with non-contacting Hall-effect or Inductive technology. Configurable angular ranges from 50 to 360 degrees, ratiometric analog output protocol, and lifetime up to 50 million cycles for harsh environment applications.",
+          "differentiator": "Non-contacting design for harsh environments",
+          "image": "https://thmhuade.com/product-category/atom-metric/",
+          "specifications": {
+            "measurement_type": "Position",
+            "technology": "Hall-effect or Inductive",
+            "angular_ranges": "Configurable from 50 to 360 degrees",
+            "output_protocol": "Analog (Ratiometric)",
+            "lifetime": "Up to 50 million cycles",
+            "accuracy": "Varies by model"
+          }
+        },
+        {
+          "name": "RH Position Sensor",
+          "tech_tier": "Best",
+          "design": "Absolute magnetostrictive, non-contact position sensor with ultra-high resolution (0.1 µm to 2 µm) and multi-position measurement capability (up to 30 positions), supporting multiple industrial communication protocols.",
+          "applications": "In-cylinder applications and hydraulic systems",
+          "features": "High precision absolute magnetostrictive, non-contact sensing with stroke length from 25 mm to 7620 mm. Ultra-high resolution (0.1 µm to 2 µm), multi-position measurement (up to 30 positions with multiple magnets), and comprehensive output options including CANbus, Profibus, DeviceNet, Analog, SSI, PROFINET, EtherNet/IP™, POWERLINK, and EtherCAT®.",
+          "differentiator": "Absolute magnetostrictive, non-contact sensing",
+          "image": "https://thmhuade.com/product-category/atom-metric/",
+          "specifications": {
+            "measurement_type": "Position",
+            "technology": "Absolute magnetostrictive",
+            "stroke_length": "25 mm to 7620 mm",
+            "resolution": "0.1 µm to 2 µm",
+            "multi_position_measurement": "Up to 30 positions with multiple magnets",
+            "outputs": "CANbus, Profibus, DeviceNet, Analog, SSI, PROFINET, EtherNet/IP™, POWERLINK, and EtherCAT®",
+            "accuracy": "High precision"
+          }
+        }
+      ]
     }
   ]
 }

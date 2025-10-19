@@ -32,6 +32,7 @@ const Header = () => {
 
           <nav className="header__nav">
             <Link to="/products" className="nav__link">Products</Link>
+            <Link to="/services" className="nav__link">Services</Link>
             <Link to="/about" className="nav__link">About</Link>
             <Link to="/about#contact" className="nav__link">Contact</Link>
           </nav>

@@ -1,0 +1,94 @@
+.cta {
+  background: #F5F7FA;
+}
+
+.cta__card {
+  position: relative;
+  background: linear-gradient(135deg, #1B3A52 0%, #0A1929 100%);
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(27, 58, 82, 0.3);
+}
+
+.cta__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.cta__pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+  opacity: 0.8;
+}
+
+.cta__content {
+  position: relative;
+  z-index: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+.cta__text {
+  max-width: 600px;
+}
+
+.cta__title {
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+
+.cta__description {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.75;
+}
+
+.cta__actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cta__actions .btn--outline {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #FFFFFF;
+  backdrop-filter: blur(10px);
+}
+
+.cta__actions .btn--outline:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #D4AF37;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta__content {
+    padding: 3rem 2rem;
+    gap: 2rem;
+  }
+
+  .cta__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta__actions .btn {
+    width: 100%;
+  }
+}

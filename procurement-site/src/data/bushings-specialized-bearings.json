@@ -1,101 +1,97 @@
+
 {
   "category": "Bushings & Specialized Bearings",
-  "subcategories": [
+  "products": [
     {
-      "name": "Linear Motion Components",
-      "products": [
-        {
-          "name": "Self-Lube DU Bushes",
-          "tech_tier": "Entry",
-          "size_range_id_mm": "\u00d83 - \u00d8300",
-          "features": "Maintenance-free, low friction (PTFE liner), wide temp range (-200 to +280\u00b0C).",
-          "materials": "Steel backing, porous bronze layer, PTFE (Polytetrafluoroethylene) lining (often with lead or lead-free).",
-          "applications": "High-load, low-speed, oscillating, or dry-run applications, including automotive, industrial machinery, heavy equipment, and aerospace.",
-          "differentiator": "Eliminates the need for external lubrication, offering high wear resistance, durability, and a compact design.",
-          "image": "https://thmhuade.com/wp-content/uploads/2020/07/self-lube-du-bushes-300x300.jpg",
-          "specifications": {
-            "max_dynamic_pressure": "Up to 140 N/mm\u00b2",
-            "max_static_load": "250 N/mm\u00b2",
-            "coefficient_of_friction": "0.02 \u2013 0.25 (dry); 0.02 \u2013 0.12 (oil lubricated)"
-          }
-        },
-        {
-          "name": "Oil-Less Graphite Bushes",
-          "tech_tier": "Entry",
-          "size_range_id_mm": "\u00d88 - \u00d8160",
-          "features": "Solid graphite plugs embedded in bronze base. Maintenance-free, high temp (to +450\u00b0C).",
-          "materials": "High-strength bronze or brass alloy with graphite plugs (or entirely carbon graphite).",
-          "applications": "High-load, low-speed, high-temp, or corrosive environments where external lubrication is difficult or undesirable.",
-          "differentiator": "Self-lubricating, high load capacity, low friction, wide operating temperature range, and excellent wear/corrosion resistance.",
-          "image": "https://thmhuade.com/wp-content/uploads/2020/07/oil-less-graphite-bushes-300x300.jpg",
-          "specifications": {
-            "friction_coefficient": "Typically less than 0.16 (dry)",
-            "temperature_range": "-40\u00b0C to +450\u00b0C (bronze-graphite); -200\u00b0C to +500\u00b0C (carbon graphite)",
-            "forms": "Cylindrical sleeves, flanged bushes, thrust washers, sliding plates, half-bearings"
-          }
-        },
-        {
-          "name": "Rod Ends",
-          "tech_tier": "System Component",
-          "size_range_bore_mm": "5 - 30",
-          "features": "Male (POS) and Female (PHS) types, L/R hand threads. Spherical bearing allows angular misalignment.",
-          "materials": "Steel, stainless steel, composite materials, aluminum, chrome steel, carbon steel.",
-          "applications": "Linkages, control rods, steering mechanisms in machinery and vehicles, automotive steering and suspension systems, aerospace controls, industrial machinery, construction equipment, and robotics.",
-          "differentiator": "Provides an articulating joint with options for lubrication and various thread types, accommodating angular motion and flexibility.",
-          "image": "https://thmhuade.com/wp-content/uploads/2020/07/rod-ends-300x300.jpg",
-          "specifications": {
-            "types": "Self-lubricating (PTFE liners), greasable, metal-to-metal",
-            "threading": "Left-hand or right-hand threads",
-            "load_capacity": "Varies significantly based on design and materials"
-          }
-        },
-        {
-          "name": "Cam Followers",
-          "tech_tier": "System Component",
-          "size_range_stud_dia_mm": "3 - 30",
-          "features": "Heavy-section outer ring to handle loads from cams. Caged needles, sealed options. Available in roller, flat-faced, knife-edge, and spherical-faced types.",
-          "materials": "Bearing Steel (often with black oxide treatment for corrosion resistance).",
-          "applications": "Cam mechanisms, conveyor systems, indexing tables, and various applications requiring conversion of rotary motion into linear or oscillating motion.",
-          "differentiator": "Robust design specifically for tracking cam profiles with high reliability, offering high radial load capacity.",
-          "image": "https://thmhuade.com/wp-content/uploads/2020/07/cam-followers-300x300.jpg",
-          "specifications": {
-            "outer_diameter_types": "Cylindrical, crowned",
-            "mounting_styles": "Stud type (concentric or eccentric), yoke type",
-            "lubrication": "Often factory-filled with grease, with options for re-lubrication"
-          }
-        },
-        {
-          "name": "Spherical Plain Bearings",
-          "tech_tier": "System Component",
-          "size_range_bore_mm": "4 - 300",
-          "features": "Accommodates angular misalignment under heavy radial and axial loads. Available in radial and angular contact types, and maintenance-required (steel-on-steel) or maintenance-free (self-lubricating) versions.",
-          "materials": "High-strength bearing steel, hardened carbon chromium steel, carbon steel, stainless steel, aluminum-bronze (for rings and balls); PTFE, nylon, PTFE fabric, PTFE composite, copper alloy (for sliding surfaces).",
-          "applications": "A-frames, hydraulic cylinder pivots, heavy equipment linkages, construction equipment, automotive, railway engineering, mining, and aerospace.",
-          "differentiator": "Self-aligning components designed to handle high static and dynamic loads with significant angular misalignment.",
-          "image": "https://thmhuade.com/wp-content/uploads/2020/07/spherical-plain-bearings-300x300.jpg",
-          "specifications": {
-            "load_capacity": "High radial and axial load capacities (static and dynamic)",
-            "operating_temperature": "Typically -30\u00b0C to 130\u00b0C (varies by material)",
-            "lubrication": "Maintenance-required versions need periodic lubrication; maintenance-free versions are self-lubricating."
-          }
-        },
-        {
-          "name": "Needle Roller Bearings",
-          "tech_tier": "Core Component",
-          "size_range": "Various bore diameters, outside diameters, and widths.",
-          "features": "High radial load capacity in a small cross-section. Available in drawn cup, machined, thrust, and combined radial/axial designs. Caged or full complement.",
-          "materials": "Hardened steel (for rollers and raceways), stamped steel (for drawn cups).",
-          "applications": "Transmissions, automotive applications, universal joints, and applications with limited radial space requiring high load capacity.",
-          "differentiator": "Extremely high load capacity for its size, with a small cross-sectional height.",
-          "image": "https://thmhuade.com/wp-content/uploads/2020/07/needle-roller-bearings-300x300.jpg",
-          "specifications": {
-            "roller_diameter": "Typically 6 mm or less",
-            "length_to_diameter_ratio": "1:3 or greater",
-            "load_capacity": "High radial load capacity",
-            "misalignment_capability": "Low (typically around 1 minute of arc)"
-          }
-        }
-      ]
+      "name": "Self-Lube DU Bushes",
+      "tech_tier": "Entry",
+      "size_range_id_mm": "Ø3 - Ø300",
+      "features": "Maintenance-free, low friction (PTFE liner), wide temp range (-200 to +280°C).",
+      "materials": "Steel backing, porous bronze layer, PTFE (Polytetrafluoroethylene) lining (often with lead or lead-free).",
+      "applications": "High-load, low-speed, oscillating, or dry-run applications, including automotive, industrial machinery, heavy equipment, and aerospace.",
+      "differentiator": "Eliminates the need for external lubrication, offering high wear resistance, durability, and a compact design.",
+      "image": "https://thmhuade.com/wp-content/uploads/2020/07/self-lube-du-bushes-300x300.jpg",
+      "specifications": {
+        "max_dynamic_pressure": "Up to 140 N/mm²",
+        "max_static_load": "250 N/mm²",
+        "coefficient_of_friction": "0.02 – 0.25 (dry); 0.02 – 0.12 (oil lubricated)"
+      }
+    },
+    {
+      "name": "Oil-Less Graphite Bushes",
+      "tech_tier": "Entry",
+      "size_range_id_mm": "Ø8 - Ø160",
+      "features": "Solid graphite plugs embedded in bronze base. Maintenance-free, high temp (to +450°C).",
+      "materials": "High-strength bronze or brass alloy with graphite plugs (or entirely carbon graphite).",
+      "applications": "High-load, low-speed, high-temp, or corrosive environments where external lubrication is difficult or undesirable.",
+      "differentiator": "Self-lubricating, high load capacity, low friction, wide operating temperature range, and excellent wear/corrosion resistance.",
+      "image": "https://thmhuade.com/wp-content/uploads/2020/07/oil-less-graphite-bushes-300x300.jpg",
+      "specifications": {
+        "friction_coefficient": "Typically less than 0.16 (dry)",
+        "temperature_range": "-40°C to +450°C (bronze-graphite); -200°C to +500°C (carbon graphite)",
+        "forms": "Cylindrical sleeves, flanged bushes, thrust washers, sliding plates, half-bearings"
+      }
+    },
+    {
+      "name": "Rod Ends",
+      "tech_tier": "System Component",
+      "size_range_bore_mm": "5 - 30",
+      "features": "Male (POS) and Female (PHS) types, L/R hand threads. Spherical bearing allows angular misalignment.",
+      "materials": "Steel, stainless steel, composite materials, aluminum, chrome steel, carbon steel.",
+      "applications": "Linkages, control rods, steering mechanisms in machinery and vehicles, automotive steering and suspension systems, aerospace controls, industrial machinery, construction equipment, and robotics.",
+      "differentiator": "Provides an articulating joint with options for lubrication and various thread types, accommodating angular motion and flexibility.",
+      "image": "https://thmhuade.com/wp-content/uploads/2020/07/rod-ends-300x300.jpg",
+      "specifications": {
+        "types": "Self-lubricating (PTFE liners), greasable, metal-to-metal",
+        "threading": "Left-hand or right-hand threads",
+        "load_capacity": "Varies significantly based on design and materials"
+      }
+    },
+    {
+      "name": "Cam Followers",
+      "tech_tier": "System Component",
+      "size_range_stud_dia_mm": "3 - 30",
+      "features": "Heavy-section outer ring to handle loads from cams. Caged needles, sealed options. Available in roller, flat-faced, knife-edge, and spherical-faced types.",
+      "materials": "Bearing Steel (often with black oxide treatment for corrosion resistance).",
+      "applications": "Cam mechanisms, conveyor systems, indexing tables, and various applications requiring conversion of rotary motion into linear or oscillating motion.",
+      "differentiator": "Robust design specifically for tracking cam profiles with high reliability, offering high radial load capacity.",
+      "image": "https://thmhuade.com/wp-content/uploads/2020/07/cam-followers-300x300.jpg",
+      "specifications": {
+        "outer_diameter_types": "Cylindrical, crowned",
+        "mounting_styles": "Stud type (concentric or eccentric), yoke type",
+        "lubrication": "Often factory-filled with grease, with options for re-lubrication"
+      }
+    },
+    {
+      "name": "Spherical Plain Bearings",
+      "tech_tier": "System Component",
+      "size_range_bore_mm": "4 - 300",
+      "features": "Accommodates angular misalignment under heavy radial and axial loads. Available in radial and angular contact types, and maintenance-required (steel-on-steel) or maintenance-free (self-lubricating) versions.",
+      "materials": "High-strength bearing steel, hardened carbon chromium steel, carbon steel, stainless steel, aluminum-bronze (for rings and balls); PTFE, nylon, PTFE fabric, PTFE composite, copper alloy (for sliding surfaces).",
+      "applications": "A-frames, hydraulic cylinder pivots, heavy equipment linkages, construction equipment, automotive, railway engineering, mining, and aerospace.",
+      "differentiator": "Self-aligning components designed to handle high static and dynamic loads with significant angular misalignment.",
+      "image": "https://thmhuade.com/wp-content/uploads/2020/07/spherical-plain-bearings-300x300.jpg",
+      "specifications": {
+        "load_capacity": "High radial and axial load capacities (static and dynamic)",
+        "operating_temperature": "Typically -30°C to 130°C (varies by material)",
+        "lubrication": "Maintenance-required versions need periodic lubrication; maintenance-free versions are self-lubricating."
+      }
+    },
+    {
+      "name": "Needle Roller Bearings",
+      "tech_tier": "Core Component",
+      "size_range": "Various bore diameters, outside diameters, and widths.",
+      "features": "High radial load capacity in a small cross-section. Available in drawn cup, machined, thrust, and combined radial/axial designs. Caged or full complement.",
+      "materials": "Hardened steel (for rollers and raceways), stamped steel (for drawn cups).",
+      "applications": "Transmissions, automotive applications, universal joints, and applications with limited radial space requiring high load capacity.",
+      "differentiator": "Extremely high load capacity for its size, with a small cross-sectional height.",
+      "image": "https://thmhuade.com/wp-content/uploads/2020/07/needle-roller-bearings-300x300.jpg",
+      "specifications": {
+        "roller_diameter": "Typically 6 mm or less",
+        "length_to_diameter_ratio": "1:3 or greater",
+        "load_capacity": "High radial load capacity",
+        "misalignment_capability": "Low (typically around 1 minute of arc)"
+      }
     }
   ]
 }

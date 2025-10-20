@@ -5,27 +5,27 @@ import './ValueProposition.css';
 const values = [
   {
     id: 1,
-    icon: '🏆',
-    title: 'AS9100-D Certified Quality',
-    description: 'Export-quality precision manufacturing meeting international aerospace and defense standards with complete traceability',
+    icon: '⚙️',
+    title: 'Precision Manufacturing',
+    description: '26+ years of CNC machining expertise with SIEMENS & FANUC controls, precision boring, and CMM inspection for complex aerospace and defense components',
   },
   {
     id: 2,
-    icon: '🌍',
-    title: 'Global Expertise',
-    description: 'Proven track record with Siemens, L&T, ABB, ISRO, and international clients across Defense, Aerospace, and Energy sectors',
+    icon: '🏆',
+    title: 'AS9100-D Certified Quality',
+    description: 'Export-quality precision manufacturing meeting international aerospace and defense standards with complete traceability and rigorous quality control',
   },
   {
     id: 3,
-    icon: '⚙️',
-    title: 'Advanced Manufacturing',
-    description: 'CNC machining capabilities with SIEMENS & FANUC controls, precision boring, and CMM inspection for complex components',
+    icon: '🌍',
+    title: 'Global Industry Experience',
+    description: 'Proven track record with Siemens, L&T, ABB, ISRO, and international clients across Defense, Aerospace, and Energy sectors',
   },
   {
     id: 4,
     icon: '💡',
-    title: 'Technical Excellence',
-    description: '26+ years of machine shop management, process optimization, and engineering solutions from setup to delivery',
+    title: 'Complete Engineering Solutions',
+    description: 'End-to-end services from machine shop setup and manufacturing to procurement, installation, and commissioning support',
   },
 ];
 
@@ -35,9 +35,9 @@ const ValueProposition = () => {
       <div className="container">
         <div className="values__header">
           <div className="section-badge">Why Choose Us</div>
-          <h2 className="section-title">Your Partner in Excellence</h2>
+          <h2 className="section-title">Engineering Excellence, Delivered</h2>
           <p className="section-description">
-            We deliver more than just products – we provide complete solutions backed by expertise and commitment
+            From precision manufacturing to procurement and installation – we provide complete engineering solutions backed by 26+ years of expertise
           </p>
         </div>
 

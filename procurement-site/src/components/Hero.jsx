@@ -34,7 +34,7 @@ const Hero = () => {
           <div className="hero__text">
             <div className="hero__badge">
               <span className="badge__dot"></span>
-              Engineering Procurement & Installation
+              Precision Engineering & Manufacturing Solutions
             </div>
 
             <h1 className="hero__title">
@@ -46,15 +46,15 @@ const Hero = () => {
             </h1>
 
             <p className="hero__description">
-              Your trusted partner for procurement and installation of high-performance hydraulic systems,
-              linear motion components, and industrial cooling solutions. Backed by 26+ years of precision
-              engineering expertise serving Defense, Aerospace, Energy, and Industrial sectors worldwide.
+              AS9100-D certified precision engineering and manufacturing company with 26+ years of expertise.
+              We deliver complete solutions—from CNC machining and aerospace components to industrial
+              procurement and installation—serving Defense, Aerospace, Energy, and Industrial sectors worldwide.
             </p>
 
             <div className="hero__actions">
-              <Link to="/products" style={{ textDecoration: 'none' }}>
+              <Link to="/services" style={{ textDecoration: 'none' }}>
                 <Button variant="primary" size="lg">
-                  Explore Products
+                  Our Services
                 </Button>
               </Link>
               <Link to="/contact" style={{ textDecoration: 'none' }}>

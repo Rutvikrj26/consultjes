@@ -11,7 +11,7 @@ const FAQ = () => {
       questions: [
         {
           q: 'What industries does JES Engineering serve?',
-          a: 'We serve Aerospace & Defense, Energy & Power, Industrial Manufacturing, and various export markets. Our expertise spans precision machining, turbine components, injection molding parts, and specialized engineering services.'
+          a: 'We serve Aerospace & Defense, Energy & Power, Industrial Manufacturing, and various export markets. As a precision engineering and manufacturing company, our expertise spans CNC machining for aerospace and defense components, machine shop setup, quality assurance, and industrial procurement services.'
         },
         {
           q: 'Where is JES Engineering located?',

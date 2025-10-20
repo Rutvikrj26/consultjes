@@ -25,21 +25,21 @@ const Contact = () => {
             <div className="contact-info">
               <h2>Get In Touch</h2>
               <p>
-                Whether you need products, services, or a complete turnkey solution, our team will
-                help you specify, source, and implement with precision. Share a few details below and
-                we’ll follow up quickly with next steps.
+                Whether you need precision manufacturing, quality assurance, or complete engineering solutions,
+                our team brings 26+ years of expertise to your project. Share your requirements below and
+                we'll follow up quickly with next steps.
               </p>
               <p>
-                We support projects across Defense, Aerospace, Energy, and Industrial Manufacturing.
-                From component selection and procurement to installation, commissioning, and quality
-                documentation—we provide end‑to‑end support and long-term reliability.
+                We support projects across Defense, Aerospace, Energy, and Industrial Manufacturing sectors.
+                From CNC machining and quality inspection to component procurement, installation, and commissioning—we
+                provide end‑to‑end AS9100-D certified support and long-term reliability.
               </p>
 
               <ul className="contact-highlights">
-                <li>Procurement and sourcing from vetted global suppliers</li>
-                <li>Installation and commissioning support</li>
-                <li>Technical consulting and project management</li>
-                <li>Quality assurance and documentation</li>
+                <li>Precision CNC machining and aerospace component manufacturing</li>
+                <li>AS9100-D quality assurance and inspection services</li>
+                <li>Industrial procurement and sourcing from vetted suppliers</li>
+                <li>Installation, commissioning, and technical support</li>
               </ul>
 
               <div className="contact-details">

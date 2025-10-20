@@ -36,10 +36,10 @@ const ProductCategories = () => {
     <section className="categories section">
       <div className="container">
         <div className="categories__header">
-          <div className="section-badge">Our Solutions</div>
-          <h2 className="section-title">Comprehensive Product Range</h2>
+          <div className="section-badge">Industrial Procurement</div>
+          <h2 className="section-title">Premium Industrial Components</h2>
           <p className="section-description">
-            Explore our extensive catalog of industrial components designed for precision, reliability, and performance
+            Beyond our manufacturing capabilities, we source and supply high-quality industrial components from trusted global manufacturers
           </p>
         </div>
 

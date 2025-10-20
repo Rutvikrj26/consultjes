@@ -16,7 +16,7 @@ const CallToAction = () => {
             <div className="cta__text">
               <h2 className="cta__title">Ready to Get Started?</h2>
               <p className="cta__description">
-                Request a quote or browse our products to explore our full range of industrial solutions
+                Partner with us for precision manufacturing, quality assurance, and complete industrial solutions
               </p>
             </div>
 
@@ -26,9 +26,9 @@ const CallToAction = () => {
                   Request a Quote
                 </Button>
               </Link>
-              <Link to="/products" style={{ textDecoration: 'none' }}>
+              <Link to="/services" style={{ textDecoration: 'none' }}>
                 <Button variant="outline" size="lg">
-                  Browse Products
+                  Our Services
                 </Button>
               </Link>
             </div>

@@ -19,17 +19,17 @@ const Footer = () => {
               </div>
             </div>
             <p className="footer__description">
-              Your trusted partner for premium industrial components and engineering solutions.
+              AS9100-D certified precision engineering and manufacturing company with 26+ years of expertise in CNC machining, aerospace components, and industrial solutions.
             </p>
           </div>
 
           <div className="footer__section">
-            <h4 className="footer__heading">Products</h4>
+            <h4 className="footer__heading">Services</h4>
             <ul className="footer__links">
-              <li><Link to="/products">Hydraulic Systems</Link></li>
-              <li><Link to="/products">Linear Motion</Link></li>
-              <li><Link to="/products">Cooling Solutions</Link></li>
-              <li><Link to="/products">Accessories</Link></li>
+              <li><Link to="/services#cnc-machining">CNC Machining</Link></li>
+              <li><Link to="/services#quality-assurance">Quality Assurance</Link></li>
+              <li><Link to="/services#machine-shop-setup">Machine Shop Setup</Link></li>
+              <li><Link to="/services#industrial-procurement">Industrial Procurement</Link></li>
             </ul>
           </div>
 
@@ -49,7 +49,6 @@ const Footer = () => {
               <li><Link to="/contact">Contact Us</Link></li>
               <li><Link to="/faq">FAQs</Link></li>
               <li><Link to="/resources">Resources</Link></li>
-              {/* Removed per request: Technical Support link */}
             </ul>
           </div>
         </div>

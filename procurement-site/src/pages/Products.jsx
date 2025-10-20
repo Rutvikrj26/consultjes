@@ -168,7 +168,7 @@ const Products = () => {
             <div className="products-main">
               <div className="products-toolbar">
                 <p className="products-count">
-                  {filteredProducts.length} {filteredProducts.length === 1 ? 'product' : 'products'} found
+                  {filteredProducts.length} {filteredProducts.length === 1 ? 'product range' : 'product ranges'} found
                 </p>
               </div>
 
@@ -230,7 +230,7 @@ const Products = () => {
               ) : (
                 <div className="products-empty">
                   <div className="empty-icon">🔍</div>
-                  <h3>No products found</h3>
+                  <h3>No product ranges found</h3>
                   <p>Try adjusting your filters or search query</p>
                 </div>
               )}

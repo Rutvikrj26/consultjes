@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import './Services.css';
 
 const Services = () => {
+  const location = useLocation();
   const engineeringServices = [
     {
+      id: 'machine-shop-setup',
       icon: '🏭',
       title: 'Machine Shop Setup & Installation',
       description: 'Complete end-to-end machine shop setup including installation of heavy-duty CNC machines, quality inspection equipment, and production workflow optimization.',
@@ -20,6 +23,7 @@ const Services = () => {
       industries: ['Manufacturing', 'Heavy Engineering', 'Industrial Machinery']
     },
     {
+      id: 'cnc-machining',
       icon: '⚙️',
       title: 'Precision Manufacturing & Machining',
       description: 'Export-quality precision machining services for complex components across Defense, Aerospace, Energy, and Industrial sectors.',
@@ -34,6 +38,7 @@ const Services = () => {
       industries: ['Defense', 'Aerospace', 'Energy', 'Turbine Manufacturing']
     },
     {
+      id: 'quality-assurance',
       icon: '✓',
       title: 'Quality Assurance & Inspection',
       description: 'Comprehensive quality management systems compliant with international standards including AS9100-D for aerospace and defense applications.',
@@ -47,6 +52,7 @@ const Services = () => {
       industries: ['Aerospace', 'Defense', 'Precision Engineering']
     },
     {
+      id: 'process-optimization',
       icon: '📊',
       title: 'Process Optimization & Consulting',
       description: 'Manufacturing process improvement through Kaizen methodology, 5S implementation, and workflow optimization for enhanced productivity.',
@@ -60,6 +66,7 @@ const Services = () => {
       industries: ['Manufacturing', 'Production Facilities', 'Industrial Plants']
     },
     {
+      id: 'cnc-programming',
       icon: '🔧',
       title: 'CNC Programming & Tooling',
       description: 'Expert CNC programming and custom tooling development for SIEMENS and FANUC controllers across various machine types.',
@@ -74,6 +81,7 @@ const Services = () => {
       industries: ['Machine Shops', 'Job Work', 'OEM Manufacturing']
     },
     {
+      id: 'training',
       icon: '👥',
       title: 'Training & Technical Support',
       description: 'Comprehensive technical training programs for machine operators, supervisors, and maintenance teams on advanced CNC operations and quality systems.',
@@ -87,6 +95,7 @@ const Services = () => {
       industries: ['All Manufacturing Sectors']
     },
     {
+      id: 'vendor-management',
       icon: '🤝',
       title: 'Vendor Development & Management',
       description: 'Strategic vendor development for specialized processes and comprehensive supply chain management for manufacturing operations.',
@@ -100,6 +109,7 @@ const Services = () => {
       industries: ['Manufacturing', 'Production', 'Engineering Projects']
     },
     {
+      id: 'maintenance-support',
       icon: '🛠️',
       title: 'Maintenance & Breakdown Support',
       description: 'Preventive and predictive maintenance planning, along with expert troubleshooting for mechanical and PLC-based breakdowns.',
@@ -111,6 +121,21 @@ const Services = () => {
         'Equipment reliability improvement'
       ],
       industries: ['CNC Machine Shops', 'Production Facilities']
+    },
+    {
+      id: 'industrial-procurement',
+      icon: '📦',
+      title: 'Industrial Procurement & Installation',
+      description: 'Complete sourcing, procurement, and installation services for high-performance hydraulic systems, linear motion components, and industrial cooling equipment.',
+      capabilities: [
+        'Global sourcing of hydraulic systems (pumps, motors, valves)',
+        'Precision linear motion components (bearings, ball screws, guideways)',
+        'Industrial chiller procurement (air-cooled and water-cooled)',
+        'Professional installation and commissioning services',
+        'Supplier quality management and verification',
+        'End-to-end logistics coordination and project management'
+      ],
+      industries: ['Manufacturing', 'Industrial Facilities', 'Process Industries']
     }
   ];
 
@@ -177,6 +202,22 @@ const Services = () => {
     };
   }, [selectedService]);
 
+  // Handle hash navigation
+  useEffect(() => {
+    if (location.hash) {
+      const hash = location.hash.slice(1); // Remove the # character
+      const element = document.getElementById(hash);
+      if (element) {
+        // Scroll to element with offset for fixed header
+        setTimeout(() => {
+          const yOffset = -100;
+          const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [location]);
+
   return (
     <div className="services-page">
       {/* Page Header */}
@@ -197,11 +238,11 @@ const Services = () => {
           <div className="intro-content">
             <h2>Excellence in Engineering & Manufacturing</h2>
             <p>
-              JES Engineering provides world-class manufacturing and engineering services across Defense, Aerospace,
+              JES Engineering is a comprehensive precision engineering and manufacturing company serving Defense, Aerospace,
               Energy, and Industrial sectors. With 26+ years of hands-on experience managing complex projects for
-              industry leaders like ISRO, Siemens, L&T, ABB, and Godrej Aerospace, we deliver precision solutions
-              from machine shop setup to export-quality component manufacturing. Our AS9100-D certified processes
-              ensure compliance with the highest international standards for aerospace and defense applications.
+              industry leaders like ISRO, Siemens, L&T, ABB, and Godrej Aerospace, we deliver end-to-end solutions—from
+              CNC machining and aerospace component manufacturing to industrial procurement and installation services.
+              Our AS9100-D certified processes ensure compliance with the highest international standards.
             </p>
             <div className="intro-stats">
               <div className="stat">
@@ -235,20 +276,21 @@ const Services = () => {
             {engineeringServices
               .filter(svc => svc.title !== 'Training & Technical Support')
               .map((service, index) => (
-                <Card 
-                  key={index} 
-                  variant="elevated" 
-                  padding="xl" 
-                  className="service-card"
-                  onClick={() => setSelectedService(service)}
-                >
-                  <div className="service-card-content">
-                    <div className="service-detail-icon">{service.icon}</div>
-                    <h3 className="service-card-title">{service.title}</h3>
-                    <p className="service-card-teaser">{service.description}</p>
-                    <button className="service-learn-more">Learn More →</button>
-                  </div>
-                </Card>
+                <div key={index} id={service.id}>
+                  <Card
+                    variant="elevated"
+                    padding="xl"
+                    className="service-card"
+                    onClick={() => setSelectedService(service)}
+                  >
+                    <div className="service-card-content">
+                      <div className="service-detail-icon">{service.icon}</div>
+                      <h3 className="service-card-title">{service.title}</h3>
+                      <p className="service-card-teaser">{service.description}</p>
+                      <button className="service-learn-more">Learn More →</button>
+                    </div>
+                  </Card>
+                </div>
               ))}
           </div>
 

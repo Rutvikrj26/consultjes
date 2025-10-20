@@ -8,34 +8,34 @@ import shailesh_image from '../assets/shailesh_solanki.jpg'
 const About = () => {
   const services = [
     {
+      icon: '⚙️',
+      title: 'CNC Machining',
+      description: 'Precision manufacturing with SIEMENS & FANUC controls, including gantry milling, VTL, and floor boring for complex aerospace and defense components.'
+    },
+    {
+      icon: '🏭',
+      title: 'Machine Shop Setup',
+      description: 'Complete machine shop installation, heavy-duty HMC/VMC setup, CMM installation, and process optimization with 5S and Kaizen methodologies.'
+    },
+    {
+      icon: '✓',
+      title: 'Quality Assurance',
+      description: 'AS9100-D First Article Inspection, CMM inspection, dimensional verification, and ISO compliance documentation for aerospace-grade quality.'
+    },
+    {
       icon: '🔍',
-      title: 'Product Sourcing',
-      description: 'We identify and source the highest quality industrial components from trusted global manufacturers.'
-    },
-    {
-      icon: '📋',
-      title: 'Technical Consultation',
-      description: 'Our experts provide guidance on product selection, specifications, and application requirements.'
-    },
-    {
-      icon: '🚚',
-      title: 'Logistics Management',
-      description: 'End-to-end logistics coordination ensuring timely delivery of your industrial components.'
+      title: 'Industrial Procurement',
+      description: 'Sourcing and supply of high-performance hydraulic systems, linear motion components, and industrial cooling equipment from trusted global manufacturers.'
     },
     {
       icon: '🔧',
-      title: 'Installation Services',
-      description: 'Professional installation and commissioning of hydraulic, linear motion, and cooling systems.'
+      title: 'Installation & Commissioning',
+      description: 'Professional installation, commissioning, and operator training for hydraulic, linear motion, and cooling systems.'
     },
     {
       icon: '📊',
-      title: 'Project Management',
-      description: 'Comprehensive project oversight from procurement through installation and testing.'
-    },
-    {
-      icon: '🛠️',
-      title: 'After-Sales Support',
-      description: 'Ongoing technical support and maintenance services for all procured equipment.'
+      title: 'Engineering Support',
+      description: 'CNC programming, tooling design, process development, technical training, and comprehensive project management from setup to delivery.'
     }
   ];
 
@@ -62,7 +62,7 @@ const About = () => {
     name: 'Shailesh N. Solanki',
     title: 'Technical Director',
     image: shailesh_image,
-    bio: 'Competent and proactive professional with over 26 years of achievement-driven experience in end-to-end production management, control, and quality assurance. As Technical Director of JES Engineering for the past three years, he brings extensive expertise in industrial procurement, CNC machining, production planning, and resource management to guide our technical operations and client solutions.',
+    bio: 'Competent and proactive professional with over 26 years of achievement-driven experience in end-to-end production management, control, and quality assurance. As Technical Director of JES Engineering for the past three years, he brings extensive expertise in CNC machining, machine shop management, production planning, and quality systems to guide our precision manufacturing operations, engineering services, and industrial procurement solutions.',
     expertise: [
       'Production Planning & Control',
       'CNC Machining (SIEMENS & FANUC)',
@@ -77,7 +77,7 @@ const About = () => {
         company: 'JES Engineering',
         role: 'Technical Director',
         period: '2022 - Present',
-        highlights: 'Leading technical operations, procurement strategy, and client solutions for industrial hydraulic, linear motion, and cooling systems.'
+        highlights: 'Leading precision manufacturing operations, CNC machining, quality systems, and engineering solutions for aerospace, defense, and industrial sectors. Overseeing procurement of industrial components.'
       },
       {
         company: 'Haitian Huayuan Machinery India Pvt. Ltd.',
@@ -96,7 +96,7 @@ const About = () => {
           <div className="about-header__content">
             <h1 className="about-header__title">About JES Engineering</h1>
             <p className="about-header__description">
-              Your trusted partner for industrial procurement and installation services
+              AS9100-D certified precision engineering and manufacturing company with 26+ years of expertise
             </p>
           </div>
         </div>
@@ -107,19 +107,20 @@ const About = () => {
         <div className="container">
           <div className="about-intro">
             <div className="about-intro__text">
-              <h2>Engineering Procurement Excellence</h2>
+              <h2>Precision Engineering & Manufacturing Excellence</h2>
               <p>
-                JES Engineering specializes in the procurement and installation of high-performance industrial
-                components. With over 26 years of precision engineering experience, we provide comprehensive
-                solutions for hydraulic systems, linear motion components, and industrial cooling equipment.
-                Our expertise spans Defense, Aerospace, Energy, and Industrial Manufacturing sectors worldwide.
+                JES Engineering is a precision engineering and manufacturing company with over 26 years of expertise
+                serving Defense, Aerospace, Energy, and Industrial Manufacturing sectors worldwide. We specialize in
+                CNC machining of complex components, machine shop setup and management, AS9100-D First Article
+                Inspection, and process optimization—complemented by comprehensive industrial procurement and
+                installation services.
               </p>
               <p>
-                Backed by AS9100-D certification and proven track record with industry leaders like ISRO,
-                Siemens, L&T, ABB, and Godrej Aerospace, we combine world-class procurement capabilities with
-                advanced manufacturing expertise. Our mission is to deliver precision-engineered solutions with
-                complete technical support—from component selection and sourcing to installation, commissioning,
-                and after-sales service.
+                Backed by AS9100-D certification and a proven track record with industry leaders like ISRO,
+                Siemens, L&T, ABB, and Godrej Aerospace, we deliver end-to-end solutions from precision manufacturing
+                of aerospace and defense components to procurement of hydraulic systems, linear motion components,
+                and cooling equipment. Our mission is to provide complete engineering solutions with technical
+                excellence—from CNC programming and machining to procurement, installation, and commissioning support.
               </p>
             </div>
             <div className="about-intro__stats">
@@ -196,7 +197,7 @@ const About = () => {
           <div className="section-header">
             <h2 className="section-title">Our Services</h2>
             <p className="section-description">
-              Comprehensive procurement and installation solutions for your engineering projects
+              Complete engineering solutions from precision manufacturing to procurement and installation
             </p>
           </div>
 
@@ -218,7 +219,7 @@ const About = () => {
           <Card variant="elevated" padding="xl" className="cta-card">
             <div className="cta-content">
               <h2>Have a project in mind?</h2>
-              <p>Reach out for a tailored solution from our engineering procurement team.</p>
+              <p>Reach out for a tailored engineering solution from our precision manufacturing and technical team.</p>
               <div className="cta-buttons">
                 <Link to="/contact" style={{ textDecoration: 'none' }}>
                   <Button variant="primary" size="md">Contact Us</Button>

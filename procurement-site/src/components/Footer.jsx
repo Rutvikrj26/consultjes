@@ -48,7 +48,7 @@ const Footer = () => {
               <li><a href="#contact">Contact Us</a></li>
               <li><a href="#faq">FAQs</a></li>
               <li><a href="#resources">Resources</a></li>
-              <li><a href="#technical">Technical Support</a></li>
+              {/* Removed per request: Technical Support link */}
             </ul>
           </div>
         </div>

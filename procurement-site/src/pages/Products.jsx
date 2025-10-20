@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import Card from '../components/Card';
 import Button from '../components/Button';
-import { productsByCategory, categoryGroups, getAllProducts } from '../utils/productData';
+import { productsByCategory } from '../utils/productData';
 import './Products.css';
 
 const Products = () => {
@@ -12,11 +12,7 @@ const Products = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredProducts, setFilteredProducts] = useState([]);
 
-  useEffect(() => {
-    loadProducts();
-  }, [selectedCategory, selectedSubcategory, searchQuery]);
-
-  const loadProducts = () => {
+  const loadProducts = useCallback(() => {
     let products = [];
 
     if (selectedCategory === 'all') {
@@ -67,7 +63,11 @@ const Products = () => {
     }
 
     setFilteredProducts(products);
-  };
+  }, [selectedCategory, selectedSubcategory, searchQuery]);
+
+  useEffect(() => {
+    loadProducts();
+  }, [loadProducts]);
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
@@ -206,7 +206,7 @@ const Products = () => {
                       {product.specifications && Object.keys(product.specifications).length > 0 && (
                         <div className="product-card__specs">
                           {Object.entries(product.specifications)
-                            .filter(([key, value]) => typeof value !== 'object' || value === null)
+                            .filter(([, value]) => typeof value !== 'object' || value === null)
                             .slice(0, 3)
                             .map(([key, value]) => (
                               <div key={key} className="spec-item">

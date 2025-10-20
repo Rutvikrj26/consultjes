@@ -47,6 +47,7 @@
   opacity: 0.08;
   filter: blur(2px);
   pointer-events: none;
+  -webkit-user-select: none;
   user-select: none;
   z-index: 0;
 }
@@ -107,13 +108,18 @@
   font-size: 3.5rem;
 }
 
+/* Force three-line layout */
+.hero__title-line {
+  display: block;
+}
+
 .hero__title-dynamic {
   background: linear-gradient(135deg, #D4AF37 0%, #F4D03F 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  display: inline-block;
-  min-width: 400px;
+  display: block; /* sits on its own line */
+  min-width: 0;
   text-align: left;
   position: relative;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -182,6 +188,7 @@
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.3);
   color: #FFFFFF;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
@@ -235,6 +242,7 @@
 .visual__card {
   position: absolute;
   background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border-radius: 1.5rem;
   padding: 2rem;
@@ -376,7 +384,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    min-height: auto;
+    min-height: 0; /* better compatibility */
     padding-top: 0;
   }
 
@@ -389,8 +397,8 @@
   }
 
   .hero__title-dynamic {
-    min-width: 100%;
-    display: block;
+    display: block; /* keep in the middle line on mobile */
+    text-align: left;
   }
 
   .hero__description {

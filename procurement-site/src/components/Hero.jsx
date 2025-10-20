@@ -19,7 +19,7 @@ const Hero = () => {
     }, 3500); // Change word every 3.5 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  }, [words.length]);
 
   return (
     <section className="hero">
@@ -38,12 +38,11 @@ const Hero = () => {
             </div>
 
             <h1 className="hero__title">
-              Industrial{' '}
+              <span className="hero__title-line">Industrial</span>
               <span className={`hero__title-dynamic ${isAnimating ? 'hero__title-dynamic--exit' : 'hero__title-dynamic--enter'}`}>
                 {words[currentWord]}
               </span>
-              <br />
-              <span className="hero__title-highlight">Services</span>
+              <span className="hero__title-highlight hero__title-line">Services</span>
             </h1>
 
             <p className="hero__description">

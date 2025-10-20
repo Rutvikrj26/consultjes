@@ -152,7 +152,30 @@ const Services = () => {
     }
   ];
 
-  const [openIndex, setOpenIndex] = useState(0);
+  const [selectedService, setSelectedService] = useState(null);
+
+  // Close modal on Escape key
+  React.useEffect(() => {
+    const handleEscape = (e) => {
+      if (e.key === 'Escape' && selectedService !== null) {
+        setSelectedService(null);
+      }
+    };
+    window.addEventListener('keydown', handleEscape);
+    return () => window.removeEventListener('keydown', handleEscape);
+  }, [selectedService]);
+
+  // Lock body scroll when modal is open
+  React.useEffect(() => {
+    if (selectedService !== null) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [selectedService]);
 
   return (
     <div className="services-page">
@@ -208,39 +231,64 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="services-accordion">
+          <div className="services-grid">
             {engineeringServices
               .filter(svc => svc.title !== 'Training & Technical Support')
               .map((service, index) => (
-                <Card key={index} variant="elevated" padding="xl" className="accordion-item">
-                  <button
-                    type="button"
-                    className="accordion-header"
-                    aria-expanded={openIndex === index}
-                    aria-controls={`service-panel-${index}`}
-                    id={`service-header-${index}`}
-                    onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
-                  >
-                    <div className="service-detail-header">
-                      <div className="service-detail-icon">{service.icon}</div>
-                      <h3 className="service-detail-title">{service.title}</h3>
-                    </div>
-                    <span className="accordion-chevron" aria-hidden>⌄</span>
-                  </button>
+                <Card 
+                  key={index} 
+                  variant="elevated" 
+                  padding="xl" 
+                  className="service-card"
+                  onClick={() => setSelectedService(service)}
+                >
+                  <div className="service-card-content">
+                    <div className="service-detail-icon">{service.icon}</div>
+                    <h3 className="service-card-title">{service.title}</h3>
+                    <p className="service-card-teaser">{service.description}</p>
+                    <button className="service-learn-more">Learn More →</button>
+                  </div>
+                </Card>
+              ))}
+          </div>
 
-                  <div
-                    className="accordion-body"
-                    id={`service-panel-${index}`}
-                    role="region"
-                    aria-labelledby={`service-header-${index}`}
-                    hidden={openIndex !== index}
-                  >
-                    <p className="service-detail-description">{service.description}</p>
+          {/* Modal/Popup */}
+          {selectedService && (
+            <>
+              <div 
+                className="modal-backdrop" 
+                onClick={() => setSelectedService(null)}
+                aria-hidden="true"
+              />
+              <div 
+                className="modal-dialog" 
+                role="dialog" 
+                aria-modal="true"
+                aria-labelledby="modal-title"
+              >
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <div className="modal-header-left">
+                      <div className="service-detail-icon">{selectedService.icon}</div>
+                      <h2 id="modal-title" className="modal-title">{selectedService.title}</h2>
+                    </div>
+                    <button 
+                      type="button" 
+                      className="modal-close"
+                      onClick={() => setSelectedService(null)}
+                      aria-label="Close dialog"
+                    >
+                      ✕
+                    </button>
+                  </div>
+                  
+                  <div className="modal-body">
+                    <p className="service-detail-description">{selectedService.description}</p>
 
                     <div className="service-capabilities">
                       <h4>Capabilities:</h4>
                       <ul>
-                        {service.capabilities.map((capability, idx) => (
+                        {selectedService.capabilities.map((capability, idx) => (
                           <li key={idx}>
                             <span className="bullet">•</span>
                             {capability}
@@ -252,15 +300,16 @@ const Services = () => {
                     <div className="service-industries">
                       <h4>Industries Served:</h4>
                       <div className="industry-tags">
-                        {service.industries.map((industry, idx) => (
+                        {selectedService.industries.map((industry, idx) => (
                           <span key={idx} className="industry-tag">{industry}</span>
                         ))}
                       </div>
                     </div>
                   </div>
-                </Card>
-              ))}
-          </div>
+                </div>
+              </div>
+            </>
+          )}
         </div>
       </section>
 

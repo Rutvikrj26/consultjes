@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import './Footer.css';
 
@@ -25,29 +26,29 @@ const Footer = () => {
           <div className="footer__section">
             <h4 className="footer__heading">Products</h4>
             <ul className="footer__links">
-              <li><a href="#hydraulic">Hydraulic Systems</a></li>
-              <li><a href="#linear">Linear Motion</a></li>
-              <li><a href="#cooling">Cooling Solutions</a></li>
-              <li><a href="#accessories">Accessories</a></li>
+              <li><Link to="/products">Hydraulic Systems</Link></li>
+              <li><Link to="/products">Linear Motion</Link></li>
+              <li><Link to="/products">Cooling Solutions</Link></li>
+              <li><Link to="/products">Accessories</Link></li>
             </ul>
           </div>
 
           <div className="footer__section">
             <h4 className="footer__heading">Company</h4>
             <ul className="footer__links">
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#quality">Quality Standards</a></li>
-              <li><a href="#partners">Partners</a></li>
-              <li><a href="#careers">Careers</a></li>
+              <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/quality">Quality Standards</Link></li>
+              <li><Link to="/partners">Partners</Link></li>
+              <li><Link to="/careers">Careers</Link></li>
             </ul>
           </div>
 
           <div className="footer__section">
             <h4 className="footer__heading">Support</h4>
             <ul className="footer__links">
-              <li><a href="#contact">Contact Us</a></li>
-              <li><a href="#faq">FAQs</a></li>
-              <li><a href="#resources">Resources</a></li>
+              <li><Link to="/contact">Contact Us</Link></li>
+              <li><Link to="/faq">FAQs</Link></li>
+              <li><Link to="/resources">Resources</Link></li>
               {/* Removed per request: Technical Support link */}
             </ul>
           </div>
@@ -58,9 +59,9 @@ const Footer = () => {
             © {new Date().getFullYear()} JES Engineering. All rights reserved.
           </p>
           <div className="footer__legal">
-            <a href="#privacy">Privacy Policy</a>
+            <Link to="/privacy">Privacy Policy</Link>
             <span className="footer__divider">•</span>
-            <a href="#terms">Terms of Service</a>
+            <Link to="/terms">Terms of Service</Link>
           </div>
         </div>
       </div>

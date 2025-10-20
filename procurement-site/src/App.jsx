@@ -8,6 +8,13 @@ import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Thanks from './pages/Thanks';
+import Quality from './pages/Quality';
+import Partners from './pages/Partners';
+import Careers from './pages/Careers';
+import FAQ from './pages/FAQ';
+import Resources from './pages/Resources';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 import './styles/global.css';
 
 function App() {
@@ -23,6 +30,13 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/thanks" element={<Thanks />} />
+            <Route path="/quality" element={<Quality />} />
+            <Route path="/partners" element={<Partners />} />
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/resources" element={<Resources />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
           </Routes>
         </main>
         <Footer />

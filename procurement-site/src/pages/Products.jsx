@@ -218,9 +218,11 @@ const Products = () => {
                       )}
 
                       <div className="product-card__actions">
-                        <Button variant="primary" size="sm" fullWidth>
-                          Request Quote
-                        </Button>
+                        <a href="/contact" style={{ textDecoration: 'none', width: '100%', display: 'inline-block' }}>
+                          <Button variant="primary" size="sm" fullWidth>
+                            Request Quote
+                          </Button>
+                        </a>
                       </div>
                     </Card>
                   ))}

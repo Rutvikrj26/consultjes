@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import './Services.css';
@@ -152,6 +152,8 @@ const Services = () => {
     }
   ];
 
+  const [openIndex, setOpenIndex] = useState(0);
+
   return (
     <div className="services-page">
       {/* Page Header */}
@@ -206,37 +208,58 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="services-grid">
-            {engineeringServices.map((service, index) => (
-              <Card key={index} variant="elevated" padding="xl" className="service-detail-card">
-                <div className="service-detail-header">
-                  <div className="service-detail-icon">{service.icon}</div>
-                  <h3 className="service-detail-title">{service.title}</h3>
-                </div>
-                <p className="service-detail-description">{service.description}</p>
+          <div className="services-accordion">
+            {engineeringServices
+              .filter(svc => svc.title !== 'Training & Technical Support')
+              .map((service, index) => (
+                <Card key={index} variant="elevated" padding="xl" className="accordion-item">
+                  <button
+                    type="button"
+                    className="accordion-header"
+                    aria-expanded={openIndex === index}
+                    aria-controls={`service-panel-${index}`}
+                    id={`service-header-${index}`}
+                    onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
+                  >
+                    <div className="service-detail-header">
+                      <div className="service-detail-icon">{service.icon}</div>
+                      <h3 className="service-detail-title">{service.title}</h3>
+                    </div>
+                    <span className="accordion-chevron" aria-hidden>⌄</span>
+                  </button>
 
-                <div className="service-capabilities">
-                  <h4>Capabilities:</h4>
-                  <ul>
-                    {service.capabilities.map((capability, idx) => (
-                      <li key={idx}>
-                        <span className="bullet">•</span>
-                        {capability}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                  <div
+                    className="accordion-body"
+                    id={`service-panel-${index}`}
+                    role="region"
+                    aria-labelledby={`service-header-${index}`}
+                    hidden={openIndex !== index}
+                  >
+                    <p className="service-detail-description">{service.description}</p>
 
-                <div className="service-industries">
-                  <h4>Industries Served:</h4>
-                  <div className="industry-tags">
-                    {service.industries.map((industry, idx) => (
-                      <span key={idx} className="industry-tag">{industry}</span>
-                    ))}
+                    <div className="service-capabilities">
+                      <h4>Capabilities:</h4>
+                      <ul>
+                        {service.capabilities.map((capability, idx) => (
+                          <li key={idx}>
+                            <span className="bullet">•</span>
+                            {capability}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div className="service-industries">
+                      <h4>Industries Served:</h4>
+                      <div className="industry-tags">
+                        {service.industries.map((industry, idx) => (
+                          <span key={idx} className="industry-tag">{industry}</span>
+                        ))}
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </Card>
-            ))}
+                </Card>
+              ))}
           </div>
         </div>
       </section>

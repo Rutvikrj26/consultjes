@@ -60,13 +60,15 @@ const Header = () => {
             <Link to="/products" className="nav__link">Products</Link>
             <Link to="/services" className="nav__link">Services</Link>
             <Link to="/about" className="nav__link">About</Link>
-            <Link to="/about#contact" className="nav__link">Contact</Link>
+            <Link to="/contact" className="nav__link">Contact</Link>
           </nav>
 
           <div className="header__actions">
-            <Button variant="primary" size="md">
-              Request Quote
-            </Button>
+            <Link to="/contact" style={{ textDecoration: 'none' }}>
+              <Button variant="primary" size="md">
+                Request Quote
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu toggle */}
@@ -98,14 +100,16 @@ const Header = () => {
             <Link to="/about" className="mobile-nav__link" onClick={() => setMenuOpen(false)}>
               About
             </Link>
-            <Link to="/about#contact" className="mobile-nav__link" onClick={() => setMenuOpen(false)}>
+            <Link to="/contact" className="mobile-nav__link" onClick={() => setMenuOpen(false)}>
               Contact
             </Link>
           </nav>
           <div className="mobile-nav__actions">
-            <Button variant="primary" size="md" fullWidth onClick={() => setMenuOpen(false)}>
-              Request Quote
-            </Button>
+            <Link to="/contact" style={{ textDecoration: 'none', width: '100%' }} onClick={() => setMenuOpen(false)}>
+              <Button variant="primary" size="md" fullWidth>
+                Request Quote
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

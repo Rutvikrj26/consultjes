@@ -21,7 +21,7 @@ const CallToAction = () => {
             </div>
 
             <div className="cta__actions">
-              <Link to="/about#contact" style={{ textDecoration: 'none' }}>
+              <Link to="/contact" style={{ textDecoration: 'none' }}>
                 <Button variant="primary" size="lg">
                   Request a Quote
                 </Button>

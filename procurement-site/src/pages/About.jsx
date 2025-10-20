@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../components/Card';
 import Button from '../components/Button';
+import { Link } from 'react-router-dom';
 import './About.css';
 import shailesh_image from '../assets/shailesh_solanki.jpg'
 
@@ -211,84 +212,20 @@ const About = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="contact-section section">
+      {/* Contact CTA */}
+      <section className="services-cta section">
         <div className="container">
-          <div className="contact-content">
-            <div className="contact-info">
-              <h2>Get In Touch</h2>
-              <p>
-                Ready to discuss your procurement needs? Our team is here to help you find the
-                right solutions for your engineering projects.
-              </p>
-
-              <div className="contact-details">
-                <div className="contact-item">
-                  <div className="contact-item__icon">📧</div>
-                  <div>
-                    <h4>Email</h4>
-                    <p>info@jesengineering.com</p>
-                  </div>
-                </div>
-
-                <div className="contact-item">
-                  <div className="contact-item__icon">📞</div>
-                  <div>
-                    <h4>Phone</h4>
-                    <p>+1 (555) 123-4567</p>
-                  </div>
-                </div>
-
-                <div className="contact-item">
-                  <div className="contact-item__icon">📍</div>
-                  <div>
-                    <h4>Location</h4>
-                    <p>Industrial District, Engineering Hub</p>
-                  </div>
-                </div>
+          <Card variant="elevated" padding="xl" className="cta-card">
+            <div className="cta-content">
+              <h2>Have a project in mind?</h2>
+              <p>Reach out for a tailored solution from our engineering procurement team.</p>
+              <div className="cta-buttons">
+                <Link to="/contact" style={{ textDecoration: 'none' }}>
+                  <Button variant="primary" size="md">Contact Us</Button>
+                </Link>
               </div>
             </div>
-
-            <Card variant="elevated" padding="xl" className="contact-form-card">
-              <h3>Request a Quote</h3>
-              <form className="contact-form">
-                <div className="form-group">
-                  <label htmlFor="name">Name</label>
-                  <input type="text" id="name" className="form-input" required />
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="email">Email</label>
-                  <input type="email" id="email" className="form-input" required />
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="company">Company</label>
-                  <input type="text" id="company" className="form-input" />
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="product">Product Category</label>
-                  <select id="product" className="form-input">
-                    <option value="">Select a category</option>
-                    <option value="hydraulics">Hydraulic Systems</option>
-                    <option value="linear-motion">Linear Motion</option>
-                    <option value="cooling">Cooling Solutions</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="message">Project Details</label>
-                  <textarea id="message" className="form-input" rows="4" required></textarea>
-                </div>
-
-                <Button variant="primary" size="lg" fullWidth>
-                  Submit Request
-                </Button>
-              </form>
-            </Card>
-          </div>
+          </Card>
         </div>
       </section>
     </div>

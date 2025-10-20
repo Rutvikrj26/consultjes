@@ -57,7 +57,7 @@ const Hero = () => {
                   Explore Products
                 </Button>
               </Link>
-              <Link to="/about#contact" style={{ textDecoration: 'none' }}>
+              <Link to="/contact" style={{ textDecoration: 'none' }}>
                 <Button variant="outline" size="lg">
                   Request Quote
                 </Button>
